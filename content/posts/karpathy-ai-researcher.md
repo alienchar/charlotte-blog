@@ -8,8 +8,8 @@ tags: ["AI工具", "Karpathy", "开源项目", "Agent", "自动化"]
 上周五晚上，Karpathy 发了一条推文。
 
 末尾留了一句话加一个 GitHub 地址：
-![[Pasted image 20260308124007.png]]
-![[Pasted image 20260308123411.png]]
+![](/images/Pasted_image_20260308124007.png)
+![](/images/Pasted_image_20260308123411.png)
 
 翻译过来就是：一半代码，一半科幻，再加一点点精神失常。
 
