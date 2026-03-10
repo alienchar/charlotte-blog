@@ -7,7 +7,7 @@ layout: 'single'
 
 前500强外企营销人，现在全职用AI搞活。
 
-2025年辞职，一个人带着AI搭档开始做内容创作。公众号「夏洛特的AI实验室」，YouTube频道 The Silent General。
+2025年辞职，一个人带着AI搭档开始做内容创作。公众号「夏洛特的AI实验室」。
 
 **我相信的事：**
 
@@ -24,7 +24,7 @@ layout: 'single'
 **联系我：**
 
 - 公众号：夏洛特的AI实验室
-- X/Twitter：@charlotteailab
+- X/Twitter：@aliencharX
 
 ---
 
