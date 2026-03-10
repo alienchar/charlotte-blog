@@ -1,0 +1,39 @@
+baseURL = "https://charlotteailab.com/"
+languageCode = "zh-cn"
+title = "夏洛特的AI实验室"
+theme = "paper"
+
+
+[params]
+  color = "linen"
+  avatar = "avatar.png"
+  name = "Charlotte"
+  bio = "前500强营销人 → AI创作者 | 用AI实现时间自由"
+
+[params.comments]
+  enabled = false
+
+[params.twitter]
+  enabled = false
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 1
+  [[menu.main]]
+    identifier = "articles"
+    name = "文章"
+    url = "/posts/"
+    weight = 2
+
+[markup]
+  [markup.highlight]
+    style = "github"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[pagination]
+  pagerSize = 10
