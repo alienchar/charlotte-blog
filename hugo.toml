@@ -13,8 +13,6 @@ theme = "paper"
 [params.comments]
   enabled = false
 
-[params.twitter]
-  enabled = false
 
 [menu]
   [[menu.main]]
