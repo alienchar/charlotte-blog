@@ -6,7 +6,7 @@ theme = "paper"
 
 [params]
   color = "linen"
-  avatar = "avatar.png"
+  avatar = "https://charlotteailab.com/avatar.png"
   name = "Charlotte"
   bio = "前500强营销人 → AI创作者 | 用AI实现时间自由"
 
