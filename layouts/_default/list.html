@@ -25,17 +25,15 @@
 {{- end -}}
 {{- end -}}
 
-<div style="background:#fff;border-radius:12px;margin-bottom:1rem;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.04);position:relative;display:flex;min-height:0;">
+<div style="background:#fff;border-radius:12px;margin-bottom:1.5rem;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.04);position:relative;">
   {{- if .Params.cover -}}
-  <div style="width:180px;min-width:180px;flex-shrink:0;">
-    <img src="{{ .Params.cover }}" alt="{{ .Title }}" style="width:100%;height:100%;object-fit:cover;display:block;" />
-  </div>
+  <img src="{{ .Params.cover }}" alt="{{ .Title }}" style="width:100%;display:block;" />
   {{- end -}}
-  <div style="padding:1rem 1.2rem;flex:1;min-width:0;">
-    <div style="font-size:0.7rem;color:#aaa;margin-bottom:0.3rem;">{{- .Date | time.Format "2006-01-02" -}}</div>
-    <div style="font-family:'Noto Serif SC',serif;font-size:1.05rem;font-weight:700;line-height:1.4;color:#2c2c2c;margin-bottom:0.3rem;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;">{{- .Title -}}</div>
+  <div style="padding:1.2rem 1.4rem 1.4rem;">
+    <div style="font-size:0.75rem;color:#aaa;margin-bottom:0.4rem;">{{- .Date | time.Format "2006-01-02" -}}</div>
+    <div style="font-family:'Noto Serif SC',serif;font-size:1.15rem;font-weight:700;line-height:1.4;color:#2c2c2c;margin-bottom:0.4rem;">{{- .Title -}}</div>
     {{- if .Params.summary -}}
-    <div style="font-size:0.8rem;color:#999;line-height:1.5;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;">{{- .Params.summary -}}</div>
+    <div style="font-size:0.85rem;color:#999;line-height:1.6;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;">{{- .Params.summary -}}</div>
     {{- end -}}
   </div>
   <a href="{{- .Permalink -}}" style="position:absolute;inset:0;z-index:1;"></a>
