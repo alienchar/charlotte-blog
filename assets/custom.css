@@ -297,3 +297,10 @@ footer {
     aspect-ratio: 16/9;
   }
 }
+
+/* Hide Paper theme's unstyled navigation elements */
+.not-prose nav, 
+article + nav,
+.pagination {
+  display: none;
+}
