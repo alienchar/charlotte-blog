@@ -3,6 +3,7 @@ title: 'Anthropic自己下场研究了：AI会不会抢你的饭碗'
 date: 2026-03-07
 summary: '造AI的人亲自研究AI会不会让人失业，结论比你想的复杂得多'
 tags: ["AI就业", "Anthropic", "职场趋势", "白领危机", "AI工具"]
+cover: '/images/cover_anthropic-ai-jobs.png'
 ---
 
 2026年3月5日，Anthropic——就是做 Claude 的那家公司——发了一篇研究报告。

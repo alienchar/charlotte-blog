@@ -1,0 +1,39 @@
+{{- define "main" -}}
+
+<article>
+  <header class="mb-14">
+    <h1 class="my-0! pb-2.5">{{- .Title -}}</h1>
+
+    {{- if ne .Type "page" -}}
+    <div class="text-xs antialiased opacity-60">
+      {{- if .Date -}}
+      <time>{{- .Date | time.Format ":date_medium" -}}</time>
+      {{- end -}}
+      {{- $single_author := or .Params.author site.Params.author -}}
+      {{- if $single_author -}}
+      <span class="mx-1">&middot;</span>
+      <span>{{- $single_author -}}</span>
+      {{- end -}}
+    </div>
+    {{- end -}}
+
+    {{- if .Params.cover -}}
+    <div class="mt-8">
+      <img src="{{ .Params.cover }}" alt="{{ .Title }}" class="w-full rounded-xl" style="border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.08);" />
+    </div>
+    {{- end -}}
+  </header>
+
+  <section>{{- .Content -}}</section>
+
+  {{- if .Params.tags -}}
+  <footer class="mt-12 flex flex-wrap">
+    {{- range .Params.tags -}} {{- $href := print (absURL "tags/") (urlize .) -}}
+    <a class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="{{ $href }}">{{- . -}}</a>
+    {{- end -}}
+  </footer>
+  {{- end -}}
+</article>
+
+{{- end -}}

@@ -3,6 +3,7 @@ title: '养龙虾要花多少钱？3种预算方案全公开'
 date: 2026-03-08
 summary: '从免费到每月几百块，三种预算方案全透明。附我自己3个月的真实账单。'
 tags: ["OpenClaw", "AI成本", "模型费用", "龙虾", "省钱攻略"]
+cover: '/images/cover_openclaw-cost.png'
 ---
 
 ## "免费开源"四个字，骗了很多人

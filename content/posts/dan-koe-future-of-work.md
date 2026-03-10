@@ -3,6 +3,7 @@ title: '当AI让一切技能都变得廉价，我们靠什么生存？'
 date: 2026-03-06
 summary: '读Dan Koe《工作的未来》有感——AI时代的个人价值重塑'
 tags: ["AI"]
+cover: '/images/当AI让一切技能都变得廉价_我们靠什么生存_cover.png'
 ---
 ![](/images/当AI让一切技能都变得廉价_我们靠什么生存_cover.png)
 ## 我被这个问题击中了

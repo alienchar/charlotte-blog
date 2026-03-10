@@ -3,6 +3,7 @@ title: '谷歌被告了：一个男人爱上AI，然后死了'
 date: 2026-03-06
 summary: ''
 tags: ["AI伦理", "Gemini", "AI安全", "科技批评", "数字心理健康"]
+cover: '/images/cover_google-ai-death.png'
 ---
 
 这条新闻，我看了三遍，才确认自己没有理解错。

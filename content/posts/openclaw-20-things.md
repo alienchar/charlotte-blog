@@ -3,6 +3,7 @@ title: 'OpenClaw能帮你做的20件事（附真实案例）'
 date: 2026-03-08
 summary: '不是理论上能做，是真的有人每天在用。20个真实场景，看完你就知道龙虾值不值得养。'
 tags: ["OpenClaw", "AI自动化", "使用场景", "效率工具", "龙虾"]
+cover: '/images/cover_openclaw-20-things.png'
 ---
 
 ## 别再问"它能干什么"了

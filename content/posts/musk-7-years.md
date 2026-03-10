@@ -3,6 +3,7 @@ title: '马斯克：接下来7年，比你想象的颠得多'
 date: 2026-03-05
 summary: '他担心的不是AI毁灭人类，而是接下来3到7年的过渡期会有多混乱。'
 tags: ["马斯克", "AI趋势", "未来预测", "白领工作", "人工智能"]
+cover: '/images/elon_cover_sample.png'
 ---
 ![](/images/elon_cover_sample.png)
 

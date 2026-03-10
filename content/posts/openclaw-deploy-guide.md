@@ -3,6 +3,7 @@ title: '为普通人和技术小白打造的龙虾部署指南'
 date: 2026-03-06
 summary: '没有Mac Mini也能用OpenClaw？我用踩坑经验，整理出这份连非程序员都能复制的完整部署手册。'
 tags: ["OpenClaw", "VPS部署", "技术教程", "小白指南"]
+cover: '/images/cover_openclaw-deploy-guide.png'
 ---
 
 

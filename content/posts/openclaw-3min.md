@@ -3,6 +3,7 @@ title: 'OpenClaw到底是什么？3分钟看懂这只AI龙虾'
 date: 2026-03-07
 summary: '微信指数7100万的AI龙虾，到底能干什么？一个用了3个月的人来讲清楚。'
 tags: ["OpenClaw", "龙虾", "入门科普", "人工智能"]
+cover: '/images/cover_openclaw-3min.png'
 ---
 
 ## 人人都在聊，但90%的人搞不清楚
