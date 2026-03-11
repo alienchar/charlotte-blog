@@ -193,8 +193,8 @@ def main():
                     print(f"  📷 封面: {cover_fname}")
                     break
         
-        # Write blog post
-        dest = os.path.join(POSTS, f"{slug}.md")
+        # Write blog post (Chinese version)
+        dest = os.path.join(POSTS, f"{slug}.zh.md")
         with open(dest, 'w') as f:
             f.write("---\n")
             f.write(f"title: '{title.replace(chr(39), chr(39)+chr(39))}'\n")
@@ -211,6 +211,14 @@ def main():
         print(f"  ✅ {slug}.md")
         new_count += 1
     
+    # Check for Chinese posts without English translations
+    zh_posts = {f.replace('.zh.md', '') for f in os.listdir(POSTS) if f.endswith('.zh.md')}
+    en_posts = {f.replace('.en.md', '') for f in os.listdir(POSTS) if f.endswith('.en.md')}
+    missing_en = zh_posts - en_posts
+    if missing_en:
+        print(f"\n⚠️ {len(missing_en)}篇文章缺少英文版: {', '.join(sorted(missing_en))}")
+        print("  请运行翻译子agent生成英文版")
+
     if new_count == 0:
         print("✅ 无新文章需要同步")
         return

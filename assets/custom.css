@@ -301,13 +301,13 @@ footer {
 /* ===== Dark Mode ===== */
 @media (prefers-color-scheme: dark) {
   :root {
-    --c-bg: #1a1a1a;
-    --c-text: #e8e6e1;
-    --c-muted: #9a9a9a;
-    --c-border: #333333;
-    --c-surface: #242424;
+    --c-bg: #2a2825;
+    --c-text: #ede9e0;
+    --c-muted: #a8a49c;
+    --c-border: #3d3a36;
+    --c-surface: #332f2b;
     --c-accent: #d4b87a;
-    --c-card: #222222;
+    --c-card: #312e2a;
   }
 
   body {
@@ -325,10 +325,15 @@ footer {
   }
 
   .article-card .card-title {
-    color: var(--c-text);
+    color: var(--c-text) !important;
   }
 
   .post-header h1 {
+    color: var(--c-text) !important;
+  }
+
+  /* Force all headings to warm white, override theme defaults */
+  h1, h2, h3, h4, h5, h6 {
     color: var(--c-text) !important;
   }
 
@@ -337,16 +342,16 @@ footer {
   }
 
   .prose h2 {
-    color: var(--c-text);
+    color: var(--c-text) !important;
     border-bottom-color: var(--c-border);
   }
 
   .prose h3 {
-    color: var(--c-text);
+    color: var(--c-text) !important;
   }
 
   .prose strong {
-    color: #f0ece4;
+    color: #f5f0e6;
   }
 
   .prose blockquote {
@@ -364,6 +369,11 @@ footer {
     box-shadow: 0 2px 16px rgba(0,0,0,0.2);
   }
 
+  .prose a {
+    color: var(--c-accent) !important;
+    text-decoration-color: rgba(212,184,122,0.4) !important;
+  }
+
   .tag-pill {
     background: var(--c-surface);
     color: var(--c-muted);
@@ -378,27 +388,27 @@ footer {
     background: var(--c-surface);
   }
 
-  /* Paper theme overrides for dark mode */
-  .dark body,
-  html[data-theme="dark"] body {
-    background: var(--c-bg) !important;
-  }
-
+  /* Paper theme overrides — force all link/nav/header colors */
   header, nav, footer {
     color: var(--c-text) !important;
   }
 
-  header a, nav a {
+  header a, nav a, footer a {
     color: var(--c-text) !important;
   }
 
   a {
-    color: var(--c-accent);
+    color: var(--c-accent) !important;
   }
 
-  /* Ensure all text is readable on dark bg */
-  p, li, td, th, span, div {
+  /* Ensure ALL text is readable */
+  p, li, td, th, span, div, label, figcaption {
     color: var(--c-text);
+  }
+
+  /* Site title in header */
+  .site-title, header .title, header h1 a {
+    color: var(--c-text) !important;
   }
 }
 

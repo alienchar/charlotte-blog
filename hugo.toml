@@ -1,30 +1,63 @@
 baseURL = "https://charlotteailab.com/"
-languageCode = "zh-cn"
 title = "夏洛特的AI实验室"
 theme = "paper"
+defaultContentLanguage = "zh"
 
+[languages]
+  [languages.zh]
+    languageCode = "zh-CN"
+    languageName = "中文"
+    weight = 1
+    title = "夏洛特的AI实验室"
+    [languages.zh.params]
+      color = "linen"
+      avatar = "https://charlotteailab.com/avatar.png"
+      name = "Charlotte"
+      bio = "前500强营销人 → AI创作者 | 用AI实现时间自由"
+    [[languages.zh.menu.main]]
+      identifier = "about"
+      name = "关于"
+      url = "/about/"
+      weight = 1
+    [[languages.zh.menu.main]]
+      identifier = "articles"
+      name = "文章"
+      url = "/posts/"
+      weight = 2
+    [[languages.zh.menu.main]]
+      identifier = "lang"
+      name = "EN"
+      url = "/en/"
+      weight = 3
 
-[params]
-  color = "linen"
-  avatar = "https://charlotteailab.com/avatar.png"
-  name = "Charlotte"
-  bio = "前500强营销人 → AI创作者 | 用AI实现时间自由"
+  [languages.en]
+    languageCode = "en"
+    languageName = "English"
+    weight = 2
+    title = "Charlotte's AI Lab"
+    [languages.en.params]
+      color = "linen"
+      avatar = "https://charlotteailab.com/avatar.png"
+      name = "Charlotte"
+      bio = "Ex-Fortune 500 marketer → AI creator | Building freedom with AI"
+    [[languages.en.menu.main]]
+      identifier = "about"
+      name = "About"
+      url = "/en/about/"
+      weight = 1
+    [[languages.en.menu.main]]
+      identifier = "articles"
+      name = "Articles"
+      url = "/en/posts/"
+      weight = 2
+    [[languages.en.menu.main]]
+      identifier = "lang"
+      name = "中文"
+      url = "/"
+      weight = 3
 
 [params.comments]
   enabled = false
-
-
-[menu]
-  [[menu.main]]
-    identifier = "about"
-    name = "关于"
-    url = "/about/"
-    weight = 1
-  [[menu.main]]
-    identifier = "articles"
-    name = "文章"
-    url = "/posts/"
-    weight = 2
 
 [markup]
   [markup.highlight]
