@@ -193,17 +193,52 @@ def main():
                     print(f"  📷 封面: {cover_fname}")
                     break
         
+        # SEO: generate description from summary or first paragraph
+        description = summary
+        if not description:
+            # Take first meaningful paragraph (skip images, headers)
+            for line in body.split('\n'):
+                line = line.strip()
+                if line and not line.startswith('#') and not line.startswith('!') and not line.startswith('>') and len(line) > 30:
+                    description = line[:160]
+                    break
+        
+        # SEO: generate keywords from tags + title
+        keywords = list(tags) if tags else []
+        for kw in ['AI', 'OpenClaw', '龙虾']:
+            if kw.lower() in title.lower() and kw not in keywords:
+                keywords.append(kw)
+        
+        # SEO: estimate reading time (Chinese ~400 chars/min)
+        char_count = len(re.sub(r'\s+', '', body))
+        reading_time = max(1, round(char_count / 400))
+        
+        # SEO: extract first image for og:image fallback
+        og_image = cover_slug
+        if not og_image:
+            img_match = re.search(r'!\[.*?\]\((/images/[^)]+)\)', body)
+            if img_match:
+                og_image = img_match.group(1)
+        
         # Write blog post (Chinese version)
         dest = os.path.join(POSTS, f"{slug}.zh.md")
         with open(dest, 'w') as f:
             f.write("---\n")
             f.write(f"title: '{title.replace(chr(39), chr(39)+chr(39))}'\n")
             f.write(f"date: {article_date}\n")
+            if description:
+                f.write(f"description: '{description.replace(chr(39), chr(39)+chr(39))}'\n")
             if summary:
                 f.write(f"summary: '{summary.replace(chr(39), chr(39)+chr(39))}'\n")
             f.write(f"tags: {json.dumps(tags, ensure_ascii=False)}\n")
+            if keywords:
+                f.write(f"keywords: {json.dumps(keywords, ensure_ascii=False)}\n")
             if cover_slug:
                 f.write(f"cover: '{cover_slug}'\n")
+            if og_image:
+                f.write(f"images: ['{og_image}']\n")
+            f.write(f"readingTime: {reading_time}\n")
+            f.write(f"slug: '{slug}'\n")
             f.write("---\n\n")
             f.write(body)
             f.write("\n")

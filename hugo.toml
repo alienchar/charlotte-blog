@@ -56,8 +56,29 @@ defaultContentLanguage = "zh"
       url = "/"
       weight = 3
 
+[params]
+  description = "夏洛特的AI实验室 — AI赛道跨平台内容创作者，用AI实现时间自由"
+  keywords = ["AI", "OpenClaw", "龙虾", "人工智能", "AI工具", "内容创作", "效率"]
+  images = ["https://charlotteailab.com/avatar.png"]
+
 [params.comments]
   enabled = false
+
+# SEO: sitemap
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+# SEO: RSS/Atom
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = "application/rss+xml"
+    baseName = "feed"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
 
 [markup]
   [markup.highlight]
