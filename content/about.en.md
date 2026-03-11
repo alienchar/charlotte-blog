@@ -24,7 +24,9 @@ Left my corporate job in 2025. Now I create content full-time with my AI partner
 **Find me:**
 
 - WeChat: 夏洛特的AI实验室
+- Xiaohongshu: 夏洛特的AI实验室
 - X/Twitter: @aliencharX
+- Email: aliencharwork4@gmail.com
 - Blog: charlotteailab.com
 
 ---

@@ -24,7 +24,9 @@ layout: 'single'
 **联系我：**
 
 - 公众号：夏洛特的AI实验室
+- 小红书：夏洛特的AI实验室
 - X/Twitter：@aliencharX
+- 邮箱：aliencharwork4@gmail.com
 
 ---
 
