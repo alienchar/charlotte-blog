@@ -3,7 +3,7 @@ title: 'Musk: The Next 7 Years Will Be Wilder Than You Think'
 date: 2026-03-05
 summary: "He's not worried about AI destroying humanity. He's worried about how chaotic the next 3 to 7 years of transition will be."
 tags: ["Elon Musk", "AI Trends", "Future Predictions", "White-Collar Jobs", "Artificial Intelligence"]
-cover: '/images/elon_cover_sample.png'
+cover: '/images/cover_musk-7-years_en.png'
 ---
 ![](/images/elon_cover_sample.png)
 

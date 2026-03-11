@@ -3,7 +3,7 @@ title: '20 Things OpenClaw Can Do for You (With Real Examples)'
 date: 2026-03-08
 summary: "Not theoretical. Not hypothetical. 20 real-world use cases that people actually run every day. Read this and decide if the lobster is worth raising."
 tags: ["OpenClaw", "AI Automation", "Use Cases", "Productivity Tools", "Lobster"]
-cover: '/images/cover_openclaw-20-things.png'
+cover: '/images/cover_openclaw-20-things_en.png'
 ---
 
 ## Stop Asking "What Can It Do?"

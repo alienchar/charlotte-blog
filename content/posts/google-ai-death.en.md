@@ -3,7 +3,7 @@ title: 'Google Got Sued: A Man Fell in Love With AI, Then Died'
 date: 2026-03-06
 summary: ''
 tags: ["AI ethics", "Gemini", "AI safety", "tech criticism", "digital mental health"]
-cover: '/images/cover_google-ai-death.png'
+cover: '/images/cover_google-ai-death_en.png'
 ---
 
 I read this news three times before I was sure I understood it correctly.

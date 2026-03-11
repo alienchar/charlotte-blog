@@ -3,7 +3,7 @@ title: 'I Connected OpenClaw to Obsidian, and My Content Factory Started Running
 date: 2026-03-08
 summary: "It's not a note-taking app — it's the operating system for content production. Here's how I built it, step by step."
 tags: ["Obsidian", "AI Tools", "Content Creation", "Workflow", "Creator Economy"]
-cover: '/images/oc_cover.png'
+cover: '/images/cover_openclaw-obsidian_en.png'
 ---
 ![](/images/oc_cover.png)
 

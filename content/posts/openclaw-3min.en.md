@@ -3,7 +3,7 @@ title: 'What Even Is OpenClaw? A 3-Minute Guide to the AI Lobster'
 date: 2026-03-07
 summary: "An AI lobster with a WeChat Index of 71 million. What does it actually do? Here's the breakdown from someone who's been using it for 3 months."
 tags: ["OpenClaw", "Lobster", "Beginner Guide", "Artificial Intelligence"]
-cover: '/images/cover_openclaw-3min.png'
+cover: '/images/cover_openclaw-3min_en.png'
 ---
 
 ## Everyone's Talking About It, but 90% Have No Idea What It Is

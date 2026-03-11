@@ -3,7 +3,7 @@ title: "When AI Makes Every Skill Cheap, What Do We Have Left?"
 date: 2026-03-06
 summary: "Reflections on Dan Koe's 'The Future of Work' — redefining personal value in the age of AI"
 tags: ["AI"]
-cover: '/images/当AI让一切技能都变得廉价_我们靠什么生存_cover.png'
+cover: '/images/cover_dan-koe-future-of-work_en.png'
 ---
 ![](/images/当AI让一切技能都变得廉价_我们靠什么生存_cover.png)
 ## This Question Hit Me Hard

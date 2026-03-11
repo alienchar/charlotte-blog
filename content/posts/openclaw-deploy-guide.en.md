@@ -3,7 +3,7 @@ title: "The Non-Programmer's Guide to Deploying OpenClaw"
 date: 2026-03-06
 summary: "No Mac Mini? No problem. A complete deployment guide born from real trial and error — even non-programmers can follow this one."
 tags: ["OpenClaw", "VPS Deployment", "Technical Tutorial", "Beginner Guide"]
-cover: '/images/cover_openclaw-deploy-guide.png'
+cover: '/images/cover_openclaw-deploy-guide_en.png'
 ---
 
 

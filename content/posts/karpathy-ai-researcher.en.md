@@ -3,7 +3,7 @@ title: 'Karpathy Open-Sourced an AI Researcher That Runs 100 Experiments While Y
 date: 2026-03-07
 summary: 'Karpathy just dropped autoresearch: an AI Agent that modifies code, trains models, and evaluates results on its own — 100 experiments in a single night.'
 tags: ["AI Tools", "Karpathy", "Open Source", "Agent", "Automation"]
-cover: '/images/cover_karpathy-ai-researcher.png'
+cover: '/images/cover_karpathy-ai-researcher_en.png'
 ---
 
 Last Friday night, Karpathy posted a tweet.

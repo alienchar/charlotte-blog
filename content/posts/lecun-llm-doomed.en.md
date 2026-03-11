@@ -3,7 +3,7 @@ title: 'Raised $1 Billion — Yann LeCun Is Betting That LLMs Are a Dead End'
 date: 2026-03-11
 summary: 'Turing Award winner Yann LeCun left Meta to found AMI Labs, raised $1 billion, and declared LLMs a dead end. His bet: "World Models" will redefine AI.'
 tags: ["AI", "Yann LeCun", "LLM", "World Models", "Startup"]
-cover: '/images/cover_lecun-llm-doomed.png'
+cover: '/images/cover_lecun-llm-doomed_en.png'
 ---
 
 

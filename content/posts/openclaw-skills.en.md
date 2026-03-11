@@ -3,7 +3,7 @@ title: 'The 3 Types of Skills Your OpenClaw Lobster Actually Needs'
 date: 2026-03-09
 summary: "Installed the lobster but it feels underwhelming? It's not the tool — you're missing the right Skills. These 3 categories are what turn it from a chatbot into a real assistant."
 tags: ["OpenClaw", "Skills", "Lobster Advanced", "AI Tools", "Tips"]
-cover: '/images/cover_openclaw-skills.png'
+cover: '/images/cover_openclaw-skills_en.png'
 ---
 
 

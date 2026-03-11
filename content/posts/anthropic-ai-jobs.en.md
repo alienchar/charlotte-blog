@@ -3,7 +3,7 @@ title: 'Anthropic Studied It Themselves: Will AI Take Your Job?'
 date: 2026-03-07
 summary: 'The people who build AI went and researched whether AI causes unemployment. The conclusion is more complicated than you think.'
 tags: ["AI employment", "Anthropic", "workplace trends", "white-collar jobs", "AI tools"]
-cover: '/images/cover_anthropic-ai-jobs.png'
+cover: '/images/cover_anthropic-ai-jobs_en.png'
 ---
 
 On March 5, 2026, Anthropic — the company behind Claude — published a research report.
