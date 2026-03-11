@@ -1,12 +1,17 @@
 ---
 title: '融资10亿美金，杨立昆押注LLM是死路'
-date: 2026-03-11
+date: '2026-03-11'
 summary: '图灵奖得主杨立昆离开Meta创办AMI Labs，融资10亿美元，宣称LLM是死胡同，要用"世界模型"重新定义AI。'
 tags: ["AI", "杨立昆", "LLM", "世界模型", "创业"]
 cover: '/images/cover_lecun-llm-doomed.png'
+description: '图灵奖得主杨立昆离开Meta创办AMI Labs，融资10亿美元，宣称LLM是死胡同，要用"世界模型"重新定义AI。'
+keywords: ["AI", "杨立昆", "LLM", "世界模型", "创业"]
+readingTime: 12
+faq:
+  - q: '这篇文章关于图灵奖得主，撂挑子了的核心观点是什么？'
+    a: '本文深度分析了图灵奖得主，撂挑子了，结合AI内容创作者的实际经验提供实用见解。'
+images: ["/images/cover_lecun-llm-doomed.png"]
 ---
-
-
 
 ## 图灵奖得主，撂挑子了
 

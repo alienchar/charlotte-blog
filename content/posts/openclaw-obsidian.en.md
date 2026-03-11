@@ -1,10 +1,18 @@
 ---
 title: 'I Connected OpenClaw to Obsidian, and My Content Factory Started Running Itself'
-date: 2026-03-08
-summary: "It's not a note-taking app — it's the operating system for content production. Here's how I built it, step by step."
+date: '2026-03-08'
+summary: 'It''s not a note-taking app — it''s the operating system for content production. Here''s how I built it, step by step.'
 tags: ["Obsidian", "AI Tools", "Content Creation", "Workflow", "Creator Economy"]
 cover: '/images/cover_openclaw-obsidian_en.png'
+description: 'It''s not a note-taking app — it''s the operating system for content production. Here''s how I built it, step by step.。'
+keywords: ["Obsidian", "AI Tools", "Content Creation", "Workflow", "Creator Economy", "OpenClaw"]
+readingTime: 29
+faq:
+  - q: 'What is OpenClaw and how does it work?'
+    a: 'OpenClaw is an open-source AI agent framework that runs on your own computer, acting as a 24/7 AI assistant that can automate tasks, write content, and manage workflows.'
+images: ["/images/cover_openclaw-obsidian_en.png"]
 ---
+
 ![](/images/oc_cover.png)
 
 I recently read an article about someone who turned Obsidian into a factory — 468 git commits, 85 AI Skills, 7 platforms synced for distribution, one person producing the output of a ten-person team.

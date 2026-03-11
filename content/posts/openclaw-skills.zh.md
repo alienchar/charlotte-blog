@@ -1,11 +1,17 @@
 ---
 title: 'OpenClaw龙虾必备的3类Skill'
-date: 2026-03-09
+date: '2026-03-09'
 summary: '很多人装好龙虾后发现"不如预期"，不是工具问题，是少装了关键Skill。这3类Skill装完才算入门。'
 tags: ["OpenClaw", "Skill技能", "龙虾进阶", "AI工具", "使用技巧"]
 cover: '/images/cover_openclaw-skills.png'
+description: '很多人装好龙虾后发现"不如预期"，不是工具问题，是少装了关键Skill。这3类Skill装完才算入门。'
+keywords: ["OpenClaw", "Skill技能", "龙虾进阶", "AI工具", "使用技巧", "龙虾"]
+readingTime: 7
+faq:
+  - q: 'OpenClaw龙虾是什么？'
+    a: 'OpenClaw是一个开源AI Agent框架，可以在你自己的电脑上运行，充当24小时AI助手，自动化处理任务、写作和管理工作流。'
+images: ["/images/cover_openclaw-skills.png"]
 ---
-
 
 ## 装好了龙虾，感觉和普通ChatGPT没太大区别？
 

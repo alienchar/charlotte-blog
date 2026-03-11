@@ -1,9 +1,16 @@
 ---
 title: '20 Things OpenClaw Can Do for You (With Real Examples)'
-date: 2026-03-08
-summary: "Not theoretical. Not hypothetical. 20 real-world use cases that people actually run every day. Read this and decide if the lobster is worth raising."
+date: '2026-03-08'
+summary: 'Not theoretical. Not hypothetical. 20 real-world use cases that people actually run every day. Read this and decide if the lobster is worth raising.'
 tags: ["OpenClaw", "AI Automation", "Use Cases", "Productivity Tools", "Lobster"]
 cover: '/images/cover_openclaw-20-things_en.png'
+description: 'Not theoretical. Not hypothetical. 20 real-world use cases that people actually run every day. Read this and decide if the lobster is worth raising.。'
+keywords: ["OpenClaw", "AI Automation", "Use Cases", "Productivity Tools", "Lobster"]
+readingTime: 24
+faq:
+  - q: 'What is OpenClaw and how does it work?'
+    a: 'OpenClaw is an open-source AI agent framework that runs on your own computer, acting as a 24/7 AI assistant that can automate tasks, write content, and manage workflows.'
+images: ["/images/cover_openclaw-20-things_en.png"]
 ---
 
 ## Stop Asking "What Can It Do?"

@@ -1,12 +1,19 @@
 ---
 title: '为普通人和技术小白打造的龙虾部署指南'
-date: 2026-03-06
+date: '2026-03-06'
 summary: '没有Mac Mini也能用OpenClaw？我用踩坑经验，整理出这份连非程序员都能复制的完整部署手册。'
 tags: ["OpenClaw", "VPS部署", "技术教程", "小白指南"]
 cover: '/images/cover_openclaw-deploy-guide.png'
+description: '没有Mac Mini也能用OpenClaw？我用踩坑经验，整理出这份连非程序员都能复制的完整部署手册。'
+keywords: ["OpenClaw", "VPS部署", "技术教程", "小白指南", "龙虾"]
+readingTime: 23
+faq:
+  - q: 'OpenClaw龙虾是什么？'
+    a: 'OpenClaw是一个开源AI Agent框架，可以在你自己的电脑上运行，充当24小时AI助手，自动化处理任务、写作和管理工作流。'
+  - q: '不会写代码能部署OpenClaw吗？'
+    a: '可以。OpenClaw支持零代码一键部署，在云服务器或Mac电脑上都能快速安装。'
+images: ["/images/cover_openclaw-deploy-guide.png"]
 ---
-
-
 
 今天，作为一个毫无编程背景的普通中年人，我也有龙虾了！
 ![](/images/Screenshot_2026-03-01_144226.png)

@@ -1,9 +1,16 @@
 ---
 title: 'Anthropic自己下场研究了：AI会不会抢你的饭碗'
-date: 2026-03-07
+date: '2026-03-07'
 summary: '造AI的人亲自研究AI会不会让人失业，结论比你想的复杂得多'
 tags: ["AI就业", "Anthropic", "职场趋势", "白领危机", "AI工具"]
 cover: '/images/cover_anthropic-ai-jobs.png'
+description: '2026年3月5日，Anthropic——就是做 Claude 的那家公司——发了一篇研究报告。'
+keywords: ["AI就业", "Anthropic", "职场趋势", "白领危机", "AI工具", "AI"]
+readingTime: 8
+faq:
+  - q: '这篇文章关于一个新指标，叫「观测显露」的核心观点是什么？'
+    a: '本文深度分析了一个新指标，叫「观测显露」，结合AI内容创作者的实际经验提供实用见解。'
+images: ["/images/cover_anthropic-ai-jobs.png"]
 ---
 
 2026年3月5日，Anthropic——就是做 Claude 的那家公司——发了一篇研究报告。

@@ -1,9 +1,18 @@
 ---
 title: '养龙虾要花多少钱？3种预算方案全公开'
-date: 2026-03-08
+date: '2026-03-08'
 summary: '从免费到每月几百块，三种预算方案全透明。附我自己3个月的真实账单。'
 tags: ["OpenClaw", "AI成本", "模型费用", "龙虾", "省钱攻略"]
 cover: '/images/cover_openclaw-cost.png'
+description: 'OpenClaw本身确实是开源免费的——你不需要花一分钱就能把它装好。但它要工作，需要调用AI模型。模型不是免费的，按量收费。'
+keywords: ["OpenClaw", "AI成本", "模型费用", "龙虾", "省钱攻略"]
+readingTime: 8
+faq:
+  - q: 'OpenClaw龙虾是什么？'
+    a: 'OpenClaw是一个开源AI Agent框架，可以在你自己的电脑上运行，充当24小时AI助手，自动化处理任务、写作和管理工作流。'
+  - q: 'OpenClaw养龙虾需要花多少钱？'
+    a: 'OpenClaw本身免费开源，主要成本是AI模型的API调用费（按使用量计费）和可选的云服务器费用（每月5-20美元）。'
+images: ["/images/cover_openclaw-cost.png"]
 ---
 
 ## "免费开源"四个字，骗了很多人

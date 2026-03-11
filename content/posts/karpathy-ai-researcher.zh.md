@@ -1,9 +1,16 @@
 ---
 title: 'Karpathy开源了一个AI研究员，睡一觉跑100个实验'
-date: 2026-03-07
+date: '2026-03-07'
 summary: 'Karpathy最新开源autoresearch：让AI Agent自动修改代码、训练模型、评估结果，一晚上跑100个实验'
 tags: ["AI工具", "Karpathy", "开源项目", "Agent", "自动化"]
 cover: '/images/cover_karpathy-ai-researcher.png'
+description: 'Karpathy最新开源autoresearch：让AI Agent自动修改代码、训练模型、评估结果，一晚上跑100个实验。'
+keywords: ["AI工具", "Karpathy", "开源项目", "Agent", "自动化", "AI"]
+readingTime: 7
+faq:
+  - q: '这篇文章关于这东西到底是干嘛的的核心观点是什么？'
+    a: '本文深度分析了这东西到底是干嘛的，结合AI内容创作者的实际经验提供实用见解。'
+images: ["/images/cover_karpathy-ai-researcher.png"]
 ---
 
 上周五晚上，Karpathy 发了一条推文。

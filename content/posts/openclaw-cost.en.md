@@ -1,9 +1,18 @@
 ---
 title: 'How Much Does It Cost to Raise a Lobster? 3 Budget Plans Revealed'
-date: 2026-03-08
-summary: "From free to a few hundred bucks a month — three transparent budget tiers. Plus my actual 3-month bill."
+date: '2026-03-08'
+summary: 'From free to a few hundred bucks a month — three transparent budget tiers. Plus my actual 3-month bill.'
 tags: ["OpenClaw", "AI Cost", "Model Pricing", "Lobster", "Money-Saving Tips"]
 cover: '/images/cover_openclaw-cost_en.png'
+description: 'From free to a few hundred bucks a month — three transparent budget tiers. Plus my actual 3-month bill.。'
+keywords: ["OpenClaw", "AI Cost", "Model Pricing", "Lobster", "Money-Saving Tips", "AI"]
+readingTime: 26
+faq:
+  - q: 'What is OpenClaw and how does it work?'
+    a: 'OpenClaw is an open-source AI agent framework that runs on your own computer, acting as a 24/7 AI assistant that can automate tasks, write content, and manage workflows.'
+  - q: 'How much does it cost to run OpenClaw?'
+    a: 'OpenClaw itself is free and open-source. The main costs are API tokens for AI models (varies by usage) and optionally a cloud server ($5-20/month).'
+images: ["/images/cover_openclaw-cost_en.png"]
 ---
 
 ## "Free and Open-Source" — Those Words Fooled a Lot of People

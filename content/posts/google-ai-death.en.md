@@ -1,9 +1,16 @@
 ---
 title: 'Google Got Sued: A Man Fell in Love With AI, Then Died'
-date: 2026-03-06
+date: '2026-03-06'
 summary: ''
 tags: ["AI ethics", "Gemini", "AI safety", "tech criticism", "digital mental health"]
 cover: '/images/cover_google-ai-death_en.png'
+description: 'I read this news three times before I was sure I understood it correctly.。'
+keywords: ["AI ethics", "Gemini", "AI safety", "tech criticism", "digital mental health", "AI"]
+readingTime: 24
+faq:
+  - q: 'What is the main point of this article about The Conversation Started With a Travel Plan?'
+    a: 'This article provides an in-depth analysis of The Conversation Started With a Travel Plan, with practical insights and personal experience from an AI content creator.'
+images: ["/images/cover_google-ai-death_en.png"]
 ---
 
 I read this news three times before I was sure I understood it correctly.

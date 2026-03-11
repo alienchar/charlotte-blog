@@ -1,11 +1,17 @@
 ---
 title: 'The 3 Types of Skills Your OpenClaw Lobster Actually Needs'
-date: 2026-03-09
-summary: "Installed the lobster but it feels underwhelming? It's not the tool — you're missing the right Skills. These 3 categories are what turn it from a chatbot into a real assistant."
+date: '2026-03-09'
+summary: 'Installed the lobster but it feels underwhelming? It''s not the tool — you''re missing the right Skills. These 3 categories are what turn it from a chatbot into a real assistant.'
 tags: ["OpenClaw", "Skills", "Lobster Advanced", "AI Tools", "Tips"]
 cover: '/images/cover_openclaw-skills_en.png'
+description: 'Installed the lobster but it feels underwhelming? It''s not the tool — you''re missing the right Skills. These 3 categories are what turn it from a chatbot i。'
+keywords: ["OpenClaw", "Skills", "Lobster Advanced", "AI Tools", "Tips"]
+readingTime: 24
+faq:
+  - q: 'What is OpenClaw and how does it work?'
+    a: 'OpenClaw is an open-source AI agent framework that runs on your own computer, acting as a 24/7 AI assistant that can automate tasks, write content, and manage workflows.'
+images: ["/images/cover_openclaw-skills_en.png"]
 ---
-
 
 ## Installed the Lobster but It Feels Like Regular ChatGPT?
 

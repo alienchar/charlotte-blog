@@ -1,10 +1,18 @@
 ---
 title: '我把OpenClaw和Obsidian接在一起，内容工厂就自己跑起来了'
-date: 2026-03-08
+date: '2026-03-08'
 summary: '不是笔记软件，是内容生产的操作系统。我是怎么一步步搭起来的。'
 tags: ["Obsidian", "AI工具", "内容创作", "工作流", "自媒体"]
 cover: '/images/oc_cover.png'
+description: '最近看到一篇文章，他把Obsidian跑成了一座工厂——468次git commit，85个AI Skills，7个平台同步分发，一个人干出十人团队的产出。'
+keywords: ["Obsidian", "AI工具", "内容创作", "工作流", "自媒体", "OpenClaw"]
+readingTime: 8
+faq:
+  - q: 'OpenClaw龙虾是什么？'
+    a: 'OpenClaw是一个开源AI Agent框架，可以在你自己的电脑上运行，充当24小时AI助手，自动化处理任务、写作和管理工作流。'
+images: ["/images/oc_cover.png"]
 ---
+
 ![](/images/oc_cover.png)
 
 最近看到一篇文章，他把Obsidian跑成了一座工厂——468次git commit，85个AI Skills，7个平台同步分发，一个人干出十人团队的产出。

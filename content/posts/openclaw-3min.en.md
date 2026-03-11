@@ -1,9 +1,16 @@
 ---
 title: 'What Even Is OpenClaw? A 3-Minute Guide to the AI Lobster'
-date: 2026-03-07
-summary: "An AI lobster with a WeChat Index of 71 million. What does it actually do? Here's the breakdown from someone who's been using it for 3 months."
+date: '2026-03-07'
+summary: 'An AI lobster with a WeChat Index of 71 million. What does it actually do? Here''s the breakdown from someone who''s been using it for 3 months.'
 tags: ["OpenClaw", "Lobster", "Beginner Guide", "Artificial Intelligence"]
 cover: '/images/cover_openclaw-3min_en.png'
+description: 'An AI lobster with a WeChat Index of 71 million. What does it actually do? Here''s the breakdown from someone who''s been using it for 3 months.。'
+keywords: ["OpenClaw", "Lobster", "Beginner Guide", "Artificial Intelligence", "AI"]
+readingTime: 28
+faq:
+  - q: 'What is OpenClaw and how does it work?'
+    a: 'OpenClaw is an open-source AI agent framework that runs on your own computer, acting as a 24/7 AI assistant that can automate tasks, write content, and manage workflows.'
+images: ["/images/cover_openclaw-3min_en.png"]
 ---
 
 ## Everyone's Talking About It, but 90% Have No Idea What It Is

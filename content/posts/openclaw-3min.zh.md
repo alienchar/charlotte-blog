@@ -1,9 +1,16 @@
 ---
 title: 'OpenClaw到底是什么？3分钟看懂这只AI龙虾'
-date: 2026-03-07
+date: '2026-03-07'
 summary: '微信指数7100万的AI龙虾，到底能干什么？一个用了3个月的人来讲清楚。'
 tags: ["OpenClaw", "龙虾", "入门科普", "人工智能"]
 cover: '/images/cover_openclaw-3min.png'
+description: '不是小龙虾，是一只叫OpenClaw的AI龙虾。朋友圈有人说它是"AI界的Linux"，有人说它是"下一代操作系统"，还有人直接把它叫"数字员工"。'
+keywords: ["OpenClaw", "龙虾", "入门科普", "人工智能", "AI"]
+readingTime: 7
+faq:
+  - q: 'OpenClaw龙虾是什么？'
+    a: 'OpenClaw是一个开源AI Agent框架，可以在你自己的电脑上运行，充当24小时AI助手，自动化处理任务、写作和管理工作流。'
+images: ["/images/cover_openclaw-3min.png"]
 ---
 
 ## 人人都在聊，但90%的人搞不清楚

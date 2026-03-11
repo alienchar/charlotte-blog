@@ -1,9 +1,16 @@
 ---
 title: 'Anthropic Studied It Themselves: Will AI Take Your Job?'
-date: 2026-03-07
+date: '2026-03-07'
 summary: 'The people who build AI went and researched whether AI causes unemployment. The conclusion is more complicated than you think.'
 tags: ["AI employment", "Anthropic", "workplace trends", "white-collar jobs", "AI tools"]
 cover: '/images/cover_anthropic-ai-jobs_en.png'
+description: 'The people who build AI went and researched whether AI causes unemployment. The conclusion is more complicated than you think.。'
+keywords: ["AI employment", "Anthropic", "workplace trends", "white-collar jobs", "AI tools", "AI"]
+readingTime: 28
+faq:
+  - q: 'What is the main point of this article about A New Metric Called "Observed Exposure"?'
+    a: 'This article provides an in-depth analysis of A New Metric Called "Observed Exposure", with practical insights and personal experience from an AI content creator.'
+images: ["/images/cover_anthropic-ai-jobs_en.png"]
 ---
 
 On March 5, 2026, Anthropic — the company behind Claude — published a research report.

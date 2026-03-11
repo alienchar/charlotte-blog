@@ -1,9 +1,16 @@
 ---
 title: 'OpenClaw能帮你做的20件事（附真实案例）'
-date: 2026-03-08
+date: '2026-03-08'
 summary: '不是理论上能做，是真的有人每天在用。20个真实场景，看完你就知道龙虾值不值得养。'
 tags: ["OpenClaw", "AI自动化", "使用场景", "效率工具", "龙虾"]
 cover: '/images/cover_openclaw-20-things.png'
+description: '每次跟朋友聊OpenClaw，他们问的第一个问题都是："它能干啥？"。'
+keywords: ["OpenClaw", "AI自动化", "使用场景", "效率工具", "龙虾"]
+readingTime: 6
+faq:
+  - q: 'OpenClaw龙虾是什么？'
+    a: 'OpenClaw是一个开源AI Agent框架，可以在你自己的电脑上运行，充当24小时AI助手，自动化处理任务、写作和管理工作流。'
+images: ["/images/cover_openclaw-20-things.png"]
 ---
 
 ## 别再问"它能干什么"了
