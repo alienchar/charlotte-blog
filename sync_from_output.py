@@ -174,8 +174,18 @@ def main():
         cover = fm.get('cover', '')
         cover_slug = ''
         if cover and not cover.startswith('http'):
-            for base in [src_dir, VAULT]:
-                cover_path = os.path.join(base, cover)
+            # Search multiple locations for cover image
+            search_paths = [
+                os.path.join(src_dir, cover),
+                os.path.join(VAULT, cover),
+            ]
+            # Also search archive/images/ subdirectories
+            archive_dir = os.path.join(VAULT, "archive", "images")
+            if os.path.exists(archive_dir):
+                for d in os.listdir(archive_dir):
+                    search_paths.append(os.path.join(archive_dir, d, cover))
+            
+            for cover_path in search_paths:
                 if os.path.exists(cover_path):
                     cover_fname = f"cover_{slug}.png"
                     shutil.copy2(cover_path, os.path.join(IMAGES, cover_fname))
