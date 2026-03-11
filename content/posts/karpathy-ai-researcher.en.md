@@ -129,7 +129,7 @@ uv run train.py
 
 Once the environment checks out, open your Claude or Codex, point it to the project directory, and say:
 
-> "Hi have a look at program.md and let's kick off a new experiment!"
+> Hi have a look at program.md and let's kick off a new experiment!
 
 Then turn off the lights and go to sleep.
 

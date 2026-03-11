@@ -41,7 +41,7 @@ AI can produce information but cannot produce meaning. When every skill becomes 
 
 Dan Koe made a point in his podcast that really stuck with me:
 
-> "The potential displacement of jobs by AI presents an opportunity to redefine work as a source of meaning."
+> The potential displacement of jobs by AI presents an opportunity to redefine work as a source of meaning.
 
 That's a brilliant reframe. The jobs AI can replace — are those really the things we should be pouring our lives into?
 
@@ -53,7 +53,7 @@ Why? Because that "organized" content is missing the most important thing: *my* 
 
 Dan Koe also said:
 
-> "As AI commoditizes skills, one's individual taste, perspective, and story become scarce resources that drive value as a creative."
+> As AI commoditizes skills, one's individual taste, perspective, and story become scarce resources that drive value as a creative.
 
 The future of work is shifting from the "creator economy" to the "meaning economy." When AI turns skills into commodities, personal taste, perspective, and story become the scarce resources.
 
@@ -63,13 +63,13 @@ This is so easy to prove right now. AI tools are proliferating wildly, updates c
 
 Dan Koe also traced how meaning has evolved throughout history:
 
-> "For most of human history, meaning was given to you by gods, kings, elders, and scriptures."
+> For most of human history, meaning was given to you by gods, kings, elders, and scriptures.
 
-> "During the Industrial Revolution, meaning was found from out there. Science replaced religion as the dominant framework. Meaning shifted to productivity and progress."
+> During the Industrial Revolution, meaning was found from out there. Science replaced religion as the dominant framework. Meaning shifted to productivity and progress.
 
-> "Now, in Act III where we are, meaning has been deconstructed into nothing. Meaning is found nowhere."
+> Now, in Act III where we are, meaning has been deconstructed into nothing. Meaning is found nowhere.
 
-> "This leads to Act 4, where meaning will be found in here. Meaning has to be generated from within, by you, for you."
+> This leads to Act 4, where meaning will be found in here. Meaning has to be generated from within, by you, for you.
 
 One sentence version: *Creatives are the meaning architects of society.*
 
@@ -119,7 +119,7 @@ I had all these automation pipelines, but mindlessly running them produced conte
 
 Dan Koe's "swap test" really clicked for me:
 
-> "If you can swap the creator and the creation without it losing value, AI can replace it. If the value is tied to who made it, that's your moat."
+> If you can swap the creator and the creation without it losing value, AI can replace it. If the value is tied to who made it, that's your moat.
 
 I thought about my own wrong turns. Content that was pixel-perfect copies of viral hits got flagged as "reusing others' content" and failed YPP review. But the stuff infused with my perspective, my experiments, my hard-won lessons — that's what went viral.
 
@@ -130,23 +130,23 @@ In the AI era, a creator's moat is probably just *being human*. And that means y
 Dan Koe identified five attributes AI cannot replicate:
 
 ### 1. Perspective
-> "AI can think about your perspective, but it cannot think from it."
+> AI can think about your perspective, but it cannot think from it.
 
 AI can't be a first-generation immigrant. It can't understand what that specific experience actually feels like from the inside.
 
 ### 2. Energy Signature
-> "Two people can write about the same topic and it will feel completely different. AI can mimic the style but cannot mimic care."
+> Two people can write about the same topic and it will feel completely different. AI can mimic the style but cannot mimic care.
 
 ### 3. Sensemaking
-> "AI can process information but it cannot decide what information means. It cannot frame, it cannot prioritize."
+> AI can process information but it cannot decide what information means. It cannot frame, it cannot prioritize.
 
 Sensemaking requires having something at stake. AI has no stake. Most of the time, we're still the ones controlling the process and determining what matters.
 
 ### 4. Trajectory
-> "You have a past, a present, a future. You have a story arc. AI doesn't have a trajectory."
+> You have a past, a present, a future. You have a story arc. AI doesn't have a trajectory.
 
 ### 5. Evolving Taste
-> "If I tell AI to write like me and I read it, I don't want to write about that anymore. My taste instantly changes."
+> If I tell AI to write like me and I read it, I don't want to write about that anymore. My taste instantly changes.
 
 *AI gets stuck in loops. We grow.*
 
@@ -194,7 +194,7 @@ The real shortcut isn't avoiding validation — it's validating fast. Conversati
 
 Chris Paik said it beautifully:
 
-> "The elegance of the future is not in man versus machine, but in their division of labor. Silicon sands down the rough edges of necessity so carbon can ascend to meaning. We will abolish baristas and canonize chefs. AI handles the friction, humans handle the narrative."
+> The elegance of the future is not in man versus machine, but in their division of labor. Silicon sands down the rough edges of necessity so carbon can ascend to meaning. We will abolish baristas and canonize chefs. AI handles the friction, humans handle the narrative.
 
 Especially that line: *Silicon sands down the rough edges of necessity so carbon can ascend to meaning.* As a carbon-based life form, I completely agree.
 

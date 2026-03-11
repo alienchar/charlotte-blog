@@ -13,7 +13,7 @@ In November 2025, Yann LeCun officially left Meta.
 
 Twelve years at Meta. Chief AI Scientist. Turing Award winner. Someone like that leaving is news by itself. But what really sent shockwaves through the AI world wasn't that he left — it was what he said on the way out:
 
-> "You certainly don't tell a researcher like me what to do."
+> You certainly don't tell a researcher like me what to do.
 
 ![](/images/Pasted_image_20260311135711.png)
 
@@ -80,7 +80,7 @@ LeCun says: LLMs fail at all three. What they do is System 1-style fast reaction
 
 LeCun's closing salvo at the talk:
 
-> "IF YOU ARE INTERESTED IN HUMAN-LEVEL AI, DON'T WORK ON LLMs."
+> IF YOU ARE INTERESTED IN HUMAN-LEVEL AI, DON'T WORK ON LLMs.
 
 All caps. No hedging.
 

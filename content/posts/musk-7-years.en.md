@@ -16,7 +16,7 @@ Peter Diamandis flew to Austin and recorded an entire evening at Musk's Gigafact
 
 Musk's opening line sets the tone for everything that follows:
 
-> "I'm not worried about the long term. It's the next 3 to 7 years."
+> I'm not worried about the long term. It's the next 3 to 7 years.
 
 For the long run, Musk is actually optimistic. He genuinely believes AI and robotics will usher humanity into an unprecedented *era of material abundance* — healthcare, energy, food, the supply of every scarce resource will be rewritten. He's always been pretty upbeat about that.
 
