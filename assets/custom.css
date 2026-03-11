@@ -523,6 +523,15 @@ html.dark main div[style*="color:#aaa"] {
   color: #ede9e0 !important;
 }
 
+/* Card cover images — flush with card top, no margin */
+main > div[style*="border-radius:12px"] > img,
+main > div[style*="border-radius: 12px"] > img {
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
 /* Hide Paper theme's unstyled navigation elements */
 .not-prose nav, 
 article + nav,
