@@ -473,30 +473,31 @@ html.dark p, html.dark li, html.dark span {
   color: #ede9e0 !important;
 }
 
-/* Dark mode article cards */
-.dark .article-card,
-html.dark .article-card {
+/* Dark mode article cards — Paper uses inline styles, must override with !important */
+/* Target: <div style="background:#fff;border-radius:12px;..."> cards on homepage */
+.dark main > div[style*="background:#fff"],
+html.dark main > div[style*="background:#fff"],
+.dark main > div[style*="background: #fff"],
+html.dark main > div[style*="background: #fff"] {
   background: #312e2a !important;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 4px 12px rgba(0,0,0,0.15) !important;
 }
 
-.dark .article-card:hover,
-html.dark .article-card:hover {
-  box-shadow: 0 4px 16px rgba(0,0,0,0.3), 0 8px 32px rgba(0,0,0,0.2);
-}
-
-.dark .article-card .card-title,
-html.dark .article-card .card-title {
+/* Card title: inline color:#2c2c2c */
+.dark main div[style*="font-weight:700"][style*="color:#2c2c2c"],
+html.dark main div[style*="font-weight:700"][style*="color:#2c2c2c"] {
   color: #ede9e0 !important;
 }
 
-.dark .article-card .card-summary,
-html.dark .article-card .card-summary {
+/* Card summary: inline color:#999 */
+.dark main div[style*="color:#999"],
+html.dark main div[style*="color:#999"] {
   color: #a8a49c !important;
 }
 
-.dark .article-card .card-date,
-html.dark .article-card .card-date {
+/* Card date: inline color:#aaa */
+.dark main div[style*="color:#aaa"],
+html.dark main div[style*="color:#aaa"] {
   color: #8a8680 !important;
 }
 
