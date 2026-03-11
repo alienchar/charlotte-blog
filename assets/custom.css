@@ -350,8 +350,22 @@ footer {
     color: var(--c-text) !important;
   }
 
-  .prose strong {
-    color: #f5f0e6;
+  .prose strong, .prose b {
+    color: #f5f0e6 !important;
+  }
+
+  .prose em, .prose i {
+    color: var(--c-text) !important;
+  }
+
+  /* Kill ALL blue links/text from theme */
+  .prose a:visited, a:visited {
+    color: var(--c-accent) !important;
+  }
+
+  /* Override any theme color on inline elements */
+  .prose span, .prose mark {
+    color: var(--c-text) !important;
   }
 
   .prose blockquote {
@@ -401,9 +415,20 @@ footer {
     color: var(--c-accent) !important;
   }
 
-  /* Ensure ALL text is readable */
-  p, li, td, th, span, div, label, figcaption {
-    color: var(--c-text);
+  /* Ensure ALL text is readable — nuclear override */
+  p, li, td, th, span, div, label, figcaption,
+  strong, b, em, i, small, sub, sup, abbr, cite, dfn, var, samp, kbd {
+    color: var(--c-text) !important;
+  }
+
+  /* Re-apply accent for links (after nuclear override) */
+  a, .prose a {
+    color: var(--c-accent) !important;
+  }
+
+  /* Re-apply strong emphasis */
+  strong, b, .prose strong, .prose b {
+    color: #f5f0e6 !important;
   }
 
   /* Site title in header */
