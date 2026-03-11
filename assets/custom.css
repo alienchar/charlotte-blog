@@ -298,6 +298,110 @@ footer {
   }
 }
 
+/* ===== Dark Mode ===== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --c-bg: #1a1a1a;
+    --c-text: #e8e6e1;
+    --c-muted: #9a9a9a;
+    --c-border: #333333;
+    --c-surface: #242424;
+    --c-accent: #d4b87a;
+    --c-card: #222222;
+  }
+
+  body {
+    background: var(--c-bg) !important;
+    color: var(--c-text) !important;
+  }
+
+  .article-card {
+    background: var(--c-card);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  .article-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3), 0 8px 32px rgba(0,0,0,0.2);
+  }
+
+  .article-card .card-title {
+    color: var(--c-text);
+  }
+
+  .post-header h1 {
+    color: var(--c-text) !important;
+  }
+
+  .prose {
+    color: var(--c-text) !important;
+  }
+
+  .prose h2 {
+    color: var(--c-text);
+    border-bottom-color: var(--c-border);
+  }
+
+  .prose h3 {
+    color: var(--c-text);
+  }
+
+  .prose strong {
+    color: #f0ece4;
+  }
+
+  .prose blockquote {
+    background: var(--c-surface);
+    border-left-color: var(--c-accent) !important;
+    color: var(--c-text);
+  }
+
+  .prose code {
+    background: rgba(212,184,122,0.15) !important;
+    color: #d4b87a;
+  }
+
+  .prose img {
+    box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+  }
+
+  .tag-pill {
+    background: var(--c-surface);
+    color: var(--c-muted);
+  }
+
+  .tag-pill:hover {
+    background: var(--c-border);
+    color: var(--c-text);
+  }
+
+  .callout {
+    background: var(--c-surface);
+  }
+
+  /* Paper theme overrides for dark mode */
+  .dark body,
+  html[data-theme="dark"] body {
+    background: var(--c-bg) !important;
+  }
+
+  header, nav, footer {
+    color: var(--c-text) !important;
+  }
+
+  header a, nav a {
+    color: var(--c-text) !important;
+  }
+
+  a {
+    color: var(--c-accent);
+  }
+
+  /* Ensure all text is readable on dark bg */
+  p, li, td, th, span, div {
+    color: var(--c-text);
+  }
+}
+
 /* Hide Paper theme's unstyled navigation elements */
 .not-prose nav, 
 article + nav,
