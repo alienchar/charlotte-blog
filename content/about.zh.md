@@ -28,6 +28,4 @@ layout: 'single'
 - X/Twitter：@aliencharX
 - 邮箱：aliencharwork4@gmail.com
 
----
 
-*这个博客用Hugo搭建，部署在Cloudflare Pages。*

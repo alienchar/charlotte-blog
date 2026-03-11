@@ -29,6 +29,4 @@ Left my corporate job in 2025. Now I create content full-time with my AI partner
 - Email: aliencharwork4@gmail.com
 - Blog: charlotteailab.com
 
----
 
-*This blog is built with Hugo and deployed on Cloudflare Pages.*
