@@ -6,7 +6,7 @@ tags: ["AI", "杨立昆", "LLM", "世界模型", "创业"]
 cover: '/images/cover_lecun-llm-doomed.png'
 ---
 
-![cover](/images/cover.png)
+
 
 ## 图灵奖得主，撂挑子了
 

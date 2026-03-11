@@ -299,6 +299,7 @@ footer {
 }
 
 /* ===== Dark Mode ===== */
+/* Dark mode: both media query AND .dark class (Paper theme uses .dark) */
 @media (prefers-color-scheme: dark) {
   :root {
     --c-bg: #2a2825;
@@ -435,6 +436,63 @@ footer {
   .site-title, header .title, header h1 a {
     color: var(--c-text) !important;
   }
+}
+
+/* ===== .dark class overrides (Paper/Tailwind uses .dark not media query) ===== */
+/* Must use high specificity to beat Tailwind's :not(#\#) chains */
+.dark body,
+html.dark body {
+  background: #2a2825 !important;
+  color: #ede9e0 !important;
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6,
+html.dark h1, html.dark h2, html.dark h3, html.dark h4 {
+  color: #ede9e0 !important;
+}
+
+.dark strong, .dark b,
+html.dark strong, html.dark b,
+.dark .prose strong, .dark .prose b {
+  color: #f5f0e6 !important;
+}
+
+.dark em, .dark i,
+html.dark em, html.dark i,
+.dark .prose em, .dark .prose i {
+  color: #ede9e0 !important;
+}
+
+.dark a, html.dark a,
+.dark .prose a {
+  color: #d4b87a !important;
+}
+
+.dark p, .dark li, .dark span, .dark div, .dark td, .dark th,
+html.dark p, html.dark li, html.dark span {
+  color: #ede9e0 !important;
+}
+
+.dark blockquote, .dark .prose blockquote {
+  background: #332f2b !important;
+  border-left-color: #d4b87a !important;
+  color: #ede9e0 !important;
+}
+
+.dark code, .dark .prose code {
+  background: rgba(212,184,122,0.15) !important;
+  color: #d4b87a !important;
+}
+
+/* Tailwind prose-invert variable overrides */
+.dark .prose {
+  --tw-prose-body: #ede9e0 !important;
+  --tw-prose-headings: #ede9e0 !important;
+  --tw-prose-links: #d4b87a !important;
+  --tw-prose-bold: #f5f0e6 !important;
+  --tw-prose-quotes: #ede9e0 !important;
+  --tw-prose-code: #d4b87a !important;
+  color: #ede9e0 !important;
 }
 
 /* Hide Paper theme's unstyled navigation elements */
