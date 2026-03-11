@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agent on Charlotte&#39;s AI Lab</title>
+    <link>https://charlotteailab.com/en/tags/agent/</link>
+    <description>Recent content in Agent on Charlotte&#39;s AI Lab</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 07 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://charlotteailab.com/en/tags/agent/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Karpathy Open-Sourced an AI Researcher That Runs 100 Experiments While You Sleep</title>
+      <link>https://charlotteailab.com/en/posts/karpathy-ai-researcher/</link>
+      <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://charlotteailab.com/en/posts/karpathy-ai-researcher/</guid>
+      <description>Karpathy just dropped autoresearch: an AI Agent that modifies code, trains models, and evaluates results on its own — 100 experiments in a single night.</description>
+    </item>
+  </channel>
+</rss>

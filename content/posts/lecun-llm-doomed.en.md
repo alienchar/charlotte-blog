@@ -6,7 +6,6 @@ tags: ["AI", "Yann LeCun", "LLM", "World Models", "Startup"]
 cover: '/images/cover_lecun-llm-doomed.png'
 ---
 
-![cover](/images/cover.png)
 
 ## A Turing Award Winner Just Walked Out
 
@@ -95,7 +94,7 @@ Then LeCun stands up and says: **You're all wrong.**
 
 This isn't some random person ranting online. This is a Turing Award winner — the AI equivalent of a Nobel laureate — publicly declaring war on the entire industry's roadmap.
 
-![illustration-2](/images/illustration-2.png)
+![illustration-2](/images/illustration-2_lecun.png)
 
 And he's not just talking. He's been in ongoing public debates with two other godfather-level figures in AI — Geoffrey Hinton and Yoshua Bengio — for years.
 
@@ -139,7 +138,7 @@ Not predicting the next word, but understanding the physical world. Not learning
 
 LeCun has proposed a technical framework for this: **JEPA (Joint Embedding Predictive Architecture)**.
 
-![illustration-3](/images/illustration-3.png)
+![illustration-3](/images/illustration-3_lecun.png)
 
 ## JEPA: Don't Predict Pixels — Predict "Abstractions"
 

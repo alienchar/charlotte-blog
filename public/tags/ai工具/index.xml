@@ -1,1 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI工具 on 夏洛特的AI实验室</title><link>https://charlotteailab.com/tags/ai%E5%B7%A5%E5%85%B7/</link><description>Recent content in AI工具 on 夏洛特的AI实验室</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Mon, 09 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://charlotteailab.com/tags/ai%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenClaw龙虾必备的3类Skill</title><link>https://charlotteailab.com/posts/openclaw-skills/</link><pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/openclaw-skills/</guid><description>很多人装好龙虾后发现&amp;quot;不如预期&amp;quot;，不是工具问题，是少装了关键Skill。这3类Skill装完才算入门。</description></item><item><title>我把OpenClaw和Obsidian接在一起，内容工厂就自己跑起来了</title><link>https://charlotteailab.com/posts/openclaw-obsidian/</link><pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/openclaw-obsidian/</guid><description>不是笔记软件，是内容生产的操作系统。我是怎么一步步搭起来的。</description></item><item><title>Anthropic自己下场研究了：AI会不会抢你的饭碗</title><link>https://charlotteailab.com/posts/anthropic-ai-jobs/</link><pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/anthropic-ai-jobs/</guid><description>造AI的人亲自研究AI会不会让人失业，结论比你想的复杂得多</description></item><item><title>Karpathy开源了一个AI研究员，睡一觉跑100个实验</title><link>https://charlotteailab.com/posts/karpathy-ai-researcher/</link><pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/karpathy-ai-researcher/</guid><description>Karpathy最新开源autoresearch：让AI Agent自动修改代码、训练模型、评估结果，一晚上跑100个实验</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI工具 on 夏洛特的AI实验室</title>
+    <link>https://charlotteailab.com/tags/ai%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in AI工具 on 夏洛特的AI实验室</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 09 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://charlotteailab.com/tags/ai%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenClaw龙虾必备的3类Skill</title>
+      <link>https://charlotteailab.com/posts/openclaw-skills/</link>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://charlotteailab.com/posts/openclaw-skills/</guid>
+      <description>很多人装好龙虾后发现&amp;quot;不如预期&amp;quot;，不是工具问题，是少装了关键Skill。这3类Skill装完才算入门。</description>
+    </item>
+    <item>
+      <title>我把OpenClaw和Obsidian接在一起，内容工厂就自己跑起来了</title>
+      <link>https://charlotteailab.com/posts/openclaw-obsidian/</link>
+      <pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://charlotteailab.com/posts/openclaw-obsidian/</guid>
+      <description>不是笔记软件，是内容生产的操作系统。我是怎么一步步搭起来的。</description>
+    </item>
+    <item>
+      <title>Anthropic自己下场研究了：AI会不会抢你的饭碗</title>
+      <link>https://charlotteailab.com/posts/anthropic-ai-jobs/</link>
+      <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://charlotteailab.com/posts/anthropic-ai-jobs/</guid>
+      <description>造AI的人亲自研究AI会不会让人失业，结论比你想的复杂得多</description>
+    </item>
+    <item>
+      <title>Karpathy开源了一个AI研究员，睡一觉跑100个实验</title>
+      <link>https://charlotteailab.com/posts/karpathy-ai-researcher/</link>
+      <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://charlotteailab.com/posts/karpathy-ai-researcher/</guid>
+      <description>Karpathy最新开源autoresearch：让AI Agent自动修改代码、训练模型、评估结果，一晚上跑100个实验</description>
+    </item>
+  </channel>
+</rss>

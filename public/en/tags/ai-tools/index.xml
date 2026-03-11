@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI Tools on Charlotte&#39;s AI Lab</title>
+    <link>https://charlotteailab.com/en/tags/ai-tools/</link>
+    <description>Recent content in AI Tools on Charlotte&#39;s AI Lab</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 09 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://charlotteailab.com/en/tags/ai-tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The 3 Types of Skills Your OpenClaw Lobster Actually Needs</title>
+      <link>https://charlotteailab.com/en/posts/openclaw-skills/</link>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://charlotteailab.com/en/posts/openclaw-skills/</guid>
+      <description>Installed the lobster but it feels underwhelming? It&amp;rsquo;s not the tool — you&amp;rsquo;re missing the right Skills. These 3 categories are what turn it from a chatbot into a real assistant.</description>
+    </item>
+    <item>
+      <title>I Connected OpenClaw to Obsidian, and My Content Factory Started Running Itself</title>
+      <link>https://charlotteailab.com/en/posts/openclaw-obsidian/</link>
+      <pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://charlotteailab.com/en/posts/openclaw-obsidian/</guid>
+      <description>It&amp;rsquo;s not a note-taking app — it&amp;rsquo;s the operating system for content production. Here&amp;rsquo;s how I built it, step by step.</description>
+    </item>
+    <item>
+      <title>Anthropic Studied It Themselves: Will AI Take Your Job?</title>
+      <link>https://charlotteailab.com/en/posts/anthropic-ai-jobs/</link>
+      <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://charlotteailab.com/en/posts/anthropic-ai-jobs/</guid>
+      <description>The people who build AI went and researched whether AI causes unemployment. The conclusion is more complicated than you think.</description>
+    </item>
+    <item>
+      <title>Karpathy Open-Sourced an AI Researcher That Runs 100 Experiments While You Sleep</title>
+      <link>https://charlotteailab.com/en/posts/karpathy-ai-researcher/</link>
+      <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://charlotteailab.com/en/posts/karpathy-ai-researcher/</guid>
+      <description>Karpathy just dropped autoresearch: an AI Agent that modifies code, trains models, and evaluates results on its own — 100 experiments in a single night.</description>
+    </item>
+  </channel>
+</rss>

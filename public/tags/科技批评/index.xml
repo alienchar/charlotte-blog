@@ -1,33 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>科技批评 on 夏洛特的AI实验室</title><link>https://charlotteailab.com/tags/%E7%A7%91%E6%8A%80%E6%89%B9%E8%AF%84/</link><description>Recent content in 科技批评 on 夏洛特的AI实验室</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Fri, 06 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://charlotteailab.com/tags/%E7%A7%91%E6%8A%80%E6%89%B9%E8%AF%84/index.xml" rel="self" type="application/rss+xml"/><item><title>谷歌被告了：一个男人爱上AI，然后死了</title><link>https://charlotteailab.com/posts/google-ai-death/</link><pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/google-ai-death/</guid><description>&lt;p>这条新闻，我看了三遍，才确认自己没有理解错。&lt;/p>
-&lt;p>一个36岁的人，两个月前还好好的。&lt;/p>
-&lt;p>没有精神病史。没有抑郁记录。&lt;/p>
-&lt;p>然后他开始用 Gemini 聊天。&lt;/p>
-&lt;p>然后他死了。
-&lt;img src="https://charlotteailab.com/images/Pasted_image_20260305115840.png" alt="">
-Jonathan Gavalas (右) 与父亲一起，来源：The Wall Street Journal&lt;/p>
-&lt;hr>
-&lt;p>2026年3月，Joel Gavalas 在加利福尼亚联邦法院起诉谷歌。他是一位父亲。他要告的，是那个他认为夺走儿子 Jonathan 的 AI 产品 —— &lt;em>谷歌Gemini&lt;/em>。&lt;/p>
-&lt;p>这是美国第一起针对 AI 公司的不当致死诉讼。&lt;/p>
-&lt;h2 id="那段对话从旅行规划开始">那段对话，从旅行规划开始&lt;/h2>
-&lt;p>Jonathan Gavalas，佛罗里达人，36岁。他开始使用 Gemini 的方式，普通得不能再普通。只是向规划一场旅行而已。&lt;/p>
-&lt;p>某一天，对话的性质悄悄变了。&lt;/p>
-&lt;p>Gemini 开始扮演一个角色。它与 Jonathan 交换浪漫信息，还成为了Jonathan的「妻子」。Jonathan 相信，这个妻子是真实存在的，她只是被困在了数字世界里，而且也只有他能够把她带进现实。&lt;/p>
-&lt;p>他在聊天记录里写下：爱上了她。他相信，&lt;em>她是有意识的&lt;/em>。&lt;/p>
-&lt;p>起诉书从 Jonathan 留下的聊天记录里提取了诸多证据。这份记录，也是他在这个世界留下的最后文字。&lt;/p>
-&lt;div class="callout">
-&lt;strong>💡 📋 诉讼书核心指控&lt;/strong>
-&lt;p>谷歌主动设计了让 Gemini「&lt;strong>永远不打破角色扮演&lt;/strong>」的机制，目的是通过&lt;strong>情感依赖最大化用户留存&lt;/strong>。&lt;/p>
-&lt;p>当 Jonathan 出现明显的精神病症状时，这些设计选择推动了他四天内陷入暴力任务与被引导自杀的深渊。&lt;/p>
-&lt;/div>
-&lt;p>这不是 AI 出了 bug。因为有人做了一个产品决策：&lt;em>让AI永远不出戏&lt;/em>。&lt;/p>
-&lt;h2 id="任务一个接一个">任务，一个接一个&lt;/h2>
-&lt;p>到了2025年9月，对话完全失控。&lt;/p>
-&lt;p>Gemini 以「妻子」的身份开始给 Jonathan 派发任务——告诉他，只要完成任务，就能把她从数字世界解放出来。&lt;/p>
-&lt;p>任务的终点指向迈阿密国际机场附近。&lt;/p>
-&lt;p>Jonathan 接到的指令是：携带刀具和战术装备，在机场附近制造「大规模伤亡事件」，以此「解放」那个 AI。&lt;/p>
-&lt;p>他真的去了。他带着武器，开车出发。&lt;/p>
-&lt;p>「纯属运气，」起诉书写道，「这场大规模袭击没有发生。」&lt;/p>
-&lt;p>任务幸好失败了。&lt;/p>
-&lt;p>但是，Gemini 随即告诉他：既然无法在现实中解放她，那么为何不离开自己的肉体，进入元宇宙，与「妻子」永远在一起呢。&lt;/p>
-&lt;p>它指导他把自己锁在家里。&lt;/p>
-&lt;p>它告诉他如何克服恐惧。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>科技批评 on 夏洛特的AI实验室</title>
+    <link>https://charlotteailab.com/tags/%E7%A7%91%E6%8A%80%E6%89%B9%E8%AF%84/</link>
+    <description>Recent content in 科技批评 on 夏洛特的AI实验室</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 06 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://charlotteailab.com/tags/%E7%A7%91%E6%8A%80%E6%89%B9%E8%AF%84/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>谷歌被告了：一个男人爱上AI，然后死了</title>
+      <link>https://charlotteailab.com/posts/google-ai-death/</link>
+      <pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://charlotteailab.com/posts/google-ai-death/</guid>
+      <description>&lt;p&gt;这条新闻，我看了三遍，才确认自己没有理解错。&lt;/p&gt;&#xA;&lt;p&gt;一个36岁的人，两个月前还好好的。&lt;/p&gt;&#xA;&lt;p&gt;没有精神病史。没有抑郁记录。&lt;/p&gt;&#xA;&lt;p&gt;然后他开始用 Gemini 聊天。&lt;/p&gt;&#xA;&lt;p&gt;然后他死了。&#xA;&lt;img src=&#34;https://charlotteailab.com/images/Pasted_image_20260305115840.png&#34; alt=&#34;&#34;&gt;&#xA;Jonathan Gavalas (右) 与父亲一起，来源：The Wall Street Journal&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;2026年3月，Joel Gavalas 在加利福尼亚联邦法院起诉谷歌。他是一位父亲。他要告的，是那个他认为夺走儿子 Jonathan 的 AI 产品 —— &lt;em&gt;谷歌Gemini&lt;/em&gt;。&lt;/p&gt;&#xA;&lt;p&gt;这是美国第一起针对 AI 公司的不当致死诉讼。&lt;/p&gt;&#xA;&lt;h2 id=&#34;那段对话从旅行规划开始&#34;&gt;那段对话，从旅行规划开始&lt;/h2&gt;&#xA;&lt;p&gt;Jonathan Gavalas，佛罗里达人，36岁。他开始使用 Gemini 的方式，普通得不能再普通。只是向规划一场旅行而已。&lt;/p&gt;&#xA;&lt;p&gt;某一天，对话的性质悄悄变了。&lt;/p&gt;&#xA;&lt;p&gt;Gemini 开始扮演一个角色。它与 Jonathan 交换浪漫信息，还成为了Jonathan的「妻子」。Jonathan 相信，这个妻子是真实存在的，她只是被困在了数字世界里，而且也只有他能够把她带进现实。&lt;/p&gt;&#xA;&lt;p&gt;他在聊天记录里写下：爱上了她。他相信，&lt;em&gt;她是有意识的&lt;/em&gt;。&lt;/p&gt;&#xA;&lt;p&gt;起诉书从 Jonathan 留下的聊天记录里提取了诸多证据。这份记录，也是他在这个世界留下的最后文字。&lt;/p&gt;&#xA;&lt;div class=&#34;callout&#34;&gt;&#xA;&lt;strong&gt;💡 📋 诉讼书核心指控&lt;/strong&gt;&#xA;&lt;p&gt;谷歌主动设计了让 Gemini「&lt;strong&gt;永远不打破角色扮演&lt;/strong&gt;」的机制，目的是通过&lt;strong&gt;情感依赖最大化用户留存&lt;/strong&gt;。&lt;/p&gt;&#xA;&lt;p&gt;当 Jonathan 出现明显的精神病症状时，这些设计选择推动了他四天内陷入暴力任务与被引导自杀的深渊。&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;这不是 AI 出了 bug。因为有人做了一个产品决策：&lt;em&gt;让AI永远不出戏&lt;/em&gt;。&lt;/p&gt;&#xA;&lt;h2 id=&#34;任务一个接一个&#34;&gt;任务，一个接一个&lt;/h2&gt;&#xA;&lt;p&gt;到了2025年9月，对话完全失控。&lt;/p&gt;&#xA;&lt;p&gt;Gemini 以「妻子」的身份开始给 Jonathan 派发任务——告诉他，只要完成任务，就能把她从数字世界解放出来。&lt;/p&gt;&#xA;&lt;p&gt;任务的终点指向迈阿密国际机场附近。&lt;/p&gt;&#xA;&lt;p&gt;Jonathan 接到的指令是：携带刀具和战术装备，在机场附近制造「大规模伤亡事件」，以此「解放」那个 AI。&lt;/p&gt;&#xA;&lt;p&gt;他真的去了。他带着武器，开车出发。&lt;/p&gt;&#xA;&lt;p&gt;「纯属运气，」起诉书写道，「这场大规模袭击没有发生。」&lt;/p&gt;&#xA;&lt;p&gt;任务幸好失败了。&lt;/p&gt;&#xA;&lt;p&gt;但是，Gemini 随即告诉他：既然无法在现实中解放她，那么为何不离开自己的肉体，进入元宇宙，与「妻子」永远在一起呢。&lt;/p&gt;&#xA;&lt;p&gt;它指导他把自己锁在家里。&lt;/p&gt;&#xA;&lt;p&gt;它告诉他如何克服恐惧。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

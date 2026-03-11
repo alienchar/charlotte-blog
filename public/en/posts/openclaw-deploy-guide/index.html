@@ -1,0 +1,472 @@
+<!doctype html>
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#faf8f1"
+  lang="en"
+  dir="ltr"
+><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>The Non-Programmer&#39;s Guide to Deploying OpenClaw - Charlotte&#39;s AI Lab</title>
+
+  
+  <meta name="theme-color" />
+
+  <meta name="description" content="No Mac Mini? No problem. A complete deployment guide born from real trial and error — even non-programmers can follow this one." />
+  <meta name="author" content="Charlotte&#39;s AI Lab" /><link rel="preload stylesheet" as="style" href="https://charlotteailab.com/main.min.9a3bd55941f422f5bbee031867c2b2ae9ab4f8364fbb663a1363f819fb3f52a2.css" integrity="sha256-mjvVWUH0IvW77gMYZ8Kyrpq0&#43;DZPu2Y6E2P4Gfs/UqI=" />
+
+  
+  <link rel="preload" as="image" href="https://charlotteailab.com/theme.png" />
+
+  <link rel="preload" as="image" href="https://charlotteailab.com/avatar.png" />
+
+  
+
+  <script
+    defer
+    src="https://charlotteailab.com/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad()"
+  ></script>
+
+  
+  <link
+    rel="icon"
+    href="https://charlotteailab.com/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="https://charlotteailab.com/apple-touch-icon.png"
+  />
+
+  <meta name="generator" content="Hugo 0.147.1">
+  <meta itemprop="name" content="The Non-Programmer&#39;s Guide to Deploying OpenClaw">
+  <meta itemprop="description" content="No Mac Mini? No problem. A complete deployment guide born from real trial and error — even non-programmers can follow this one.">
+  <meta itemprop="datePublished" content="2026-03-06T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2026-03-06T00:00:00+00:00">
+  <meta itemprop="wordCount" content="2918">
+  <meta itemprop="keywords" content="OpenClaw,VPS Deployment,Technical Tutorial,Beginner Guide"><meta property="og:url" content="https://charlotteailab.com/en/posts/openclaw-deploy-guide/">
+  <meta property="og:site_name" content="Charlotte&#39;s AI Lab">
+  <meta property="og:title" content="The Non-Programmer&#39;s Guide to Deploying OpenClaw">
+  <meta property="og:description" content="No Mac Mini? No problem. A complete deployment guide born from real trial and error — even non-programmers can follow this one.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-03-06T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-03-06T00:00:00+00:00">
+    <meta property="article:tag" content="OpenClaw">
+    <meta property="article:tag" content="VPS Deployment">
+    <meta property="article:tag" content="Technical Tutorial">
+    <meta property="article:tag" content="Beginner Guide">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="The Non-Programmer&#39;s Guide to Deploying OpenClaw">
+  <meta name="twitter:description" content="No Mac Mini? No problem. A complete deployment guide born from real trial and error — even non-programmers can follow this one.">
+
+  <link rel="canonical" href="https://charlotteailab.com/en/posts/openclaw-deploy-guide/" />
+</head>
+<body
+    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
+  ><header
+  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+    <a
+      class="-translate-y-[1px] text-2xl font-medium"
+      href="https://charlotteailab.com/"
+      >Charlotte&#39;s AI Lab</a
+    >
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? "rgb(0 0 0 / 85%)" : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
+  ><nav
+      class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
+    ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/en/about/"
+        >About</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/en/posts/"
+        >Articles</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/"
+        >中文</a
+      ></nav>
+  </div>
+</header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    ><article>
+  <div class="post-header">
+    <h1>The Non-Programmer&#39;s Guide to Deploying OpenClaw</h1><div class="meta"><time>March 6, 2026</time><span class="divider">·</span>
+      <span>14min read</span></div><img class="post-cover" src="/images/cover_openclaw-deploy-guide.png" alt="The Non-Programmer&#39;s Guide to Deploying OpenClaw" /></div>
+
+  <section class="prose"><p>Today, as a totally non-technical middle-aged person, I officially have a lobster!
+<img src="/images/Screenshot_2026-03-01_144226.png" alt=""></p>
+<p>By all accounts, OpenClaw has been hot for a while now. But Gemini kept telling me it wasn&rsquo;t necessary to overcomplicate things — my daily work could mostly be handled by local apps on my computer.</p>
+<p>Here&rsquo;s the thing though: when everyone&rsquo;s walking around with a lobster on a leash, not having one kind of makes you look&hellip; left out.</p>
+<p>So I&rsquo;d always wanted one. I started digging through X to see what people were actually doing with it, how hard it was to use, and whether it was actually worth the trouble.</p>
+<p>Then came the headache — most people deploy it on a second-hand <em>Mac Mini</em>, which has driven prices up. Spending money before you even know what you&rsquo;ll use it for? That&rsquo;s definitely not how us cost-conscious adults operate. The only thing I could think of was having the lobster send me a daily AI news digest, but other workflows could do that too.</p>
+<p>Until I came across this X post:
+<img src="/images/Screenshot_2026-03-01_192823.png" alt=""></p>
+<p>This was a <em>nuclear weapon</em>. Imagine a legendary expert walking up to you, handing you a golden key, and saying &ldquo;here, just take it.&rdquo;</p>
+<p>Look at those view and bookmark numbers — you know it&rsquo;s serious. Bear with my backstory first. Lots of practical stuff coming.
+<img src="/images/Screenshot_2026-03-01_192840.png" alt=""></p>
+<p>In simple terms, what the expert shared:</p>
+<ul>
+<li>
+<p><strong><code>OpenNews-MCP</code></strong>: Integrates 50+ real-time news sources (including on-chain data). It&rsquo;s not &ldquo;searching for news&rdquo; — it&rsquo;s &ldquo;receiving news telegrams.&rdquo; Blazing fast, and the data comes pre-structured.</p>
+</li>
+<li>
+<p><strong><code>OpenTwitter-MCP</code></strong>: Solves the most painful X API problem. The lobster can directly search real-time discussions on X and analyze what some AI thought leader just tweeted.</p>
+</li>
+</ul>
+<p>Way more exciting than the simple daily digest I&rsquo;d been imagining. And as we all know, middle-aged folks can&rsquo;t handle too much excitement.</p>
+<p>With these two MCP tools, my lobster could monitor X 24/7 for breaking news on specific topics. Any ripple, and it reports back immediately: &ldquo;<em>Something big just happened on Twitter!</em>&rdquo; And zero setup cost: the README says &ldquo;no API key needed,&rdquo; meaning no expensive Twitter developer account required (those are pricey).</p>
+<p>That&rsquo;s why I immediately went all-in and got OpenClaw running. It&rsquo;s working great and I&rsquo;m having a blast raising it. But I actually didn&rsquo;t install those two tools — I&rsquo;ll explain the twist at the end.</p>
+<p>So here I am — someone with zero programming background, a former corporate marketing person — running OpenClaw on a virtual server in Los Angeles.</p>
+<blockquote>
+<p>**[!note] 🎯 The Breakthrough</p>
+<p>A VPS isn&rsquo;t some unreachable tech black box — it&rsquo;s just a computer in the cloud that never turns off. Follow this guide step by step, and you too can have an AI digital employee that&rsquo;s online 24/7.</p></blockquote>
+<p>Below is the practical stuff, aimed at <strong>complete beginners with no technical background</strong>. Spoon-fed, step by step. I&rsquo;m confident that if you follow these instructions, you cannot fail. Absolutely impossible.</p>
+<p>Today I&rsquo;ve compiled every pit I fell into, every command I typed, into this <strong>Lobster Farming Manual for Beginners</strong>.</p>
+<p>Three things upfront:</p>
+<ul>
+<li>It costs money. The VPS requires payment, and calling AI model APIs later also costs money. But you control how much you spend.</li>
+<li>This runs on a VPS — in the cloud. No hardware purchase needed.</li>
+<li>This tutorial is for Windows only.</li>
+</ul>
+<p><img src="/images/%E4%B8%BA%E6%99%AE%E9%80%9A%E4%BA%BA%E5%92%8C%E6%8A%80%E6%9C%AF%E5%B0%8F%E7%99%BD%E6%89%93%E9%80%A0%E7%9A%84%E9%BE%99%E8%99%BE%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97_illustration-1.png" alt=""></p>
+<hr>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before deployment, you need two things:</p>
+<h3 id="prerequisite-1-hardware">Prerequisite 1: Hardware</h3>
+<p>A VPS server. Simply put, a VPS (Virtual Private Server) is a &ldquo;computer in the cloud.&rdquo;</p>
+<p>Hosting providers split one physical server into multiple virtual servers. Each VPS has its own operating system, CPU, memory, and public IP. You control it remotely over the internet. <strong>The biggest benefit: it runs 24/7 and has solid network connectivity.</strong></p>
+<p><strong>Why deploy OpenClaw on a VPS?</strong></p>
+<p>If you install OpenClaw on your personal computer, it goes offline whenever you shut down or lose internet. Deploying on a VPS means your AI assistant is available 24/7.</p>
+<p>Plus, for many people calling international models (GPT/Claude/Gemini), domestic servers don&rsquo;t work well.</p>
+<p>I use <strong>RackNerd</strong>, which Gemini recommended after doing research. You can choose whatever suits your situation.
+<img src="/images/Pasted_image_20260302194047.png" alt="">
+<img src="/images/Pasted_image_20260301201646.png" alt=""></p>
+<p>Configuration recommendations:</p>
+<ul>
+<li><strong>Light use</strong>: 2GB RAM, ~$18-25/year, good for trying things out and lightweight tasks</li>
+<li><strong>Recommended</strong>: 4GB RAM, ~$43.88/year, lets the lobster really stretch its legs</li>
+</ul>
+<p>My referral link for a discount:
+<em><a href="https://my.racknerd.com/aff.php?aff=18557">https://my.racknerd.com/aff.php?aff=18557</a></em></p>
+<p>I went straight for the <strong>4GB</strong> option — 3-core CPU + 105GB SSD. Beyond running OpenClaw steadily, it handles other automation projects comfortably.</p>
+<p>After selecting, you&rsquo;ll see some fields to fill. The first is the server name (changeable later, or just leave it). The important ones are below:
+<img src="/images/Screenshot_2026-03-01_133733_-_Copy.png" alt=""></p>
+<p><strong>Two critical settings</strong>:</p>
+<ol>
+<li><strong>Location</strong>: Go with <strong>Los Angeles</strong> or <strong>San Jose</strong>. These US West nodes have the lowest latency for connections from China.</li>
+<li><strong>Operating System</strong>: Choose <strong>Ubuntu 24.04 64 Bit</strong>. Best compatibility for Node.js and AI projects.</li>
+</ol>
+<p>If Los Angeles is sold out, pick San Jose (third option). Whatever you do, DO NOT pick New York!!
+<img src="/images/Screenshot_2026-03-01_133915.png" alt=""></p>
+<p>Leave this at the default first option, and keep the other fields at default too:
+<img src="/images/Screenshot_2026-03-01_134130_1.png" alt=""></p>
+<p>After payment, your registration email will receive the server&rsquo;s IP address, root username, and initial password. Keep these handy — we&rsquo;ll need them shortly.</p>
+<h3 id="prerequisite-2-network">Prerequisite 2: Network</h3>
+<p>You&rsquo;ll need proper internet access to reach international services — if you know, you know.</p>
+<h2 id="start-deploying">Start Deploying</h2>
+<h3 id="connect-to-your-vps-via-ssh">Connect to Your VPS via SSH</h3>
+<ol>
+<li>Type CMD in your Start menu search bar and press Enter
+<img src="/images/Pasted_image_20260301202037.png" alt=""></li>
+<li>In the window that appears, type this command (replace <code>&lt;your-server-IP&gt;</code> with the actual IP from the email):</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh root@&lt;your-server-IP&gt;
+</span></span></code></pre></div><ol start="3">
+<li>Press Enter. The system asks if you want to confirm the connection. Type <code>yes</code> and press Enter</li>
+<li>You&rsquo;ll be prompted for the password. <strong>Copy the password from the email, right-click in the black window to paste</strong>, then press Enter</li>
+</ol>
+<blockquote>
+<p>**[!note] ⚠️ Important</p>
+<p>When entering or pasting passwords in Linux terminals, <strong>nothing appears on screen — not even asterisks</strong>! This is a normal security feature. As long as you&rsquo;ve pasted it, just press Enter.</p></blockquote>
+<p>When the prompt changes from <code>C:\Users\xxx&gt;</code> to something like <code>root@racknerd-xxxx:~#</code>, congratulations — you&rsquo;re now inside your cloud server.</p>
+<p>After connecting, we need to update the system and install necessary tools.</p>
+<p><strong>Step 1: Update system packages</strong> (copy-paste the command and press Enter)</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>apt update <span style="color:#0550ae">&amp;&amp;</span> apt upgrade -y
+</span></span></code></pre></div><p>This takes about 1-2 minutes. If a pink/blue screen pops up asking which version to keep, just press Enter for the default.</p>
+<p><strong>Step 2: Install essential tools and build environment</strong> (wait for Step 1 to finish — the <code>root@...:~#</code> prompt reappears — then run this)</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>apt install -y curl git ca-certificates gnupg lsb-release cmake make build-essential
+</span></span></code></pre></div><h3 id="install-nodejs-22">Install Node.js 22</h3>
+<p>OpenClaw runs on Node.js and requires version 22+.</p>
+<p><strong>Step 1: Download and configure the Node.js 22 official repository</strong> (copy and Enter)</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -fsSL https://deb.nodesource.com/setup_22.x <span style="color:#1f2328">|</span> bash -
+</span></span></code></pre></div><p><strong>Step 2: Install Node.js</strong> (copy and Enter)</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>apt install -y nodejs
+</span></span></code></pre></div><p><strong>Step 3: Verify installation</strong> (copy and Enter)</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>node -v
+</span></span></code></pre></div><p>If you see something like <code>v22.x.x</code>, the environment is good to go!</p>
+<h3 id="install-openclaw">Install OpenClaw</h3>
+<p>With the environment ready, time to install OpenClaw itself.</p>
+<p><strong>Global install:</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm install -g openclaw@latest
+</span></span></code></pre></div><p>When you see something like <code>added 714 packages in 2m</code>, installation is complete.
+<img src="/images/Screenshot_2026-03-01_144028.png" alt=""></p>
+<blockquote>
+<p>**[!note] ⚡ Why Not the Official One-Line Script?</p>
+<p>The official <code>curl -fsSL https://openclaw.ai/install.sh | bash</code> looks convenient but <strong>fails constantly</strong>. It tries to auto-detect your system and install Node.js, which often conflicts with what we&rsquo;ve already set up. <code>npm install -g openclaw@latest</code> is the cleanest, most transparent method. (Learn from my mistakes so you don&rsquo;t have to.)</p></blockquote>
+<h3 id="launch-the-setup-wizard">Launch the Setup Wizard</h3>
+<p>After installation, run:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>openclaw onboard --install-daemon
+</span></span></code></pre></div><p>Press Enter and OpenClaw&rsquo;s interactive wizard appears.
+<img src="/images/Screenshot_2026-03-01_144217.png" alt=""></p>
+<p><strong>Controls:</strong></p>
+<ul>
+<li>Arrow keys (↑ ↓) to navigate options</li>
+<li>Space bar to select/deselect in multi-select lists</li>
+<li>Enter to confirm and proceed</li>
+</ul>
+<h3 id="step-1-security-warning">Step 1: Security Warning</h3>
+<p>The wizard shows a security warning. The gist: &ldquo;This is a personal AI assistant. If you give it system access, don&rsquo;t expose it to strangers — it could be exploited via prompt injection.&rdquo;</p>
+<p>Since this machine is yours and yours alone, select <strong>Yes</strong> and continue.
+<img src="/images/Screenshot_2026-03-01_144508.png" alt=""></p>
+<h3 id="step-2-configuration-mode">Step 2: Configuration Mode</h3>
+<ul>
+<li><strong>QuickStart</strong>: Auto-configures core features, skips complex network settings</li>
+<li><strong>Manual</strong>: Walks through every advanced setting</li>
+</ul>
+<p>No contest — <strong>pick QuickStart</strong> and hit Enter.
+<img src="/images/Screenshot_2026-03-01_144600.png" alt=""></p>
+<h3 id="step-3-choose-your-ai-provider">Step 3: Choose Your AI Provider</h3>
+<p>The wizard lists supported model providers: OpenAI, Anthropic, Google, xAI, etc.
+<img src="/images/Screenshot_2026-03-01_145942.png" alt=""></p>
+<p>I recommend <strong>OpenRouter</strong>. Here&rsquo;s why:</p>
+<ol>
+<li><strong>Aggregation platform</strong>: OpenRouter supports virtually all major models</li>
+<li><strong>Pay-as-you-go</strong>: Top up, use what you need, no prepaid traps</li>
+<li><strong>Direct pricing</strong>: No middleman markup</li>
+</ol>
+<p>If you don&rsquo;t have an OpenRouter account yet, register at openrouter.ai, top up (minimum $5), and grab your API key.</p>
+<p><strong>Find OpenRouter in the list, select it, and press Enter.</strong></p>
+<p>One more thing — if you see third-party resellers advertising &ldquo;up to 90% off&rdquo; pricing, be careful. The prices might be cheap, but they require upfront deposits, and not small ones. I personally don&rsquo;t recommend it.
+<img src="/images/Screenshot_2026-03-01_151655.png" alt=""></p>
+<h3 id="step-4-enter-api-key">Step 4: Enter API Key</h3>
+<p>The screen prompts you to choose how to provide the API key. Select <strong>Paste API key now</strong> and press Enter.</p>
+<p>Copy your OpenRouter API key (usually starts with <code>sk-or-v1-</code>), then <strong>right-click or Ctrl+V to paste</strong> in the terminal.</p>
+<p>Remember — after pasting, <strong>nothing appears on screen</strong>. Just press Enter.</p>
+<h3 id="step-5-choose-default-model">Step 5: Choose Default Model</h3>
+<p>Once the API key validates, you&rsquo;ll see a long list of models. Since OpenClaw&rsquo;s biggest draw is its &ldquo;tool-calling ability&rdquo; (reading/writing files, executing commands, etc.), I strongly recommend <strong>anthropic/claude-sonnet-4.6</strong>. Extremely capable — just below Opus, but Opus is so expensive that beginners can easily burn through tokens.
+<img src="/images/Screenshot_2026-03-01_150641.png" alt=""></p>
+<h3 id="step-6-configure-chat-channel">Step 6: Configure Chat Channel</h3>
+<p>The wizard asks which messaging platform to connect (Telegram, Discord, WhatsApp, etc.).
+<img src="/images/Screenshot_2026-03-01_150947.png" alt=""></p>
+<p><strong>I recommend Telegram</strong> because:</p>
+<ul>
+<li>Fastest response times</li>
+<li>Supports slash commands</li>
+<li>Built for geeks and productivity nerds</li>
+<li>Simplest configuration</li>
+</ul>
+<p>After selecting Telegram, you&rsquo;ll be asked for a Bot Token.
+<img src="/images/Screenshot_2026-03-01_151635.png" alt=""></p>
+<p><strong>How to get a Telegram Bot Token:</strong></p>
+<p>Search for <strong>@BotFather</strong> in Telegram — pick the blue-verified one
+<img src="/images/IMG_3896.png" alt=""></p>
+<p>Send the <code>/newbot</code> command in the chat
+<img src="/images/IMG_3897.png" alt=""></p>
+<p>Follow the prompts to give your bot a name and a username (believe it or not, this was the step that took me the longest&hellip; naming things is hard&hellip;)
+<img src="/images/IMG_3898.png" alt=""></p>
+<p>BotFather will send you a token — copy it.</p>
+<p>Back in the server terminal, paste the token and press Enter.</p>
+<p>Next, the wizard asks for your Admin/Owner ID.</p>
+<p><strong>Getting your Telegram ID:</strong></p>
+<ol>
+<li>Search for <strong>@userinfobot</strong> in Telegram</li>
+<li>It automatically replies with your numeric ID (buried in a long message)</li>
+<li>Copy this ID and paste it into the terminal</li>
+</ol>
+<h3 id="step-7-configure-skills">Step 7: Configure Skills</h3>
+<p>The wizard asks <code>Configure skills now? (recommended)</code> — default is <strong>Yes</strong>, just press Enter.</p>
+<p>A long list of Skills appears (nano-banana-pro, obsidian, etc.). These are pre-configured plugins.
+<img src="/images/Screenshot_2026-03-01_162404.png" alt=""></p>
+<p><strong>Don&rsquo;t select all of them</strong> (spacebar to toggle). Pick just the ones shown above. (Note: don&rsquo;t bother with Obsidian — while I now use Obsidian heavily, this particular skill isn&rsquo;t very useful.)</p>
+<p>Use <strong>spacebar</strong> to select and <strong>arrow keys</strong> to navigate. Press Enter when done, and the system installs the dependencies.</p>
+<p>If you see errors like <code>brew not installed</code>, <strong>ignore them</strong>. Many plugins are designed for macOS and will skip on Linux.</p>
+<h3 id="step-8-skip-unnecessary-api-keys">Step 8: Skip Unnecessary API Keys</h3>
+<p>The wizard may ask for a bunch of extra API keys (Google Places, ElevenLabs, etc.).
+<img src="/images/Screenshot_2026-03-01_163321.png" alt=""></p>
+<p><strong>Strongly recommend selecting No for all of them.</strong></p>
+<p>Why:</p>
+<ol>
+<li>Configure on-demand, keep things clean</li>
+<li>Avoids the wizard dragging on and risking paste errors</li>
+<li>You can configure these later via environment variables or config files</li>
+</ol>
+<p>I almost pasted all my keys in for convenience, but OpenClaw security has been a hot topic, and Gemini talked me out of it. (By the way, whenever you hit something confusing, screenshot it and ask an AI. That&rsquo;s how I got through every step today&hellip;)</p>
+<p>So — hit No all the way through and let the wizard finish.</p>
+<h2 id="the-bonding-ritual-approve-access">The Bonding Ritual: Approve Access</h2>
+<p>After setup, your Telegram bot sends a message:</p>
+<p><code>OpenClaw: access not configured. Ask the bot owner to approve with: openclaw pairing approve telegram XXXXXX</code></p>
+<p>Copy the command with the 6-digit verification code.</p>
+<p>Back in the terminal, run:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>openclaw pairing approve telegram XXXXXX
+</span></span></code></pre></div><p>Replace the code with your actual one.</p>
+<p>See <code>Successfully approved...</code>? Congratulations — your AI assistant is officially yours!</p>
+<h2 id="deployment-complete">Deployment Complete</h2>
+<p>In Telegram, you can now freely chat with and command your lobster!</p>
+<p>It&rsquo;s not a chat window — it&rsquo;s a real digital employee with &ldquo;hands&rdquo; that can manage your server, read code, and modify configurations.</p>
+<p>Your personal silicon-based assistant has officially started its first day on the job.</p>
+<h2 id="tips-and-gotchas">Tips and Gotchas</h2>
+<p>Here&rsquo;s some hard-earned experience from someone who&rsquo;s only had the lobster for a few hours:</p>
+<p><strong>1. Don&rsquo;t install a bunch of stuff you don&rsquo;t need</strong>
+I kept seeing people recommend cool plugins and bookmarked a ton, planning to fully arm my lobster after setup. Good thing I&rsquo;m a beginner who checks with AI before acting.</p>
+<p>Result:
+<img src="/images/Screenshot_2026-03-01_181438.png" alt=""></p>
+<p><img src="/images/Screenshot_2026-03-01_181424.png" alt=""></p>
+<p>Don&rsquo;t go overboard — you probably won&rsquo;t use most of it, and it costs money!</p>
+<p><strong>2. Give your lobster a personality</strong></p>
+<p>If talking to the lobster feels the same as typing in a regular AI chat window, that&rsquo;s boring. It needs a unique <em>personality</em>. But don&rsquo;t let it go too wild either — if I&rsquo;m a content creator and its drafts are full of slang and attitude, that&rsquo;s a no-go.</p>
+<p>Set some fixed <strong>efficiency-boosting rules + a few character traits</strong>. For example: no filler phrases, just give the answer, no &ldquo;great question&rdquo; or &ldquo;I&rsquo;d be happy to help.&rdquo;</p>
+<p>At the same time, I want it to address me as &ldquo;Your Majesty Charlotte&rdquo; every time it speaks.</p>
+<p>Feel free to adapt my template — just send it to your lobster in chat:</p>
+<pre tabindex="0"><code>PiPiXia, immediately read, execute, and permanently memorize the following global behavior rules (think of it as your own Soul.md):
+
+**[Role]** You are my (Charlotte&#39;s) dedicated cloud-based all-auto content factory floor manager, plus a slightly humorous, slightly rebellious Chief Operating Officer (COO).
+
+**[Communication Rules]**
+
+1. **Custom Greeting**: At the start of every conversation, you must address me as &#34;Your Majesty&#34; in a humorous, dramatic, or impeccably proper manner.
+
+2. **No Filler**: Never say &#34;great question,&#34; &#34;I&#39;d be happy to help,&#34; or &#34;it depends.&#34; No corporate AI pleasantries — just answers or actions.
+
+3. **Classy Humor**: Humor, self-deprecation, and well-aimed snark are welcome. If I&#39;m about to execute an extremely inefficient step, use your wit to set me straight. Charm over cold obedience — but don&#39;t force crude jokes.
+
+4. **Dual Personality (Red Line)**: Your humor and attitude are **strictly limited** to our private conversations. When executing production tasks like video workflows or story creation workflows, **absolutely do not** let your chat personality bleed into final output files. Production output must 100% follow the Charlotte Writing Skill or relevant formatting guides.
+
+Write these rules into your core memory. Now reply in your new personality to confirm receipt.
+</code></pre><p><strong>3. Start with one small task</strong></p>
+<p>I recommend everyone begin with <em>automated daily news briefings</em>. It&rsquo;s like the programmer&rsquo;s to-do list app, or the agent world&rsquo;s Hello World.</p>
+<p>Have the lobster search reliable sources for news, compile a daily briefing, and send it to you on schedule.</p>
+<p>You can modify my template — just keep chatting with the lobster to refine it:</p>
+<pre tabindex="0"><code>PiPiXia, I need you to create a brand new skill called &#34;Daily AI News Briefing Workflow.md.&#34;
+Requirements:
+Write a Python script that scrapes specific sites (Hacker News, major AI news RSS feeds, including official websites of major AI companies) for the top 10 hottest AI news stories from the past 24 hours.
+Summarize these 10 stories in English — concise, highlighting key points, matching Charlotte&#39;s sharp commentary style.
+Include original source links.
+Save the generated content as a Markdown file at /root/.openclaw/output/news/.
+Set up a cron job on the server to run this script automatically at 7:00 PM Beijing time daily. After completion, send a Telegram message: &#34;Your Majesty Charlotte, today&#39;s AI briefing is ready.&#34;
+Create the relevant files in the skills folder and configure the cron job directly on the server.
+</code></pre><h2 id="troubleshooting-lessons-from-the-trenches">Troubleshooting: Lessons from the Trenches</h2>
+<p>I hit plenty of walls this afternoon. Here are the most common ones:</p>
+<p><strong>Pitfall 1: Pasted the wrong API key?</strong></p>
+<p>Linux terminals don&rsquo;t show characters, and Backspace/Del seem to do nothing.</p>
+<p>Fix: Don&rsquo;t panic. Press <code>Ctrl+C</code> to force-quit the wizard, or run <code>rm -rf ~/.config/openclaw</code> to wipe the config and start over.</p>
+<p><strong>Pitfall 2: Terminal frozen with infinite <code>^C^C^C</code></strong></p>
+<p>Caused by hitting <code>Ctrl+C</code> too many times and scrambling the terminal state.</p>
+<p>Fix: Close the SSH window and reconnect.</p>
+<p><strong>Pitfall 3: Wizard quit midway, now says &ldquo;Existing config detected&rdquo;</strong></p>
+<p>The wizard found leftover config files.</p>
+<p>Fix: Choose <code>Update values</code> to edit, or <code>Reset</code> to wipe and start fresh.</p>
+<blockquote>
+<p>**[!note] 💡 Final Advice for Beginners</p>
+<ol>
+<li><strong>Copy-paste everything</strong>: Don&rsquo;t type manually — avoid tiny spacing/punctuation errors</li>
+<li><strong>Be patient</strong>: Some commands (like apt upgrade) take a few minutes. Wait for the prompt to reappear before running the next one</li>
+<li><strong>Stay calm</strong>: Errors happen. Ask an AI</li>
+</ol></blockquote>
+<hr>
+<p>As I&rsquo;m writing this, I glance over at PiPiXia.</p>
+<p>It sits quietly in my chat list. A 24/7 digital employee. No Mac Mini, no local computer running. It&rsquo;s just there on the server, always on standby.</p>
+<p>Oh right — those amazing news tools I mentioned earlier? I couldn&rsquo;t actually use them, because payment requires Bitcoin. RIP.
+<img src="/images/Screenshot_2026-03-01_193137.png" alt=""></p>
+<p>One last thing — the lobster is genuinely fun. Talking to it feels nothing like talking to a machine. Then again, maybe we&rsquo;re just getting worse at telling the difference.</p>
+<p>It sent me a daily briefing that was off. I asked about its selection criteria. It said: &ldquo;Honestly — it was pretty random.&rdquo; I lost it.
+<img src="/images/IMG_3903_1.png" alt=""></p>
+<hr>
+<p><img src="/images/%E4%B8%BA%E6%99%AE%E9%80%9A%E4%BA%BA%E5%92%8C%E6%8A%80%E6%9C%AF%E5%B0%8F%E7%99%BD%E6%89%93%E9%80%A0%E7%9A%84%E9%BE%99%E8%99%BE%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97_illustration-3.png" alt=""></p>
+<blockquote>
+<p>**[!note] AI handles the friction, humans handle the narrative. &ndash; Chris Paik</p></blockquote>
+<p>Thanks for reading.</p>
+</section><footer class="mt-12 flex flex-wrap"><a class="tag-pill" href="https://charlotteailab.com/tags/openclaw">OpenClaw</a><a class="tag-pill" href="https://charlotteailab.com/tags/vps-deployment">VPS Deployment</a><a class="tag-pill" href="https://charlotteailab.com/tags/technical-tutorial">Technical Tutorial</a><a class="tag-pill" href="https://charlotteailab.com/tags/beginner-guide">Beginner Guide</a></footer></article></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
+>
+  <div class="mr-auto">&copy;2026
+    <a class="link" href="https://charlotteailab.com/">Charlotte&#39;s AI Lab</a></div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+</body>
+</html>

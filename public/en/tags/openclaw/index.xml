@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OpenClaw on Charlotte&#39;s AI Lab</title>
+    <link>https://charlotteailab.com/en/tags/openclaw/</link>
+    <description>Recent content in OpenClaw on Charlotte&#39;s AI Lab</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 09 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://charlotteailab.com/en/tags/openclaw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The 3 Types of Skills Your OpenClaw Lobster Actually Needs</title>
+      <link>https://charlotteailab.com/en/posts/openclaw-skills/</link>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://charlotteailab.com/en/posts/openclaw-skills/</guid>
+      <description>Installed the lobster but it feels underwhelming? It&amp;rsquo;s not the tool — you&amp;rsquo;re missing the right Skills. These 3 categories are what turn it from a chatbot into a real assistant.</description>
+    </item>
+    <item>
+      <title>20 Things OpenClaw Can Do for You (With Real Examples)</title>
+      <link>https://charlotteailab.com/en/posts/openclaw-20-things/</link>
+      <pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://charlotteailab.com/en/posts/openclaw-20-things/</guid>
+      <description>Not theoretical. Not hypothetical. 20 real-world use cases that people actually run every day. Read this and decide if the lobster is worth raising.</description>
+    </item>
+    <item>
+      <title>How Much Does It Cost to Raise a Lobster? 3 Budget Plans Revealed</title>
+      <link>https://charlotteailab.com/en/posts/openclaw-cost/</link>
+      <pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://charlotteailab.com/en/posts/openclaw-cost/</guid>
+      <description>From free to a few hundred bucks a month — three transparent budget tiers. Plus my actual 3-month bill.</description>
+    </item>
+    <item>
+      <title>What Even Is OpenClaw? A 3-Minute Guide to the AI Lobster</title>
+      <link>https://charlotteailab.com/en/posts/openclaw-3min/</link>
+      <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://charlotteailab.com/en/posts/openclaw-3min/</guid>
+      <description>An AI lobster with a WeChat Index of 71 million. What does it actually do? Here&amp;rsquo;s the breakdown from someone who&amp;rsquo;s been using it for 3 months.</description>
+    </item>
+    <item>
+      <title>The Non-Programmer&#39;s Guide to Deploying OpenClaw</title>
+      <link>https://charlotteailab.com/en/posts/openclaw-deploy-guide/</link>
+      <pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://charlotteailab.com/en/posts/openclaw-deploy-guide/</guid>
+      <description>No Mac Mini? No problem. A complete deployment guide born from real trial and error — even non-programmers can follow this one.</description>
+    </item>
+  </channel>
+</rss>

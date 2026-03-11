@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lobster on Charlotte&#39;s AI Lab</title>
+    <link>https://charlotteailab.com/en/tags/lobster/</link>
+    <description>Recent content in Lobster on Charlotte&#39;s AI Lab</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 08 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://charlotteailab.com/en/tags/lobster/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>20 Things OpenClaw Can Do for You (With Real Examples)</title>
+      <link>https://charlotteailab.com/en/posts/openclaw-20-things/</link>
+      <pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://charlotteailab.com/en/posts/openclaw-20-things/</guid>
+      <description>Not theoretical. Not hypothetical. 20 real-world use cases that people actually run every day. Read this and decide if the lobster is worth raising.</description>
+    </item>
+    <item>
+      <title>How Much Does It Cost to Raise a Lobster? 3 Budget Plans Revealed</title>
+      <link>https://charlotteailab.com/en/posts/openclaw-cost/</link>
+      <pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://charlotteailab.com/en/posts/openclaw-cost/</guid>
+      <description>From free to a few hundred bucks a month — three transparent budget tiers. Plus my actual 3-month bill.</description>
+    </item>
+    <item>
+      <title>What Even Is OpenClaw? A 3-Minute Guide to the AI Lobster</title>
+      <link>https://charlotteailab.com/en/posts/openclaw-3min/</link>
+      <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://charlotteailab.com/en/posts/openclaw-3min/</guid>
+      <description>An AI lobster with a WeChat Index of 71 million. What does it actually do? Here&amp;rsquo;s the breakdown from someone who&amp;rsquo;s been using it for 3 months.</description>
+    </item>
+  </channel>
+</rss>

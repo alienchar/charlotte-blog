@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI Automation on Charlotte&#39;s AI Lab</title>
+    <link>https://charlotteailab.com/en/tags/ai-automation/</link>
+    <description>Recent content in AI Automation on Charlotte&#39;s AI Lab</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 08 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://charlotteailab.com/en/tags/ai-automation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>20 Things OpenClaw Can Do for You (With Real Examples)</title>
+      <link>https://charlotteailab.com/en/posts/openclaw-20-things/</link>
+      <pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://charlotteailab.com/en/posts/openclaw-20-things/</guid>
+      <description>Not theoretical. Not hypothetical. 20 real-world use cases that people actually run every day. Read this and decide if the lobster is worth raising.</description>
+    </item>
+  </channel>
+</rss>

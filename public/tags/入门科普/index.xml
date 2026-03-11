@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>入门科普 on 夏洛特的AI实验室</title><link>https://charlotteailab.com/tags/%E5%85%A5%E9%97%A8%E7%A7%91%E6%99%AE/</link><description>Recent content in 入门科普 on 夏洛特的AI实验室</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sat, 07 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://charlotteailab.com/tags/%E5%85%A5%E9%97%A8%E7%A7%91%E6%99%AE/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenClaw到底是什么？3分钟看懂这只AI龙虾</title><link>https://charlotteailab.com/posts/openclaw-3min/</link><pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/openclaw-3min/</guid><description>微信指数7100万的AI龙虾，到底能干什么？一个用了3个月的人来讲清楚。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>入门科普 on 夏洛特的AI实验室</title>
+    <link>https://charlotteailab.com/tags/%E5%85%A5%E9%97%A8%E7%A7%91%E6%99%AE/</link>
+    <description>Recent content in 入门科普 on 夏洛特的AI实验室</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 07 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://charlotteailab.com/tags/%E5%85%A5%E9%97%A8%E7%A7%91%E6%99%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenClaw到底是什么？3分钟看懂这只AI龙虾</title>
+      <link>https://charlotteailab.com/posts/openclaw-3min/</link>
+      <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://charlotteailab.com/posts/openclaw-3min/</guid>
+      <description>微信指数7100万的AI龙虾，到底能干什么？一个用了3个月的人来讲清楚。</description>
+    </item>
+  </channel>
+</rss>
