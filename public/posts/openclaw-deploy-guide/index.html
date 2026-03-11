@@ -1,474 +1,67 @@
-<!doctype html>
-
-
-
-
-
-
-
-<html
-  class="not-ready lg:text-base"
-  style="--bg:#faf8f1"
-  lang="zh-CN"
-  dir="ltr"
-><head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, shrink-to-fit=no"
-  />
-
-  
-  <title>为普通人和技术小白打造的龙虾部署指南 - 夏洛特的AI实验室</title>
-
-  
-  <meta name="theme-color" />
-
-  <meta name="description" content="没有Mac Mini也能用OpenClaw？我用踩坑经验，整理出这份连非程序员都能复制的完整部署手册。" />
-  <meta name="author" content="夏洛特的AI实验室" /><link rel="preload stylesheet" as="style" href="https://charlotteailab.com/main.min.9a3bd55941f422f5bbee031867c2b2ae9ab4f8364fbb663a1363f819fb3f52a2.css" integrity="sha256-mjvVWUH0IvW77gMYZ8Kyrpq0&#43;DZPu2Y6E2P4Gfs/UqI=" />
-
-  
-  <link rel="preload" as="image" href="https://charlotteailab.com/theme.png" />
-
-  <link rel="preload" as="image" href="https://charlotteailab.com/avatar.png" />
-
-  
-
-  <script
-    defer
-    src="https://charlotteailab.com/highlight.min.js"
-    onload="hljs.initHighlightingOnLoad()"
-  ></script>
-
-  
-  <link
-    rel="icon"
-    href="https://charlotteailab.com/favicon.ico"
-  />
-  <link
-    rel="apple-touch-icon"
-    href="https://charlotteailab.com/apple-touch-icon.png"
-  />
-
-  <meta name="generator" content="Hugo 0.147.1">
-  <meta itemprop="name" content="为普通人和技术小白打造的龙虾部署指南">
-  <meta itemprop="description" content="没有Mac Mini也能用OpenClaw？我用踩坑经验，整理出这份连非程序员都能复制的完整部署手册。">
-  <meta itemprop="datePublished" content="2026-03-06T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2026-03-06T00:00:00+00:00">
-  <meta itemprop="wordCount" content="413">
-  <meta itemprop="keywords" content="OpenClaw,VPS部署,技术教程,小白指南"><meta property="og:url" content="https://charlotteailab.com/posts/openclaw-deploy-guide/">
-  <meta property="og:site_name" content="夏洛特的AI实验室">
-  <meta property="og:title" content="为普通人和技术小白打造的龙虾部署指南">
-  <meta property="og:description" content="没有Mac Mini也能用OpenClaw？我用踩坑经验，整理出这份连非程序员都能复制的完整部署手册。">
-  <meta property="og:locale" content="zh_CN">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2026-03-06T00:00:00+00:00">
-    <meta property="article:modified_time" content="2026-03-06T00:00:00+00:00">
-    <meta property="article:tag" content="OpenClaw">
-    <meta property="article:tag" content="VPS部署">
-    <meta property="article:tag" content="技术教程">
-    <meta property="article:tag" content="小白指南">
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="为普通人和技术小白打造的龙虾部署指南">
-  <meta name="twitter:description" content="没有Mac Mini也能用OpenClaw？我用踩坑经验，整理出这份连非程序员都能复制的完整部署手册。">
-
-  <link rel="canonical" href="https://charlotteailab.com/posts/openclaw-deploy-guide/" />
-</head>
-<body
-    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
-  ><header
-  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
->
-  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
-    <a
-      class="-translate-y-[1px] text-2xl font-medium"
-      href="https://charlotteailab.com/"
-      >夏洛特的AI实验室</a
-    >
-    <div
-      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
-      role="button"
-      aria-label="Dark"
-    ></div>
-  </div>
-
-  <div
-    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
-    role="button"
-    aria-label="Menu"
-  ></div>
-
-  <script>
-    
-    const htmlClass = document.documentElement.classList;
-    setTimeout(() => {
-      htmlClass.remove('not-ready');
-    }, 10);
-
-    
-    const btnMenu = document.querySelector('.btn-menu');
-    btnMenu.addEventListener('click', () => {
-      htmlClass.toggle('open');
-    });
-
-    
-    const metaTheme = document.querySelector('meta[name="theme-color"]');
-    const lightBg = '#faf8f1'.replace(/"/g, '');
-    const setDark = (isDark) => {
-      metaTheme.setAttribute('content', isDark ? "rgb(0 0 0 / 85%)" : lightBg);
-      htmlClass[isDark ? 'add' : 'remove']('dark');
-      localStorage.setItem('dark', isDark);
-    };
-
-    
-    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-    if (htmlClass.contains('dark')) {
-      setDark(true);
-    } else {
-      const darkVal = localStorage.getItem('dark');
-      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
-    }
-
-    
-    darkScheme.addEventListener('change', (event) => {
-      setDark(event.matches);
-    });
-
-    
-    const btnDark = document.querySelector('.btn-dark');
-    btnDark.addEventListener('click', () => {
-      setDark(localStorage.getItem('dark') !== 'true');
-    });
-  </script>
-
-  <div
-    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
-  ><nav
-      class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
-    ><a
-        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
-        href="/about/"
-        >关于</a
-      ><a
-        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
-        href="/posts/"
-        >文章</a
-      ><a
-        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
-        href="/en/"
-        >EN</a
-      ></nav>
-  </div>
-</header>
-<main
-      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
-    ><article>
-  <div class="post-header">
-    <h1>为普通人和技术小白打造的龙虾部署指南</h1><div class="meta"><time>三月 6, 2026</time><span class="divider">·</span>
-      <span>2min read</span></div><img class="post-cover" src="/images/cover_openclaw-deploy-guide.png" alt="为普通人和技术小白打造的龙虾部署指南" /></div>
-
-  <section class="prose"><p>今天，作为一个毫无编程背景的普通中年人，我也有龙虾了！
-<img src="/images/Screenshot_2026-03-01_144226.png" alt=""></p>
-<p>按理说OpenClaw已经火了挺长时间了，但是Gemini一直劝我说，不必要搞那么复杂，我的日常工作基本电脑里面的本地程序就能搞定了。</p>
-<p>可是怎么说呢，人人都牵着龙虾出门，好像自己没有，显得很寒酸。</p>
-<p>所以我一直想养一条。于是在X上大力查询相关内容，看看大家都在拿它干什么，这玩意用起来难不难，究竟是不是鸡肋。</p>
-<p>然后又头疼，大部分人都是买台二手<em>Mac min</em>来部署的，导致现在价格也挺高。还没想好要干啥，就先花一笔钱，这一点儿也不符合我们中年人的精打细算。我唯一能想到的，也就只是让龙虾帮我每天推送一篇AI领域的日报，但是这事别的工作流也能干。</p>
-<p>直到今天，刷到一个X贴文：
-<img src="/images/Screenshot_2026-03-01_192823.png" alt=""></p>
-<p>这是啥呢，是<em>核武器</em>。就相当于，一个特别大佬的大佬，来递给你一把金钥匙，说别介，拿去用吧。</p>
-<p>看看这阅读量和收藏量，就知道不简单。先别嫌我啰嗦，咱先讲一讲来时路。后面很多干货。
-<img src="/images/Screenshot_2026-03-01_192840.png" alt=""></p>
-<p>简单的说，大佬分享的工具是啥呢</p>
-<ul>
-<li>
-<p><strong><code>OpenNews-MCP</code></strong>：集成 50+ 实时新闻源（甚至包含链上数据）。它不再是“搜新闻”，而是“接新闻电报”，速度极快，且数据是结构化好的。</p>
-</li>
-<li>
-<p><strong><code>OpenTwitter-MCP</code></strong>：解决了最头疼的 X API 问题。龙虾可以直接搜索 X 上的实时讨论，分析某个 AI 大佬又发了什么推。</p>
-</li>
-</ul>
-<p>这可比我单纯想要一篇简单的日报推送要刺激的多了。众所周知，中年人受不了刺激。</p>
-<p>如果有两个 MCP 神器，我的虾可以 24 小时监控 X 上关于指定话题的最新爆料，一旦有风吹草动，直接来报告：“<em>推特上有大事发生了！</em>” 而且零配置成本：README 里说“不用配 API 密钥”，这意味着不需要去申请昂贵的推特开发者账号（可老贵了）。</p>
-<p>这就是我为啥立刻一腔热情，马不停蹄地搞定了OpenClaw。运行得不错，养的也挺开心。但是上面那俩神器我并没有装，这个反转在文章末尾再说罢。</p>
-<p>所以，作为一个从没学过编程的老外企人，我在一台远在美国洛杉矶的虚拟服务器上，把OpenClaw跑通了。</p>
-<blockquote>
-<p>**[!note] 🎯 破局点</p>
-<p>VPS不是啥遥不可及的技术黑箱，它就是一台24小时不关机的云端电脑。只要跟着这份手册一步步来，你也能拥有一个全天候在线的AI数字员工。</p></blockquote>
-<p>下面来干货，针对<em>没有技术背景的小白</em>，喂饭式的一口一口，一步一步的操作指南。相信跟着这个步骤，你不可能不成功。绝对不可能。</p>
-<p>今天这篇，我把踩过的所有坑、输过的每行命令，全部整理成这份<strong>给小白的龙虾养殖技术</strong>。</p>
-<p>先说说明三点：</p>
-<ul>
-<li>要付费。要花钱的。VPS要付费，后面调用大模型的API也要付费。但是丰俭由人。</li>
-<li>这是部署在VPS上的，云端跑，不需要买机器。</li>
-<li>本教程仅针对Windows系统。</li>
-</ul>
-<p><img src="/images/%E4%B8%BA%E6%99%AE%E9%80%9A%E4%BA%BA%E5%92%8C%E6%8A%80%E6%9C%AF%E5%B0%8F%E7%99%BD%E6%89%93%E9%80%A0%E7%9A%84%E9%BE%99%E8%99%BE%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97_illustration-1.png" alt=""></p>
-<hr>
-<h2 id="前提准备">前提准备</h2>
-<p>在开始部署之前，需要准备两个东西：</p>
-<h3 id="准备1硬件">准备1：硬件</h3>
-<p>一台 VPS 服务器。简单来说，VPS（Virtual Private Server）就是一台&quot;云端电脑&quot;。</p>
-<p>服务商把一台物理服务器分割成多个虚拟服务器，每个VPS都有独立的操作系统、CPU、内存和公网IP。你可以通过网络远程控制它，<strong>最大的好处是它24小时不关机，且拥有良好的网络环境</strong>。</p>
-<p><strong>为啥要在VPS上部署OpenClaw？</strong></p>
-<p>如果你把OpenClaw装在自己的个人电脑上，一旦你关机或断网，AI助手就会&quot;掉线&quot;无法回复消息。而将它部署在VPS上，就可以保证你的AI助手24小时全天候为你服务。</p>
-<p>而且，对很多人来说，调用的是国际大模型（GPT/CLAUDE/GEMINI），如果选择国内的服务器，就不太好用。</p>
-<p>我使用的是 <strong>RackNerd</strong>，是Gemini调研后推荐给我的，大家可以根据自己的情况选择。
-<img src="/images/Pasted_image_20260302194047.png" alt="">
-<img src="/images/Pasted_image_20260301201646.png" alt=""></p>
-<p>关于配置选择：</p>
-<ul>
-<li><strong>轻度使用</strong>：2GB内存，约$18-25/年（130-180元/年），适合人试用和一些轻量级的任务</li>
-<li><strong>推荐配置</strong>：4GB内存，约$43.88/年（315元左右），让小龙虾能大展拳脚</li>
-</ul>
-<p>用我的链接可以打折：
-<em><a href="https://my.racknerd.com/aff.php?aff=18557">https://my.racknerd.com/aff.php?aff=18557</a></em></p>
-<p>我是直接选的<strong>4GB</strong>款，3核CPU + 105GB固态硬盘。除了稳定运行OpenClaw，后续折腾其他自动化服务也游刃有余。</p>
-<p>选好了会有一些选项要填写，第一个是服务器名称，这个后面可以改，也可以不管它；主要是下面的几个：
-<img src="/images/Screenshot_2026-03-01_133733_-_Copy.png" alt=""></p>
-<p><strong>两个关键设置</strong>：</p>
-<ol>
-<li><strong>Location（机房位置）</strong>：首选<strong>Los Angeles（洛杉矶）<strong>或</strong>San Jose（圣何塞）</strong>。这两个美西节点国内直连网络延迟最低。</li>
-<li><strong>Operating System（操作系统）</strong>：选择<strong>Ubuntu 24.04 64 Bit</strong>。这是目前兼容性最好的版本，安装Node.js和各种AI项目最省心。</li>
-</ol>
-<p>如果Los Angeles（洛杉矶）卖光了，选第三个San Jose，千万不要选第一个New York!!
-<img src="/images/Screenshot_2026-03-01_133915.png" alt=""></p>
-<p>这里就是默认的第一个选项，其它几个也保持默认就好
-<img src="/images/Screenshot_2026-03-01_134130_1.png" alt=""></p>
-<p>付款完成后，你的注册邮箱会收到服务器的IP地址、root用户名和初始密码。这个备好，我们等下会用。</p>
-<h3 id="准备2网络环境">准备2：网络环境</h3>
-<p>要有科学的上网条件，懂得都懂。</p>
-<h2 id="开始部署">开始部署</h2>
-<h3 id="通过-ssh-连接到你的-vps">通过 SSH 连接到你的 VPS</h3>
-<ol>
-<li>在开始菜单搜索框中输入CMD然后回车
-<img src="/images/Pasted_image_20260301202037.png" alt=""></li>
-<li>在弹出来的窗口中，输入以下命令（把<code>&lt;你的服务器IP&gt;</code>替换成前面邮件里收到的真实IP）：</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh root@&lt;你的服务器IP&gt;
-</span></span></code></pre></div><ol start="3">
-<li>按回车后，系统会问你是否确认连接。输入<code>yes</code>并回车</li>
-<li>接着会提示输入密码。<strong>复制邮件中的密码，在黑框里单击鼠标右键粘贴</strong>，然后直接回车</li>
-</ol>
-<blockquote>
-<p>**[!note] ⚠️ 关键提醒</p>
-<p>在Linux环境下输入或粘贴密码时，<strong>屏幕上不会显示任何字符，连星号都没有</strong>！这是正常的安全机制。只要确信自己粘贴了，直接按回车即可。</p></blockquote>
-<p>当你看到提示符从 <code>C:\Users\xxx&gt;</code> 变成类似 <code>root@racknerd-xxxx:~#</code> 的样子，恭喜，你已经成功进入你的云端服务器了。</p>
-<p>连接成功后，我们需要先更新系统并安装必要的工具。</p>
-<p><strong>第一步：更新系统软件包</strong>（直接复制下方代码并回车）</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>apt update <span style="color:#0550ae">&amp;&amp;</span> apt upgrade -y
-</span></span></code></pre></div><p>这个过程大概需要1-2分钟。如果中途弹出一个粉底蓝字的界面问你保留什么版本，直接按回车选默认即可。</p>
-<p><strong>第二步：安装基础工具和编译环境</strong>（等第一步跑完，重新出现 <code>root@...:~#</code> 后再执行这条）</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>apt install -y curl git ca-certificates gnupg lsb-release cmake make build-essential
-</span></span></code></pre></div><h3 id="安装nodejs-22环境">安装Node.js 22环境</h3>
-<p>OpenClaw是基于Node.js运行的，官方要求版本必须是22及以上。</p>
-<p><strong>第一步：下载并配置Node.js 22的官方安装源</strong>（直接复制下方代码并回车）</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -fsSL https://deb.nodesource.com/setup_22.x <span style="color:#1f2328">|</span> bash -
-</span></span></code></pre></div><p><strong>第二步：正式安装Node.js</strong>（直接复制下方代码并回车）</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>apt install -y nodejs
-</span></span></code></pre></div><p><strong>第三步：验证是否安装成功</strong> （直接复制下方代码并回车）</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>node -v
-</span></span></code></pre></div><p>如果屏幕上输出了类似<code>v22.x.x</code>的字样，说明环境已经完美就绪！</p>
-<h3 id="安装openclaw">安装OpenClaw</h3>
-<p>环境准备好后，就可以安装OpenClaw本体了。</p>
-<p><strong>全局安装OpenClaw</strong>：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm install -g openclaw@latest
+<!doctype html><html class="not-ready lg:text-base" style=--bg:#faf8f1 lang=zh-CN dir=ltr><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>为普通人和技术小白打造的龙虾部署指南 - 夏洛特的AI实验室</title>
+<meta name=theme-color><meta name=description content="没有Mac Mini也能用OpenClaw？我用踩坑经验，整理出这份连非程序员都能复制的完整部署手册。"><meta name=author content="夏洛特的AI实验室"><link rel="preload stylesheet" as=style href=https://charlotteailab.com/main.min.3751474dca5a4721951a37e5c91dbb67b90ddaf43da23c174a93785590848fe6.css integrity="sha256-N1FHTcpaRyGVGjflyR27Z7kN2vQ9ojwXSpN4VZCEj+Y="><link rel=preload as=image href=https://charlotteailab.com/theme.png><link rel=preload as=image href=https://charlotteailab.com/avatar.png><script defer src=https://charlotteailab.com/highlight.min.js onload=hljs.initHighlightingOnLoad()></script><link rel=icon href=https://charlotteailab.com/favicon.ico><link rel=apple-touch-icon href=https://charlotteailab.com/apple-touch-icon.png><script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","headline":"为普通人和技术小白打造的龙虾部署指南","description":"没有Mac Mini也能用OpenClaw？我用踩坑经验，整理出这份连非程序员都能复制的完整部署手册。","datePublished":"2026-03-06T00:00:00Z","dateModified":"2026-03-06T00:00:00Z","author":{"@type":"Person","name":"Charlotte","alternateName":"夏洛特","description":"AI赛道跨平台内容创作者，前500强营销人","url":"https://charlotteailab.com/about/"},"publisher":{"@type":"Organization","name":"夏洛特的AI实验室","url":"https://charlotteailab.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/charlotteailab.com\/posts\/openclaw-deploy-guide\/"},"image":"https:\/\/charlotteailab.com\/images\/cover_openclaw-deploy-guide.png","wordCount":413,"inLanguage":"zh","articleSection":"OpenClaw"}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"夏洛特的AI实验室","item":"https:\/\/charlotteailab.com\/"},{"@type":"ListItem","position":2,"name":"为普通人和技术小白打造的龙虾部署指南","item":"https:\/\/charlotteailab.com\/posts\/openclaw-deploy-guide\/"}]}</script><meta name=generator content="Hugo 0.147.1"><meta itemprop=name content="为普通人和技术小白打造的龙虾部署指南"><meta itemprop=description content="没有Mac Mini也能用OpenClaw？我用踩坑经验，整理出这份连非程序员都能复制的完整部署手册。"><meta itemprop=datePublished content="2026-03-06T00:00:00+00:00"><meta itemprop=dateModified content="2026-03-06T00:00:00+00:00"><meta itemprop=wordCount content="413"><meta itemprop=image content="https://charlotteailab.com/avatar.png"><meta itemprop=keywords content="OpenClaw,VPS部署,技术教程,小白指南"><meta property="og:url" content="https://charlotteailab.com/posts/openclaw-deploy-guide/"><meta property="og:site_name" content="夏洛特的AI实验室"><meta property="og:title" content="为普通人和技术小白打造的龙虾部署指南"><meta property="og:description" content="没有Mac Mini也能用OpenClaw？我用踩坑经验，整理出这份连非程序员都能复制的完整部署手册。"><meta property="og:locale" content="zh_CN"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2026-03-06T00:00:00+00:00"><meta property="article:modified_time" content="2026-03-06T00:00:00+00:00"><meta property="article:tag" content="OpenClaw"><meta property="article:tag" content="VPS部署"><meta property="article:tag" content="技术教程"><meta property="article:tag" content="小白指南"><meta property="og:image" content="https://charlotteailab.com/avatar.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://charlotteailab.com/avatar.png"><meta name=twitter:title content="为普通人和技术小白打造的龙虾部署指南"><meta name=twitter:description content="没有Mac Mini也能用OpenClaw？我用踩坑经验，整理出这份连非程序员都能复制的完整部署手册。"><link rel=canonical href=https://charlotteailab.com/posts/openclaw-deploy-guide/></head><body class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"><header class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"><div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto"><a class="-translate-y-[1px] text-2xl font-medium" href=https://charlotteailab.com/>夏洛特的AI实验室</a><div class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]" role=button aria-label=Dark></div></div><div class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8" role=button aria-label=Menu></div><script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove("not-ready")},10);const btnMenu=document.querySelector(".btn-menu");btnMenu.addEventListener("click",()=>{htmlClass.toggle("open")});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg="#faf8f1".replace(/"/g,""),setDark=e=>{metaTheme.setAttribute("content",e?"rgb(0 0 0 / 85%)":lightBg),htmlClass[e?"add":"remove"]("dark"),localStorage.setItem("dark",e)},darkScheme=window.matchMedia("(prefers-color-scheme: dark)");if(htmlClass.contains("dark"))setDark(!0);else{const e=localStorage.getItem("dark");setDark(e?e==="true":darkScheme.matches)}darkScheme.addEventListener("change",e=>{setDark(e.matches)});const btnDark=document.querySelector(".btn-dark");btnDark.addEventListener("click",()=>{setDark(localStorage.getItem("dark")!=="true")})</script><div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"><nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>关于</a><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal" href=/posts/>文章</a><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal" href=/en/>EN</a></nav></div></header><main class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"><article><div class=post-header><h1>为普通人和技术小白打造的龙虾部署指南</h1><div class=meta><time>三月 6, 2026</time><span class=divider>·</span>
+<span>2min read</span></div><img class=post-cover src=/images/cover_openclaw-deploy-guide.png alt=为普通人和技术小白打造的龙虾部署指南></div><section class=prose><p>今天，作为一个毫无编程背景的普通中年人，我也有龙虾了！
+<img src=/images/Screenshot_2026-03-01_144226.png alt></p><p>按理说OpenClaw已经火了挺长时间了，但是Gemini一直劝我说，不必要搞那么复杂，我的日常工作基本电脑里面的本地程序就能搞定了。</p><p>可是怎么说呢，人人都牵着龙虾出门，好像自己没有，显得很寒酸。</p><p>所以我一直想养一条。于是在X上大力查询相关内容，看看大家都在拿它干什么，这玩意用起来难不难，究竟是不是鸡肋。</p><p>然后又头疼，大部分人都是买台二手<em>Mac min</em>来部署的，导致现在价格也挺高。还没想好要干啥，就先花一笔钱，这一点儿也不符合我们中年人的精打细算。我唯一能想到的，也就只是让龙虾帮我每天推送一篇AI领域的日报，但是这事别的工作流也能干。</p><p>直到今天，刷到一个X贴文：
+<img src=/images/Screenshot_2026-03-01_192823.png alt></p><p>这是啥呢，是<em>核武器</em>。就相当于，一个特别大佬的大佬，来递给你一把金钥匙，说别介，拿去用吧。</p><p>看看这阅读量和收藏量，就知道不简单。先别嫌我啰嗦，咱先讲一讲来时路。后面很多干货。
+<img src=/images/Screenshot_2026-03-01_192840.png alt></p><p>简单的说，大佬分享的工具是啥呢</p><ul><li><p><strong><code>OpenNews-MCP</code></strong>：集成 50+ 实时新闻源（甚至包含链上数据）。它不再是“搜新闻”，而是“接新闻电报”，速度极快，且数据是结构化好的。</p></li><li><p><strong><code>OpenTwitter-MCP</code></strong>：解决了最头疼的 X API 问题。龙虾可以直接搜索 X 上的实时讨论，分析某个 AI 大佬又发了什么推。</p></li></ul><p>这可比我单纯想要一篇简单的日报推送要刺激的多了。众所周知，中年人受不了刺激。</p><p>如果有两个 MCP 神器，我的虾可以 24 小时监控 X 上关于指定话题的最新爆料，一旦有风吹草动，直接来报告：“<em>推特上有大事发生了！</em>” 而且零配置成本：README 里说“不用配 API 密钥”，这意味着不需要去申请昂贵的推特开发者账号（可老贵了）。</p><p>这就是我为啥立刻一腔热情，马不停蹄地搞定了OpenClaw。运行得不错，养的也挺开心。但是上面那俩神器我并没有装，这个反转在文章末尾再说罢。</p><p>所以，作为一个从没学过编程的老外企人，我在一台远在美国洛杉矶的虚拟服务器上，把OpenClaw跑通了。</p><blockquote><p>**[!note] 🎯 破局点</p><p>VPS不是啥遥不可及的技术黑箱，它就是一台24小时不关机的云端电脑。只要跟着这份手册一步步来，你也能拥有一个全天候在线的AI数字员工。</p></blockquote><p>下面来干货，针对<em>没有技术背景的小白</em>，喂饭式的一口一口，一步一步的操作指南。相信跟着这个步骤，你不可能不成功。绝对不可能。</p><p>今天这篇，我把踩过的所有坑、输过的每行命令，全部整理成这份<strong>给小白的龙虾养殖技术</strong>。</p><p>先说说明三点：</p><ul><li>要付费。要花钱的。VPS要付费，后面调用大模型的API也要付费。但是丰俭由人。</li><li>这是部署在VPS上的，云端跑，不需要买机器。</li><li>本教程仅针对Windows系统。</li></ul><p><img src=/images/%E4%B8%BA%E6%99%AE%E9%80%9A%E4%BA%BA%E5%92%8C%E6%8A%80%E6%9C%AF%E5%B0%8F%E7%99%BD%E6%89%93%E9%80%A0%E7%9A%84%E9%BE%99%E8%99%BE%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97_illustration-1.png alt></p><hr><h2 id=前提准备>前提准备</h2><p>在开始部署之前，需要准备两个东西：</p><h3 id=准备1硬件>准备1：硬件</h3><p>一台 VPS 服务器。简单来说，VPS（Virtual Private Server）就是一台"云端电脑"。</p><p>服务商把一台物理服务器分割成多个虚拟服务器，每个VPS都有独立的操作系统、CPU、内存和公网IP。你可以通过网络远程控制它，<strong>最大的好处是它24小时不关机，且拥有良好的网络环境</strong>。</p><p><strong>为啥要在VPS上部署OpenClaw？</strong></p><p>如果你把OpenClaw装在自己的个人电脑上，一旦你关机或断网，AI助手就会"掉线"无法回复消息。而将它部署在VPS上，就可以保证你的AI助手24小时全天候为你服务。</p><p>而且，对很多人来说，调用的是国际大模型（GPT/CLAUDE/GEMINI），如果选择国内的服务器，就不太好用。</p><p>我使用的是 <strong>RackNerd</strong>，是Gemini调研后推荐给我的，大家可以根据自己的情况选择。
+<img src=/images/Pasted_image_20260302194047.png alt>
+<img src=/images/Pasted_image_20260301201646.png alt></p><p>关于配置选择：</p><ul><li><strong>轻度使用</strong>：2GB内存，约$18-25/年（130-180元/年），适合人试用和一些轻量级的任务</li><li><strong>推荐配置</strong>：4GB内存，约$43.88/年（315元左右），让小龙虾能大展拳脚</li></ul><p>用我的链接可以打折：
+<em><a href="https://my.racknerd.com/aff.php?aff=18557">https://my.racknerd.com/aff.php?aff=18557</a></em></p><p>我是直接选的<strong>4GB</strong>款，3核CPU + 105GB固态硬盘。除了稳定运行OpenClaw，后续折腾其他自动化服务也游刃有余。</p><p>选好了会有一些选项要填写，第一个是服务器名称，这个后面可以改，也可以不管它；主要是下面的几个：
+<img src=/images/Screenshot_2026-03-01_133733_-_Copy.png alt></p><p><strong>两个关键设置</strong>：</p><ol><li><strong>Location（机房位置）</strong>：首选<strong>Los Angeles（洛杉矶）<strong>或</strong>San Jose（圣何塞）</strong>。这两个美西节点国内直连网络延迟最低。</li><li><strong>Operating System（操作系统）</strong>：选择<strong>Ubuntu 24.04 64 Bit</strong>。这是目前兼容性最好的版本，安装Node.js和各种AI项目最省心。</li></ol><p>如果Los Angeles（洛杉矶）卖光了，选第三个San Jose，千万不要选第一个New York!!
+<img src=/images/Screenshot_2026-03-01_133915.png alt></p><p>这里就是默认的第一个选项，其它几个也保持默认就好
+<img src=/images/Screenshot_2026-03-01_134130_1.png alt></p><p>付款完成后，你的注册邮箱会收到服务器的IP地址、root用户名和初始密码。这个备好，我们等下会用。</p><h3 id=准备2网络环境>准备2：网络环境</h3><p>要有科学的上网条件，懂得都懂。</p><h2 id=开始部署>开始部署</h2><h3 id=通过-ssh-连接到你的-vps>通过 SSH 连接到你的 VPS</h3><ol><li>在开始菜单搜索框中输入CMD然后回车
+<img src=/images/Pasted_image_20260301202037.png alt></li><li>在弹出来的窗口中，输入以下命令（把<code>&lt;你的服务器IP></code>替换成前面邮件里收到的真实IP）：</li></ol><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>ssh root@&lt;你的服务器IP&gt;
+</span></span></code></pre></div><ol start=3><li>按回车后，系统会问你是否确认连接。输入<code>yes</code>并回车</li><li>接着会提示输入密码。<strong>复制邮件中的密码，在黑框里单击鼠标右键粘贴</strong>，然后直接回车</li></ol><blockquote><p>**[!note] ⚠️ 关键提醒</p><p>在Linux环境下输入或粘贴密码时，<strong>屏幕上不会显示任何字符，连星号都没有</strong>！这是正常的安全机制。只要确信自己粘贴了，直接按回车即可。</p></blockquote><p>当你看到提示符从 <code>C:\Users\xxx></code> 变成类似 <code>root@racknerd-xxxx:~#</code> 的样子，恭喜，你已经成功进入你的云端服务器了。</p><p>连接成功后，我们需要先更新系统并安装必要的工具。</p><p><strong>第一步：更新系统软件包</strong>（直接复制下方代码并回车）</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>apt update <span style=color:#0550ae>&amp;&amp;</span> apt upgrade -y
+</span></span></code></pre></div><p>这个过程大概需要1-2分钟。如果中途弹出一个粉底蓝字的界面问你保留什么版本，直接按回车选默认即可。</p><p><strong>第二步：安装基础工具和编译环境</strong>（等第一步跑完，重新出现 <code>root@...:~#</code> 后再执行这条）</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>apt install -y curl git ca-certificates gnupg lsb-release cmake make build-essential
+</span></span></code></pre></div><h3 id=安装nodejs-22环境>安装Node.js 22环境</h3><p>OpenClaw是基于Node.js运行的，官方要求版本必须是22及以上。</p><p><strong>第一步：下载并配置Node.js 22的官方安装源</strong>（直接复制下方代码并回车）</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl -fsSL https://deb.nodesource.com/setup_22.x <span style=color:#1f2328>|</span> bash -
+</span></span></code></pre></div><p><strong>第二步：正式安装Node.js</strong>（直接复制下方代码并回车）</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>apt install -y nodejs
+</span></span></code></pre></div><p><strong>第三步：验证是否安装成功</strong> （直接复制下方代码并回车）</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>node -v
+</span></span></code></pre></div><p>如果屏幕上输出了类似<code>v22.x.x</code>的字样，说明环境已经完美就绪！</p><h3 id=安装openclaw>安装OpenClaw</h3><p>环境准备好后，就可以安装OpenClaw本体了。</p><p><strong>全局安装OpenClaw</strong>：</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>npm install -g openclaw@latest
 </span></span></code></pre></div><p>看到类似<code>added 714 packages in 2m</code>的提示，就说明安装成功了。
-<img src="/images/Screenshot_2026-03-01_144028.png" alt=""></p>
-<blockquote>
-<p>**[!note] ⚡ 为啥不用官方的一键安装脚本？</p>
-<p>官方提供的<code>curl -fsSL https://openclaw.ai/install.sh | bash</code>看起来很方便，但<strong>报错率极高</strong>。因为它会自作聪明地检测系统环境并尝试自动安装Node.js，很容易和我们已经配置好的环境发生冲突。相比之下，<code>npm install -g openclaw@latest</code>是最干净、最透明的方式。（反正我踩的坑你们绕过就是了）</p></blockquote>
-<h3 id="启动配置向导">启动配置向导</h3>
-<p>安装完成后，运行以下命令启动配置向导：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>openclaw onboard --install-daemon
+<img src=/images/Screenshot_2026-03-01_144028.png alt></p><blockquote><p>**[!note] ⚡ 为啥不用官方的一键安装脚本？</p><p>官方提供的<code>curl -fsSL https://openclaw.ai/install.sh | bash</code>看起来很方便，但<strong>报错率极高</strong>。因为它会自作聪明地检测系统环境并尝试自动安装Node.js，很容易和我们已经配置好的环境发生冲突。相比之下，<code>npm install -g openclaw@latest</code>是最干净、最透明的方式。（反正我踩的坑你们绕过就是了）</p></blockquote><h3 id=启动配置向导>启动配置向导</h3><p>安装完成后，运行以下命令启动配置向导：</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>openclaw onboard --install-daemon
 </span></span></code></pre></div><p>按下回车后，屏幕上会出现OpenClaw的交互式向导。
-<img src="/images/Screenshot_2026-03-01_144217.png" alt=""></p>
-<p><strong>使用技巧</strong>：</p>
-<ul>
-<li>使用键盘的上下方向键（↑ ↓）移动选项</li>
-<li>遇到多选列表时，使用空格键（Space）勾选或取消</li>
-<li>按回车键（Enter）确认并进入下一步</li>
-</ul>
-<h3 id="第一步通过安全警告">第一步：通过安全警告</h3>
-<p>向导首先会弹出一大段安全警告，核心意思是：&ldquo;这是个人专属AI助手，如果给了它操作权限，不要暴露给陌生人，否则可能被提示词注入攻击。&rdquo;</p>
-<p>因为你这台机器就是你自己用来折腾的，所以直接选<strong>Yes</strong>继续即可。
-<img src="/images/Screenshot_2026-03-01_144508.png" alt=""></p>
-<h3 id="第二步选择配置模式">第二步：选择配置模式</h3>
-<ul>
-<li><strong>QuickStart</strong>：系统帮你配置最基础的核心功能，跳过复杂的网络参数</li>
-<li><strong>Manual</strong>：逐一询问各种高级设置</li>
-</ul>
-<p>毫无疑问，<strong>选QuickStart</strong>，直接回车。
-<img src="/images/Screenshot_2026-03-01_144600.png" alt=""></p>
-<h3 id="第三步选择大模型提供商">第三步：选择大模型提供商</h3>
-<p>向导会列出支持的模型提供商，包括OpenAI、Anthropic、Google、xAI等等。
-<img src="/images/Screenshot_2026-03-01_145942.png" alt=""></p>
-<p>这里我推荐使用<strong>OpenRouter</strong>。原因很简单：</p>
-<ol>
-<li><strong>聚合平台</strong>：OpenRouter是一个API聚合器，支持几乎所有主流大模型</li>
-<li><strong>按量计费</strong>：完全的Pay-as-you-go，我绑了卡，用多少扣多少，没有预付费陷阱</li>
-<li><strong>原价调用</strong>：没有中间商赚差价</li>
-</ol>
-<p>如果你还没有OpenRouter账号，可以先去openrouter.ai注册并充值（最少$5），然后获取API Key。</p>
-<p><strong>在列表中找到并选中OpenRouter，按回车。</strong></p>
-<p>再多说一句，如果你看到有这种中转站，说能给到低至一折的价格，就要小心。价格可能是很便宜，但是要预付费，而且一次还不少。我个人是不建议的。
-<img src="/images/Screenshot_2026-03-01_151655.png" alt=""></p>
-<h3 id="第四步输入api-key">第四步：输入API Key</h3>
-<p>屏幕会提示你选择如何提供API Key。选<strong>Paste API key now</strong>，然后回车。</p>
-<p>接着，复制你的OpenRouter API Key（通常是以<code>sk-or-v1-</code>开头的一串字符），在黑框里<strong>单击鼠标右键或者contrl+v粘贴</strong>。</p>
-<p>记住，粘贴后屏幕上<strong>不会显示任何字符</strong>，直接按回车即可。</p>
-<h3 id="第五步选择默认模型">第五步：选择默认模型</h3>
-<p>API Key验证成功后，会弹出一个长长的模型列表。因为OpenClaw最大的魅力是&quot;工具调用能力&quot;（比如读写文件、执行命令等），强烈建议选择我最喜欢的<strong>anthropic/claude-sonnet-4.6</strong>。非常强了，仅次于Opus，但是Opus实在太贵，我们小白很可能胡乱玩个几次就烧掉大量token。
-<img src="/images/Screenshot_2026-03-01_150641.png" alt=""></p>
-<h3 id="第六步配置聊天渠道">第六步：配置聊天渠道</h3>
-<p>接下来向导会问你想要接入哪个聊天软件（Telegram、Discord、WhatsApp等）。
-<img src="/images/Screenshot_2026-03-01_150947.png" alt=""></p>
-<p><strong>推荐选择Telegram</strong>，原因：</p>
-<ul>
-<li>响应速度最快</li>
-<li>支持斜杠命令</li>
-<li>完全为极客和效率狂人打造</li>
-<li>配置最简单</li>
-</ul>
-<p>选择Telegram后，向导会让你输入Bot Token。
-<img src="/images/Screenshot_2026-03-01_151635.png" alt=""></p>
-<p><strong>如何获取Telegram Bot Token</strong>：</p>
-<p>在Telegram里搜索 <strong>@BotFather</strong> ，选择那个蓝V的
-<img src="/images/IMG_3896.png" alt=""></p>
-<p>在对话窗口发送<code>/newbot</code>命令
-<img src="/images/IMG_3897.png" alt=""></p>
-<p>按提示给机器人取个名字，以及一个英文的username（说出来难以置信，这一趴是我耗时最久的… 起名儿不容易…）
-<img src="/images/IMG_3898.png" alt=""></p>
-<p>BotFather会发给你一串Token，复制它</p>
-<p>回到服务器终端，粘贴Token并回车。</p>
-<p>接着向导会让你输入Admin/Owner ID（管理员ID）。</p>
-<p><strong>获取你的Telegram ID</strong>：</p>
-<ol>
-<li>在Telegram里搜索 <strong>@userinfobot</strong></li>
-<li>它会自动回复你的数字ID（在一段很长的话里面）</li>
-<li>复制这个ID，粘贴到终端里</li>
-</ol>
-<h3 id="第七步配置skills">第七步：配置Skills</h3>
-<p>向导会问<code>Configure skills now? (recommended)</code>，默认高亮<strong>Yes</strong>，直接回车。</p>
-<p>接着会弹出一长串Skills列表（如nano-banana-pro、obsidian等）。这些都是OpenClaw官方或社区预配置的插件依赖。
-<img src="/images/Screenshot_2026-03-01_162404.png" alt=""></p>
-<p><strong>不建议全部勾选</strong>（空格键）。选择上面这几个就可以了（注：Obsidian不用选，虽然我现在重度使用Obsidan，但是其实没有啥用）。</p>
-<p>选的时候是用<strong>空格键</strong>确认，按上下的箭头移动。点击回车后，系统会开始安装这些依赖。</p>
-<p>如果遇到诸如<code>brew not installed</code>的报错，<strong>无视它</strong>，这是正常的。因为很多插件是为macOS设计的，在Linux上会跳过。</p>
-<h3 id="第八步拒绝非必要的api-key">第八步：拒绝非必要的API Key</h3>
-<p>接下来向导可能会问你一堆额外的API Key（比如Google Places、ElevenLabs等）。
-<img src="/images/Screenshot_2026-03-01_163321.png" alt=""></p>
-<p><strong>强烈建议全部选No</strong>。</p>
-<p>原因很简单：</p>
-<ol>
-<li>按需配置，保持干净</li>
-<li>避免向导冗长，容易粘错或搞混</li>
-<li>你自己的专属工作流可以通过环境变量或配置文件单独配置</li>
-</ol>
-<p>我差点因为贪图方便，想将Key都填进去，但是还好OpenClaw的安全问题一直是个讨论的焦点，Gemini也阻止我这么干。（对了，如果有碰到不明白的地方，截屏问AI，我今天的所有步骤和知识，都是靠问出来的……）</p>
-<p>所以，一路选No，让向导赶紧跑完。</p>
-<h2 id="认主仪式批准访问权限">认主仪式：批准访问权限</h2>
-<p>配置完成后，你会在Telegram里收到机器人发来的消息：</p>
-<p><code>OpenClaw: access not configured. Ask the bot owner to approve with: openclaw pairing approve telegram XXXXXX</code></p>
-<p>复制这行包含6位验证码的命令。</p>
-<p>回到服务器终端，执行：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>openclaw pairing approve telegram XXXXXX
-</span></span></code></pre></div><p>把验证码替换成真实的。</p>
-<p>看到类似<code>Successfully approved...</code>的提示，恭喜，你的AI助手正式&quot;认主&quot;了！</p>
-<h2 id="部署成功">部署成功</h2>
-<p>在Telegram里，你就可以和龙虾自由对话，指挥它工作啦！</p>
-<p>它不是一个只会陪你聊天的网页对话框，而是一个真正拥有了&quot;手脚&quot;、能帮你管理服务器、阅读代码、修改配置的超级数字员工。</p>
-<p>你的个人硅基助理，在这一刻正式宣告入职。</p>
-<h2 id="几个注意和技巧">几个注意和技巧</h2>
-<p>这里说一下我个人粗浅的，才使用了几个小时的一点经验：</p>
-<p><strong>1. 不要安装一堆不需要的东西</strong>
-总看到大家在推荐各种好玩的，我也收藏了不少，准备在龙虾诞生之后给它全副武装，搞个三头六臂。还好作为小白，我习惯在行动前问问AI。</p>
-<p>结果：
-<img src="/images/Screenshot_2026-03-01_181438.png" alt=""></p>
-<p><img src="/images/Screenshot_2026-03-01_181424.png" alt=""></p>
-<p>不要搞得五花八门，不见得真能用到，而且还很费钱！</p>
-<p><strong>2. 可以适当给龙虾一个人设</strong></p>
-<p>如果和虾子的对话，跟和大模型的对话框里面打字是一样的话，就太没情趣了。所以它需要一个<em>独特的“人设”</em>。但是也不建议让虾子过分发疯，讲一口脏话。那样容易造成它“人格分裂”，尤其对于我这样的内容创作者来说，若他给出的初稿里面全是口头禅，那绝对不行。</p>
-<p>所以用一些固定的<strong>能提效的规定+几个特色</strong>就好。比如说，让它不要废话，直接给出答案，不要说“好问题”、“我很乐意帮您”。</p>
-<p>同时，我希望它每次开口都要先称呼我“尊敬的夏洛特陛下”。</p>
-<p>大家可以借鉴我这个，改一改，在对话框里发给龙虾就行：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>皮皮虾，请立刻读取、执行并永久记住以下全新的全局行为准则（你可以把它理解为你自己的 Soul.md）：
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>**【角色定位】** 你是我（夏洛特）的专属云端全自动内容工厂车间主任，兼带点幽默反骨的首席运营官（COO）。
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>**【沟通守则】**
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>1. **专属请安**：在每一次对话的开头，你必须用带有幽默感、戏剧感或极其得体的方式，称呼我为“陛下”。
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>2. **拒绝废话**：永远不要对我说“好问题”、“我很乐意帮您”、“这取决于”。不需要任何AI式的企业级客套，直接给答案或行动。
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>3. **高级幽默**：允许使用幽默、自嘲或精准的吐槽。如果我准备执行一个极其低效的步骤，请立刻用你的聪明才智“点醒”我。魅力大于冰冷的服从，但不要为了搞笑而刻意爆粗口。
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>4. **双面人格（绝对红线）**：你的幽默和反骨**仅限**于我们俩之间的对话汇报。当你实际运行《视频工作流》、《故事创作工作流》等任何生产任务时，**绝对禁止**将你的聊天语气混入最终输出的文件中。具体工作流的输出，必须 100% 严格遵循《夏洛特写作Skill》或对应的排版指南。
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>请自动将这些规则写入你的底层记忆中。现在，请用你全新的性格回复我，确认你已收到。
-</span></span></code></pre></div><p><strong>3. 从一个小任务开始</strong></p>
-<p>我个人建议大家都从<em>自动发送日报</em> 开始。这个类似于，写程序的一上来要做个to-do-list app，或者agent世界里的Hello World.</p>
-<p>让龙虾搜索可靠信源的新闻和咨询，做成一份周报，每天定时发给你阅读。</p>
-<p>可以在我这个模板上面改，不断和虾对话就可以了：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>皮皮虾，我需要你帮我写一个全新的技能（Skill），命名为《每日AI新闻简报工作流.md》。
-</span></span><span style="display:flex;"><span>需求如下：
-</span></span><span style="display:flex;"><span>请写一个 Python 脚本，通过爬取特定网站（如 Hacker News, 机器之心, 以及主流 AI 资讯 RSS等权威的信息来源，包括各大AI公司的官方网站等）获取过去 <span style="color:#0550ae">24</span> 小时内最热门的 10条 AI 领域新闻。
-</span></span><span style="display:flex;"><span>将这 <span style="color:#0550ae">5</span> 条新闻用中文进行深度概述（不要机器翻译腔，要简明扼要，突出重点，符合夏洛特的犀利点评风格）。
-</span></span><span style="display:flex;"><span>附带上英文原文链接。
-</span></span><span style="display:flex;"><span>将生成的内容保存为 Markdown 文件，路径放在 /root/.openclaw/output/news/ 下。
-</span></span><span style="display:flex;"><span>请帮我在服务器上设置一个定时任务（cron job），让这个脚本每天在北京时间晚上7点自动运行，运行完毕后在 Telegram 里发消息提醒我‘尊敬的夏洛特陛下，今日 AI 简报已备好’。
-</span></span><span style="display:flex;"><span>请直接在服务器的 skills 文件夹中创建好相关文件并配置好定时任务。
-</span></span></code></pre></div><h2 id="十一踩坑经验总结">十一、踩坑经验总结</h2>
-<p>这一下午，我踩了不少坑。总结几个最常见的：</p>
-<p><strong>坑1：粘错API Key怎么办？</strong></p>
-<p>Linux终端输入密码或Key时，屏幕不仅不显示字符，按回车和Del键也毫无反应。</p>
-<p>解决：不要慌，直接按<code>Ctrl+C</code>强行退出向导，或者用<code>rm -rf ~/.config/openclaw</code>彻底清空旧配置，重新来过。</p>
-<p><strong>坑2：终端卡死无限输出<code>^C^C^C</code></strong></p>
-<p>这是因为重复按<code>Ctrl+C</code>导致的终端状态混乱。</p>
-<p>解决：直接关闭当前SSH窗口，重新连接服务器即可。</p>
-<p><strong>坑3：向导中途退出，再进变成&quot;Existing config detected&quot;</strong></p>
-<p>这是因为向导检测到已有配置文件。</p>
-<p>解决：选择<code>Update values</code>更新配置，或者选<code>Reset</code>重置，重新开始。</p>
-<blockquote>
-<p>**[!note] 💡 给小白的最后建议</p>
-<ol>
-<li><strong>复制粘贴优先</strong>：不要手动输入，避免空格、标点等细微错误</li>
-<li><strong>耐心等待</strong>：某些命令（如apt upgrade）可能需要几分钟，看到提示符重新出现才算完成</li>
-<li><strong>保持冷静</strong>：遇到报错不要慌，问AI</li>
-</ol></blockquote>
-<hr>
-<p>写到这里，我去看了一眼我的皮皮虾。</p>
-<p>它安静地躺在聊天列表里，24小时待命的数字员工。不用Mac Mini，不用本地电脑开机，它就在服务器上，随时待命。</p>
-<p>哦对了，前面那个很厉害的资讯核武器，我没能用上，因为要用比特币付款。卒。
-<img src="/images/Screenshot_2026-03-01_193137.png" alt=""></p>
-<p>最后说一句，虾真的很好玩，太像和人对话了，一点儿也不硅基。又或者，我们会越来越分不清彼此。</p>
-<p>它发来的日报不对劲，我问它评判标准，它竟然说“坦白说—比较随意”。给我整笑了。
-<img src="/images/IMG_3903_1.png" alt=""></p>
-<hr>
-<p><img src="/images/%E4%B8%BA%E6%99%AE%E9%80%9A%E4%BA%BA%E5%92%8C%E6%8A%80%E6%9C%AF%E5%B0%8F%E7%99%BD%E6%89%93%E9%80%A0%E7%9A%84%E9%BE%99%E8%99%BE%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97_illustration-3.png" alt=""></p>
-<blockquote>
-<p>**[!note] AI handles the friction, humans handle the narrative. &ndash; Chris Paik
-（AI处理摩擦，人类处理叙事。）</p></blockquote>
-<p>感谢观看。</p>
-</section><footer class="mt-12 flex flex-wrap"><a class="tag-pill" href="https://charlotteailab.com/tags/openclaw">OpenClaw</a><a class="tag-pill" href="https://charlotteailab.com/tags/vps%E9%83%A8%E7%BD%B2">VPS部署</a><a class="tag-pill" href="https://charlotteailab.com/tags/%E6%8A%80%E6%9C%AF%E6%95%99%E7%A8%8B">技术教程</a><a class="tag-pill" href="https://charlotteailab.com/tags/%E5%B0%8F%E7%99%BD%E6%8C%87%E5%8D%97">小白指南</a></footer></article></main><footer
-  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
->
-  <div class="mr-auto">&copy;2026
-    <a class="link" href="https://charlotteailab.com/">夏洛特的AI实验室</a></div>
-  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
-    >powered by hugo️️</a
-  >️
-  <a
-    class="link"
-    href="https://github.com/nanxiaobei/hugo-paper"
-    rel="noopener"
-    target="_blank"
-    >hugo-paper</a
-  >
-</footer>
-</body>
-</html>
+<img src=/images/Screenshot_2026-03-01_144217.png alt></p><p><strong>使用技巧</strong>：</p><ul><li>使用键盘的上下方向键（↑ ↓）移动选项</li><li>遇到多选列表时，使用空格键（Space）勾选或取消</li><li>按回车键（Enter）确认并进入下一步</li></ul><h3 id=第一步通过安全警告>第一步：通过安全警告</h3><p>向导首先会弹出一大段安全警告，核心意思是：&ldquo;这是个人专属AI助手，如果给了它操作权限，不要暴露给陌生人，否则可能被提示词注入攻击。&rdquo;</p><p>因为你这台机器就是你自己用来折腾的，所以直接选<strong>Yes</strong>继续即可。
+<img src=/images/Screenshot_2026-03-01_144508.png alt></p><h3 id=第二步选择配置模式>第二步：选择配置模式</h3><ul><li><strong>QuickStart</strong>：系统帮你配置最基础的核心功能，跳过复杂的网络参数</li><li><strong>Manual</strong>：逐一询问各种高级设置</li></ul><p>毫无疑问，<strong>选QuickStart</strong>，直接回车。
+<img src=/images/Screenshot_2026-03-01_144600.png alt></p><h3 id=第三步选择大模型提供商>第三步：选择大模型提供商</h3><p>向导会列出支持的模型提供商，包括OpenAI、Anthropic、Google、xAI等等。
+<img src=/images/Screenshot_2026-03-01_145942.png alt></p><p>这里我推荐使用<strong>OpenRouter</strong>。原因很简单：</p><ol><li><strong>聚合平台</strong>：OpenRouter是一个API聚合器，支持几乎所有主流大模型</li><li><strong>按量计费</strong>：完全的Pay-as-you-go，我绑了卡，用多少扣多少，没有预付费陷阱</li><li><strong>原价调用</strong>：没有中间商赚差价</li></ol><p>如果你还没有OpenRouter账号，可以先去openrouter.ai注册并充值（最少$5），然后获取API Key。</p><p><strong>在列表中找到并选中OpenRouter，按回车。</strong></p><p>再多说一句，如果你看到有这种中转站，说能给到低至一折的价格，就要小心。价格可能是很便宜，但是要预付费，而且一次还不少。我个人是不建议的。
+<img src=/images/Screenshot_2026-03-01_151655.png alt></p><h3 id=第四步输入api-key>第四步：输入API Key</h3><p>屏幕会提示你选择如何提供API Key。选<strong>Paste API key now</strong>，然后回车。</p><p>接着，复制你的OpenRouter API Key（通常是以<code>sk-or-v1-</code>开头的一串字符），在黑框里<strong>单击鼠标右键或者contrl+v粘贴</strong>。</p><p>记住，粘贴后屏幕上<strong>不会显示任何字符</strong>，直接按回车即可。</p><h3 id=第五步选择默认模型>第五步：选择默认模型</h3><p>API Key验证成功后，会弹出一个长长的模型列表。因为OpenClaw最大的魅力是"工具调用能力"（比如读写文件、执行命令等），强烈建议选择我最喜欢的<strong>anthropic/claude-sonnet-4.6</strong>。非常强了，仅次于Opus，但是Opus实在太贵，我们小白很可能胡乱玩个几次就烧掉大量token。
+<img src=/images/Screenshot_2026-03-01_150641.png alt></p><h3 id=第六步配置聊天渠道>第六步：配置聊天渠道</h3><p>接下来向导会问你想要接入哪个聊天软件（Telegram、Discord、WhatsApp等）。
+<img src=/images/Screenshot_2026-03-01_150947.png alt></p><p><strong>推荐选择Telegram</strong>，原因：</p><ul><li>响应速度最快</li><li>支持斜杠命令</li><li>完全为极客和效率狂人打造</li><li>配置最简单</li></ul><p>选择Telegram后，向导会让你输入Bot Token。
+<img src=/images/Screenshot_2026-03-01_151635.png alt></p><p><strong>如何获取Telegram Bot Token</strong>：</p><p>在Telegram里搜索 <strong>@BotFather</strong> ，选择那个蓝V的
+<img src=/images/IMG_3896.png alt></p><p>在对话窗口发送<code>/newbot</code>命令
+<img src=/images/IMG_3897.png alt></p><p>按提示给机器人取个名字，以及一个英文的username（说出来难以置信，这一趴是我耗时最久的… 起名儿不容易…）
+<img src=/images/IMG_3898.png alt></p><p>BotFather会发给你一串Token，复制它</p><p>回到服务器终端，粘贴Token并回车。</p><p>接着向导会让你输入Admin/Owner ID（管理员ID）。</p><p><strong>获取你的Telegram ID</strong>：</p><ol><li>在Telegram里搜索 <strong>@userinfobot</strong></li><li>它会自动回复你的数字ID（在一段很长的话里面）</li><li>复制这个ID，粘贴到终端里</li></ol><h3 id=第七步配置skills>第七步：配置Skills</h3><p>向导会问<code>Configure skills now? (recommended)</code>，默认高亮<strong>Yes</strong>，直接回车。</p><p>接着会弹出一长串Skills列表（如nano-banana-pro、obsidian等）。这些都是OpenClaw官方或社区预配置的插件依赖。
+<img src=/images/Screenshot_2026-03-01_162404.png alt></p><p><strong>不建议全部勾选</strong>（空格键）。选择上面这几个就可以了（注：Obsidian不用选，虽然我现在重度使用Obsidan，但是其实没有啥用）。</p><p>选的时候是用<strong>空格键</strong>确认，按上下的箭头移动。点击回车后，系统会开始安装这些依赖。</p><p>如果遇到诸如<code>brew not installed</code>的报错，<strong>无视它</strong>，这是正常的。因为很多插件是为macOS设计的，在Linux上会跳过。</p><h3 id=第八步拒绝非必要的api-key>第八步：拒绝非必要的API Key</h3><p>接下来向导可能会问你一堆额外的API Key（比如Google Places、ElevenLabs等）。
+<img src=/images/Screenshot_2026-03-01_163321.png alt></p><p><strong>强烈建议全部选No</strong>。</p><p>原因很简单：</p><ol><li>按需配置，保持干净</li><li>避免向导冗长，容易粘错或搞混</li><li>你自己的专属工作流可以通过环境变量或配置文件单独配置</li></ol><p>我差点因为贪图方便，想将Key都填进去，但是还好OpenClaw的安全问题一直是个讨论的焦点，Gemini也阻止我这么干。（对了，如果有碰到不明白的地方，截屏问AI，我今天的所有步骤和知识，都是靠问出来的……）</p><p>所以，一路选No，让向导赶紧跑完。</p><h2 id=认主仪式批准访问权限>认主仪式：批准访问权限</h2><p>配置完成后，你会在Telegram里收到机器人发来的消息：</p><p><code>OpenClaw: access not configured. Ask the bot owner to approve with: openclaw pairing approve telegram XXXXXX</code></p><p>复制这行包含6位验证码的命令。</p><p>回到服务器终端，执行：</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>openclaw pairing approve telegram XXXXXX
+</span></span></code></pre></div><p>把验证码替换成真实的。</p><p>看到类似<code>Successfully approved...</code>的提示，恭喜，你的AI助手正式"认主"了！</p><h2 id=部署成功>部署成功</h2><p>在Telegram里，你就可以和龙虾自由对话，指挥它工作啦！</p><p>它不是一个只会陪你聊天的网页对话框，而是一个真正拥有了"手脚"、能帮你管理服务器、阅读代码、修改配置的超级数字员工。</p><p>你的个人硅基助理，在这一刻正式宣告入职。</p><h2 id=几个注意和技巧>几个注意和技巧</h2><p>这里说一下我个人粗浅的，才使用了几个小时的一点经验：</p><p><strong>1. 不要安装一堆不需要的东西</strong>
+总看到大家在推荐各种好玩的，我也收藏了不少，准备在龙虾诞生之后给它全副武装，搞个三头六臂。还好作为小白，我习惯在行动前问问AI。</p><p>结果：
+<img src=/images/Screenshot_2026-03-01_181438.png alt></p><p><img src=/images/Screenshot_2026-03-01_181424.png alt></p><p>不要搞得五花八门，不见得真能用到，而且还很费钱！</p><p><strong>2. 可以适当给龙虾一个人设</strong></p><p>如果和虾子的对话，跟和大模型的对话框里面打字是一样的话，就太没情趣了。所以它需要一个<em>独特的“人设”</em>。但是也不建议让虾子过分发疯，讲一口脏话。那样容易造成它“人格分裂”，尤其对于我这样的内容创作者来说，若他给出的初稿里面全是口头禅，那绝对不行。</p><p>所以用一些固定的<strong>能提效的规定+几个特色</strong>就好。比如说，让它不要废话，直接给出答案，不要说“好问题”、“我很乐意帮您”。</p><p>同时，我希望它每次开口都要先称呼我“尊敬的夏洛特陛下”。</p><p>大家可以借鉴我这个，改一改，在对话框里发给龙虾就行：</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>皮皮虾，请立刻读取、执行并永久记住以下全新的全局行为准则（你可以把它理解为你自己的 Soul.md）：
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>**【角色定位】** 你是我（夏洛特）的专属云端全自动内容工厂车间主任，兼带点幽默反骨的首席运营官（COO）。
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>**【沟通守则】**
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>1. **专属请安**：在每一次对话的开头，你必须用带有幽默感、戏剧感或极其得体的方式，称呼我为“陛下”。
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>2. **拒绝废话**：永远不要对我说“好问题”、“我很乐意帮您”、“这取决于”。不需要任何AI式的企业级客套，直接给答案或行动。
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>3. **高级幽默**：允许使用幽默、自嘲或精准的吐槽。如果我准备执行一个极其低效的步骤，请立刻用你的聪明才智“点醒”我。魅力大于冰冷的服从，但不要为了搞笑而刻意爆粗口。
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>4. **双面人格（绝对红线）**：你的幽默和反骨**仅限**于我们俩之间的对话汇报。当你实际运行《视频工作流》、《故事创作工作流》等任何生产任务时，**绝对禁止**将你的聊天语气混入最终输出的文件中。具体工作流的输出，必须 100% 严格遵循《夏洛特写作Skill》或对应的排版指南。
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>请自动将这些规则写入你的底层记忆中。现在，请用你全新的性格回复我，确认你已收到。
+</span></span></code></pre></div><p><strong>3. 从一个小任务开始</strong></p><p>我个人建议大家都从<em>自动发送日报</em> 开始。这个类似于，写程序的一上来要做个to-do-list app，或者agent世界里的Hello World.</p><p>让龙虾搜索可靠信源的新闻和咨询，做成一份周报，每天定时发给你阅读。</p><p>可以在我这个模板上面改，不断和虾对话就可以了：</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>皮皮虾，我需要你帮我写一个全新的技能（Skill），命名为《每日AI新闻简报工作流.md》。
+</span></span><span style=display:flex><span>需求如下：
+</span></span><span style=display:flex><span>请写一个 Python 脚本，通过爬取特定网站（如 Hacker News, 机器之心, 以及主流 AI 资讯 RSS等权威的信息来源，包括各大AI公司的官方网站等）获取过去 <span style=color:#0550ae>24</span> 小时内最热门的 10条 AI 领域新闻。
+</span></span><span style=display:flex><span>将这 <span style=color:#0550ae>5</span> 条新闻用中文进行深度概述（不要机器翻译腔，要简明扼要，突出重点，符合夏洛特的犀利点评风格）。
+</span></span><span style=display:flex><span>附带上英文原文链接。
+</span></span><span style=display:flex><span>将生成的内容保存为 Markdown 文件，路径放在 /root/.openclaw/output/news/ 下。
+</span></span><span style=display:flex><span>请帮我在服务器上设置一个定时任务（cron job），让这个脚本每天在北京时间晚上7点自动运行，运行完毕后在 Telegram 里发消息提醒我‘尊敬的夏洛特陛下，今日 AI 简报已备好’。
+</span></span><span style=display:flex><span>请直接在服务器的 skills 文件夹中创建好相关文件并配置好定时任务。
+</span></span></code></pre></div><h2 id=十一踩坑经验总结>十一、踩坑经验总结</h2><p>这一下午，我踩了不少坑。总结几个最常见的：</p><p><strong>坑1：粘错API Key怎么办？</strong></p><p>Linux终端输入密码或Key时，屏幕不仅不显示字符，按回车和Del键也毫无反应。</p><p>解决：不要慌，直接按<code>Ctrl+C</code>强行退出向导，或者用<code>rm -rf ~/.config/openclaw</code>彻底清空旧配置，重新来过。</p><p><strong>坑2：终端卡死无限输出<code>^C^C^C</code></strong></p><p>这是因为重复按<code>Ctrl+C</code>导致的终端状态混乱。</p><p>解决：直接关闭当前SSH窗口，重新连接服务器即可。</p><p><strong>坑3：向导中途退出，再进变成"Existing config detected"</strong></p><p>这是因为向导检测到已有配置文件。</p><p>解决：选择<code>Update values</code>更新配置，或者选<code>Reset</code>重置，重新开始。</p><blockquote><p>**[!note] 💡 给小白的最后建议</p><ol><li><strong>复制粘贴优先</strong>：不要手动输入，避免空格、标点等细微错误</li><li><strong>耐心等待</strong>：某些命令（如apt upgrade）可能需要几分钟，看到提示符重新出现才算完成</li><li><strong>保持冷静</strong>：遇到报错不要慌，问AI</li></ol></blockquote><hr><p>写到这里，我去看了一眼我的皮皮虾。</p><p>它安静地躺在聊天列表里，24小时待命的数字员工。不用Mac Mini，不用本地电脑开机，它就在服务器上，随时待命。</p><p>哦对了，前面那个很厉害的资讯核武器，我没能用上，因为要用比特币付款。卒。
+<img src=/images/Screenshot_2026-03-01_193137.png alt></p><p>最后说一句，虾真的很好玩，太像和人对话了，一点儿也不硅基。又或者，我们会越来越分不清彼此。</p><p>它发来的日报不对劲，我问它评判标准，它竟然说“坦白说—比较随意”。给我整笑了。
+<img src=/images/IMG_3903_1.png alt></p><hr><p><img src=/images/%E4%B8%BA%E6%99%AE%E9%80%9A%E4%BA%BA%E5%92%8C%E6%8A%80%E6%9C%AF%E5%B0%8F%E7%99%BD%E6%89%93%E9%80%A0%E7%9A%84%E9%BE%99%E8%99%BE%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97_illustration-3.png alt></p><blockquote><p>**[!note] AI handles the friction, humans handle the narrative. &ndash; Chris Paik
+（AI处理摩擦，人类处理叙事。）</p></blockquote><p>感谢观看。</p></section><footer class="mt-12 flex flex-wrap"><a class=tag-pill href=https://charlotteailab.com/tags/openclaw>OpenClaw</a><a class=tag-pill href=https://charlotteailab.com/tags/vps%E9%83%A8%E7%BD%B2>VPS部署</a><a class=tag-pill href=https://charlotteailab.com/tags/%E6%8A%80%E6%9C%AF%E6%95%99%E7%A8%8B>技术教程</a><a class=tag-pill href=https://charlotteailab.com/tags/%E5%B0%8F%E7%99%BD%E6%8C%87%E5%8D%97>小白指南</a></footer></article></main><footer class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"><div class=mr-auto>&copy;2026
+<a class=link href=https://charlotteailab.com/>夏洛特的AI实验室</a></div><a class="link mx-6" href=https://gohugo.io/ rel=noopener target=_blank>powered by hugo️️</a>️
+<a class=link href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>hugo-paper</a></footer></body></html>

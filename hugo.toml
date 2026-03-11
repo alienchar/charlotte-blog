@@ -57,6 +57,7 @@ defaultContentLanguage = "zh"
       weight = 3
 
 [params]
+  env = "production"
   description = "夏洛特的AI实验室 — AI赛道跨平台内容创作者，用AI实现时间自由"
   keywords = ["AI", "OpenClaw", "龙虾", "人工智能", "AI工具", "内容创作", "效率"]
   images = ["https://charlotteailab.com/avatar.png"]

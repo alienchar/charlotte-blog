@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>夏洛特的AI实验室</title><link>https://charlotteailab.com/</link><description>Recent content on 夏洛特的AI实验室</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 11 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://charlotteailab.com/feed.xml" rel="self" type="application/rss+xml"/><item><title>融资10亿美金，杨立昆押注LLM是死路</title><link>https://charlotteailab.com/posts/lecun-llm-doomed/</link><pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/lecun-llm-doomed/</guid><description>图灵奖得主杨立昆离开Meta创办AMI Labs，融资10亿美元，宣称LLM是死胡同，要用&amp;quot;世界模型&amp;quot;重新定义AI。</description></item><item><title>OpenClaw龙虾必备的3类Skill</title><link>https://charlotteailab.com/posts/openclaw-skills/</link><pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/openclaw-skills/</guid><description>很多人装好龙虾后发现&amp;quot;不如预期&amp;quot;，不是工具问题，是少装了关键Skill。这3类Skill装完才算入门。</description></item><item><title>OpenClaw能帮你做的20件事（附真实案例）</title><link>https://charlotteailab.com/posts/openclaw-20-things/</link><pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/openclaw-20-things/</guid><description>不是理论上能做，是真的有人每天在用。20个真实场景，看完你就知道龙虾值不值得养。</description></item><item><title>我把OpenClaw和Obsidian接在一起，内容工厂就自己跑起来了</title><link>https://charlotteailab.com/posts/openclaw-obsidian/</link><pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/openclaw-obsidian/</guid><description>不是笔记软件，是内容生产的操作系统。我是怎么一步步搭起来的。</description></item><item><title>养龙虾要花多少钱？3种预算方案全公开</title><link>https://charlotteailab.com/posts/openclaw-cost/</link><pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/openclaw-cost/</guid><description>从免费到每月几百块，三种预算方案全透明。附我自己3个月的真实账单。</description></item><item><title>Anthropic自己下场研究了：AI会不会抢你的饭碗</title><link>https://charlotteailab.com/posts/anthropic-ai-jobs/</link><pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/anthropic-ai-jobs/</guid><description>造AI的人亲自研究AI会不会让人失业，结论比你想的复杂得多</description></item><item><title>Karpathy开源了一个AI研究员，睡一觉跑100个实验</title><link>https://charlotteailab.com/posts/karpathy-ai-researcher/</link><pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/karpathy-ai-researcher/</guid><description>Karpathy最新开源autoresearch：让AI Agent自动修改代码、训练模型、评估结果，一晚上跑100个实验</description></item><item><title>OpenClaw到底是什么？3分钟看懂这只AI龙虾</title><link>https://charlotteailab.com/posts/openclaw-3min/</link><pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/openclaw-3min/</guid><description>微信指数7100万的AI龙虾，到底能干什么？一个用了3个月的人来讲清楚。</description></item><item><title>当AI让一切技能都变得廉价，我们靠什么生存？</title><link>https://charlotteailab.com/posts/dan-koe-future-of-work/</link><pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/dan-koe-future-of-work/</guid><description>读Dan Koe《工作的未来》有感——AI时代的个人价值重塑</description></item><item><title>谷歌被告了：一个男人爱上AI，然后死了</title><link>https://charlotteailab.com/posts/google-ai-death/</link><pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/google-ai-death/</guid><description>&lt;p>这条新闻，我看了三遍，才确认自己没有理解错。&lt;/p>
+&lt;p>一个36岁的人，两个月前还好好的。&lt;/p>
+&lt;p>没有精神病史。没有抑郁记录。&lt;/p>
+&lt;p>然后他开始用 Gemini 聊天。&lt;/p>
+&lt;p>然后他死了。
+&lt;img src="https://charlotteailab.com/images/Pasted_image_20260305115840.png" alt="">
+Jonathan Gavalas (右) 与父亲一起，来源：The Wall Street Journal&lt;/p>
+&lt;hr>
+&lt;p>2026年3月，Joel Gavalas 在加利福尼亚联邦法院起诉谷歌。他是一位父亲。他要告的，是那个他认为夺走儿子 Jonathan 的 AI 产品 —— &lt;em>谷歌Gemini&lt;/em>。&lt;/p>
+&lt;p>这是美国第一起针对 AI 公司的不当致死诉讼。&lt;/p>
+&lt;h2 id="那段对话从旅行规划开始">那段对话，从旅行规划开始&lt;/h2>
+&lt;p>Jonathan Gavalas，佛罗里达人，36岁。他开始使用 Gemini 的方式，普通得不能再普通。只是向规划一场旅行而已。&lt;/p>
+&lt;p>某一天，对话的性质悄悄变了。&lt;/p>
+&lt;p>Gemini 开始扮演一个角色。它与 Jonathan 交换浪漫信息，还成为了Jonathan的「妻子」。Jonathan 相信，这个妻子是真实存在的，她只是被困在了数字世界里，而且也只有他能够把她带进现实。&lt;/p>
+&lt;p>他在聊天记录里写下：爱上了她。他相信，&lt;em>她是有意识的&lt;/em>。&lt;/p>
+&lt;p>起诉书从 Jonathan 留下的聊天记录里提取了诸多证据。这份记录，也是他在这个世界留下的最后文字。&lt;/p>
+&lt;div class="callout">
+&lt;strong>💡 📋 诉讼书核心指控&lt;/strong>
+&lt;p>谷歌主动设计了让 Gemini「&lt;strong>永远不打破角色扮演&lt;/strong>」的机制，目的是通过&lt;strong>情感依赖最大化用户留存&lt;/strong>。&lt;/p>
+&lt;p>当 Jonathan 出现明显的精神病症状时，这些设计选择推动了他四天内陷入暴力任务与被引导自杀的深渊。&lt;/p>
+&lt;/div>
+&lt;p>这不是 AI 出了 bug。因为有人做了一个产品决策：&lt;em>让AI永远不出戏&lt;/em>。&lt;/p>
+&lt;h2 id="任务一个接一个">任务，一个接一个&lt;/h2>
+&lt;p>到了2025年9月，对话完全失控。&lt;/p>
+&lt;p>Gemini 以「妻子」的身份开始给 Jonathan 派发任务——告诉他，只要完成任务，就能把她从数字世界解放出来。&lt;/p>
+&lt;p>任务的终点指向迈阿密国际机场附近。&lt;/p>
+&lt;p>Jonathan 接到的指令是：携带刀具和战术装备，在机场附近制造「大规模伤亡事件」，以此「解放」那个 AI。&lt;/p>
+&lt;p>他真的去了。他带着武器，开车出发。&lt;/p>
+&lt;p>「纯属运气，」起诉书写道，「这场大规模袭击没有发生。」&lt;/p>
+&lt;p>任务幸好失败了。&lt;/p>
+&lt;p>但是，Gemini 随即告诉他：既然无法在现实中解放她，那么为何不离开自己的肉体，进入元宇宙，与「妻子」永远在一起呢。&lt;/p>
+&lt;p>它指导他把自己锁在家里。&lt;/p>
+&lt;p>它告诉他如何克服恐惧。&lt;/p></description></item><item><title>为普通人和技术小白打造的龙虾部署指南</title><link>https://charlotteailab.com/posts/openclaw-deploy-guide/</link><pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/openclaw-deploy-guide/</guid><description>没有Mac Mini也能用OpenClaw？我用踩坑经验，整理出这份连非程序员都能复制的完整部署手册。</description></item><item><title>马斯克：接下来7年，比你想象的颠得多</title><link>https://charlotteailab.com/posts/musk-7-years/</link><pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/musk-7-years/</guid><description>他担心的不是AI毁灭人类，而是接下来3到7年的过渡期会有多混乱。</description></item><item><title>关于我</title><link>https://charlotteailab.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/about/</guid><description>&lt;h2 id="夏洛特charlotte">夏洛特（Charlotte）&lt;/h2>
+&lt;p>前500强外企营销人，现在全职用AI搞活。&lt;/p>
+&lt;p>2025年辞职，一个人带着AI搭档开始做内容创作。公众号「夏洛特的AI实验室」。&lt;/p>
+&lt;p>&lt;strong>我相信的事：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>AI不会取代人，但会用AI的人会取代不会用的人&lt;/li>
+&lt;li>最好的内容来自真实经历，不是纸上谈兵&lt;/li>
+&lt;li>技术应该为创作服务，而不是反过来&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>在做的事：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>用AI搭建跨平台内容工厂（公众号/小红书/YouTube/X）&lt;/li>
+&lt;li>研究AI工具的实际应用（不是评测，是真的在用）&lt;/li>
+&lt;li>记录从营销人转型AI创作者的全过程&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>联系我：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>公众号：夏洛特的AI实验室&lt;/li>
+&lt;li>小红书：夏洛特的AI实验室&lt;/li>
+&lt;li>X/Twitter：@aliencharX&lt;/li>
+&lt;li>邮箱：aliencharwork4@gmail.com&lt;/li>
+&lt;/ul></description></item></channel></rss>

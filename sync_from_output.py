@@ -114,6 +114,61 @@ def convert_images(body, src_dir):
     
     return body, copied
 
+def generate_faq(title, body, tags):
+    """GEO: Auto-generate FAQ from article content for AI search engines"""
+    faqs = []
+    
+    # Extract questions from headings (## 开头的疑问句)
+    for line in body.split('\n'):
+        line = line.strip()
+        if line.startswith('#') and ('？' in line or '?' in line):
+            q = re.sub(r'^#+\s*', '', line).strip()
+            # Find the next paragraph as answer
+            idx = body.find(line)
+            remaining = body[idx + len(line):]
+            answer_lines = []
+            for aline in remaining.split('\n'):
+                aline = aline.strip()
+                if not aline or aline.startswith('#'):
+                    break
+                if not aline.startswith('!') and not aline.startswith('>'):
+                    answer_lines.append(aline)
+            if answer_lines:
+                a = ' '.join(answer_lines[:3])[:300]
+                faqs.append({"q": q, "a": a})
+    
+    # Generate key questions from title if not enough FAQs
+    if len(faqs) < 2:
+        # Basic questions based on title keywords
+        base_q = title.replace('，', '').replace('。', '')
+        faqs.append({"q": f"什么是{base_q}？" if len(base_q) < 10 else f"{base_q}是什么意思？",
+                      "a": ""})  # Will be filled by description
+    
+    # Only return FAQs that have answers
+    return [f for f in faqs if f.get("a")][:5]
+
+def make_geo_description(title, summary, body):
+    """GEO: Create AI-friendly description as a complete answer sentence"""
+    if summary:
+        # Ensure it reads as a complete statement, not marketing copy
+        desc = summary
+        if not desc.endswith(('。', '！', '？', '.', '!', '?')):
+            desc += '。'
+        return desc[:200]
+    
+    # Extract first substantive paragraph
+    for line in body.split('\n'):
+        line = line.strip()
+        if (line and not line.startswith('#') and not line.startswith('!')
+            and not line.startswith('>') and not line.startswith('-')
+            and not line.startswith('```') and len(line) > 40):
+            desc = line[:200]
+            if not desc.endswith(('。', '！', '？', '.', '!', '?')):
+                desc += '。'
+            return desc
+    
+    return f"{title}。"
+
 def get_existing_titles():
     """Get titles of existing blog posts"""
     titles = set()
@@ -193,15 +248,11 @@ def main():
                     print(f"  📷 封面: {cover_fname}")
                     break
         
-        # SEO: generate description from summary or first paragraph
-        description = summary
-        if not description:
-            # Take first meaningful paragraph (skip images, headers)
-            for line in body.split('\n'):
-                line = line.strip()
-                if line and not line.startswith('#') and not line.startswith('!') and not line.startswith('>') and len(line) > 30:
-                    description = line[:160]
-                    break
+        # GEO: generate AI-friendly description (complete answer sentence)
+        description = make_geo_description(title, summary, body)
+        
+        # GEO: auto-generate FAQ for AI search engines
+        faq_items = generate_faq(title, body, tags)
         
         # SEO: generate keywords from tags + title
         keywords = list(tags) if tags else []
@@ -239,6 +290,14 @@ def main():
                 f.write(f"images: ['{og_image}']\n")
             f.write(f"readingTime: {reading_time}\n")
             f.write(f"slug: '{slug}'\n")
+            # GEO: FAQ structured data for AI search engines
+            if faq_items:
+                f.write("faq:\n")
+                for faq in faq_items:
+                    q = faq['q'].replace("'", "''")
+                    a = faq['a'].replace("'", "''")
+                    f.write(f"  - q: '{q}'\n")
+                    f.write(f"    a: '{a}'\n")
             f.write("---\n\n")
             f.write(body)
             f.write("\n")
