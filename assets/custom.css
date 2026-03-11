@@ -473,6 +473,33 @@ html.dark p, html.dark li, html.dark span {
   color: #ede9e0 !important;
 }
 
+/* Dark mode article cards */
+.dark .article-card,
+html.dark .article-card {
+  background: #312e2a !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.dark .article-card:hover,
+html.dark .article-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3), 0 8px 32px rgba(0,0,0,0.2);
+}
+
+.dark .article-card .card-title,
+html.dark .article-card .card-title {
+  color: #ede9e0 !important;
+}
+
+.dark .article-card .card-summary,
+html.dark .article-card .card-summary {
+  color: #a8a49c !important;
+}
+
+.dark .article-card .card-date,
+html.dark .article-card .card-date {
+  color: #8a8680 !important;
+}
+
 .dark blockquote, .dark .prose blockquote {
   background: #332f2b !important;
   border-left-color: #d4b87a !important;
