@@ -13,7 +13,6 @@ faq:
 images: ["/images/elon_cover_sample.png"]
 ---
 
-![](/images/elon_cover_sample.png)
 
 我最近反复看了一期对话。
 

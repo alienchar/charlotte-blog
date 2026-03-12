@@ -13,7 +13,6 @@ faq:
 images: ["/images/cover_dan-koe-future-of-work_en.png"]
 ---
 
-![](/images/当AI让一切技能都变得廉价_我们靠什么生存_cover.png)
 ## This Question Hit Me Hard
 
 "Why are you still watching this video? You have ChatGPT, you have Claude — you could just ask AI to summarize this for you."

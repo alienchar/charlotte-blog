@@ -13,7 +13,6 @@ faq:
 images: ["/images/cover_openclaw-obsidian_en.png"]
 ---
 
-![](/images/oc_cover.png)
 
 I recently read an article about someone who turned Obsidian into a factory — 468 git commits, 85 AI Skills, 7 platforms synced for distribution, one person producing the output of a ten-person team.
 

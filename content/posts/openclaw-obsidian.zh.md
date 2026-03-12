@@ -13,7 +13,6 @@ faq:
 images: ["/images/oc_cover.png"]
 ---
 
-![](/images/oc_cover.png)
 
 最近看到一篇文章，他把Obsidian跑成了一座工厂——468次git commit，85个AI Skills，7个平台同步分发，一个人干出十人团队的产出。
 

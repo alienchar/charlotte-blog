@@ -229,23 +229,32 @@ def main():
         cover = fm.get('cover', '')
         cover_slug = ''
         if cover and not cover.startswith('http'):
-            # Search multiple locations for cover image
-            search_paths = [
+            # Priority 1: search archive/images/标题/ directory (most specific)
+            archive_dir = os.path.join(VAULT, "archive", "images")
+            search_paths = []
+            if os.path.exists(archive_dir):
+                # Match by title (exact folder name = article title from source filename)
+                src_title = os.path.splitext(os.path.basename(src_path))[0]
+                title_dir = os.path.join(archive_dir, src_title)
+                if os.path.exists(title_dir):
+                    search_paths.append(os.path.join(title_dir, cover))
+                # Also try all subdirectories (fallback)
+                for d in sorted(os.listdir(archive_dir)):
+                    candidate = os.path.join(archive_dir, d, cover)
+                    if candidate not in search_paths:
+                        search_paths.append(candidate)
+            # Priority 2: source directory and vault root
+            search_paths.extend([
                 os.path.join(src_dir, cover),
                 os.path.join(VAULT, cover),
-            ]
-            # Also search archive/images/ subdirectories
-            archive_dir = os.path.join(VAULT, "archive", "images")
-            if os.path.exists(archive_dir):
-                for d in os.listdir(archive_dir):
-                    search_paths.append(os.path.join(archive_dir, d, cover))
+            ])
             
             for cover_path in search_paths:
                 if os.path.exists(cover_path):
                     cover_fname = f"cover_{slug}.png"
                     shutil.copy2(cover_path, os.path.join(IMAGES, cover_fname))
                     cover_slug = f"/images/{cover_fname}"
-                    print(f"  📷 封面: {cover_fname}")
+                    print(f"  📷 封面: {cover_fname} ← {cover_path}")
                     break
         
         # GEO: generate AI-friendly description (complete answer sentence)

@@ -13,7 +13,6 @@ faq:
 images: ["/images/cover_musk-7-years_en.png"]
 ---
 
-![](/images/elon_cover_sample.png)
 
 I've been rewatching a conversation lately.
 

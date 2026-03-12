@@ -11,7 +11,6 @@ readingTime: 9
 slug: 'ai'
 ---
 
-![](/images/cover.png)
 
 你有没有想过，有一天你跟AI说一句"帮我买个充电宝"，它就真的下单了？
 
