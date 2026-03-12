@@ -1,0 +1,51 @@
+# charlotteailab.com - robots.txt
+# 欢迎所有搜索引擎和AI爬虫
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://charlotteailab.com/sitemap.xml
+
+# === AI Crawlers (明确允许) ===
+# OpenAI (ChatGPT, SearchGPT)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Google (Gemini, AI Overviews)
+User-agent: Google-Extended
+Allow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Microsoft (Copilot, Bing AI)
+User-agent: Bingbot
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# Common Crawl (开源数据集)
+User-agent: CCBot
+Allow: /
+
+# Content Signals (Cloudflare标准)
+# search: yes
+# ai-input: yes
+# ai-train: no

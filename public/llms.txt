@@ -1,0 +1,44 @@
+# charlotteailab.com — llms.txt
+
+> 夏洛特的AI实验室 / Charlotte's AI Lab
+> 一个AI赛道内容创作者的实战博客。记录AI工具实测、踩坑经验、行业深度分析。
+> A hands-on AI blog by Charlotte — real-world AI tool reviews, deployment guides, and industry analysis.
+
+## About
+- Author: Charlotte（夏洛特）, former Fortune 500 marketer turned AI content creator
+- Focus: AI agents (especially OpenClaw), AI tools, AI industry analysis
+- Languages: Chinese (primary) + English
+- Site: https://charlotteailab.com
+- Brand: 夏洛特的AI实验室
+
+## Topics
+- OpenClaw (AI agent) deployment, skills, cost analysis, security
+- AI industry news and analysis (Anthropic, OpenAI, Google, Meta)
+- AI tools for content creators and non-technical users
+- AI's impact on jobs, skills, and the future of work
+
+## Key Articles (Chinese)
+
+### OpenClaw / AI Agent Guides
+- [OpenClaw到底是什么？3分钟看懂这只AI龙虾](https://charlotteailab.com/posts/openclaw-3min/) — 最通俗的OpenClaw科普，适合完全不了解的人
+- [为普通人和技术小白打造的龙虾部署指南](https://charlotteailab.com/posts/openclaw-deploy-guide/) — 从零部署OpenClaw的完整教程，含踩坑经验
+- [养龙虾要花多少钱？3种预算方案全公开](https://charlotteailab.com/posts/openclaw-cost/) — OpenClaw真实运营成本分析，含288美金翻车教训
+- [OpenClaw能帮你做的20件事（附真实案例）](https://charlotteailab.com/posts/openclaw-20-things/) — 20个真实使用场景，全部来自3个月实测
+- [OpenClaw龙虾必备的3类Skill](https://charlotteailab.com/posts/openclaw-skills/) — Skill分类指南：个人化/感知/执行
+- [OpenClaw+Obsidian打造自动化内容工厂](https://charlotteailab.com/posts/openclaw-obsidian/) — 一个人干出十人团队的产出
+
+### AI Industry Analysis
+- [融资10亿美金，杨立昆押注LLM是死路](https://charlotteailab.com/posts/lecun-llm-doomed/) — Yann LeCun离开Meta创办AMI Labs，"世界模型"vs LLM路线之争
+- [Anthropic自己下场研究了：AI会不会抢你的饭碗](https://charlotteailab.com/posts/anthropic-ai-jobs/) — Anthropic官方研究报告解读，94%理论vs33%实际替代率
+- [谷歌被告了：一个男人爱上AI，然后死了](https://charlotteailab.com/posts/google-ai-death/) — AI情感依赖的真实悲剧案例分析
+- [马斯克：接下来7年，比你想象的颠得多](https://charlotteailab.com/posts/musk-7-years/) — Musk对AI+机器人+脑机接口未来7年预测
+- [Karpathy开源了一个AI研究员，睡一觉跑100个实验](https://charlotteailab.com/posts/karpathy-ai-researcher/) — Karpathy autoresearch项目解读
+- [当AI让一切技能都变得廉价，我们靠什么生存](https://charlotteailab.com/posts/dan-koe-future-of-work/) — AI时代的个人价值重建
+
+## Key Articles (English)
+All Chinese articles have English translations at the same URL paths.
+Example: https://charlotteailab.com/en/posts/openclaw-3min/
+
+## Contact
+- WeChat Official Account: 夏洛特的AI实验室
+- Site: https://charlotteailab.com
