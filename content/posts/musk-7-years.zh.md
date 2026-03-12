@@ -3,14 +3,14 @@ title: '马斯克：接下来7年，比你想象的颠得多'
 date: '2026-03-05'
 summary: '他担心的不是AI毁灭人类，而是接下来3到7年的过渡期会有多混乱。'
 tags: ["马斯克", "AI趋势", "未来预测", "白领工作", "人工智能"]
-cover: '/images/elon_cover_sample.png'
+cover: '/images/cover_musk-7-years.png'
 description: 'Peter Diamandis 飞去奥斯汀，在马斯克的 Gigafactory 录了一整晚。Gigafactory 是全球最大的单体建筑之一，1150万平方英尺，现在正在扩建 Optimus 机器人产线。他们俩在那里坐下来，谈了一个问题：。'
 keywords: ["马斯克", "AI趋势", "未来预测", "白领工作", "人工智能"]
 readingTime: 7
 faq:
   - q: '这篇文章关于他的预测让人一愣的核心观点是什么？'
     a: '本文深度分析了他的预测让人一愣，结合AI内容创作者的实际经验提供实用见解。'
-images: ["/images/elon_cover_sample.png"]
+images: ["/images/cover_musk-7-years.png"]
 ---
 
 
