@@ -76,7 +76,7 @@ def find_missing_translations():
 
 def translate_article(slug, zh_path):
     """Translate a single article using Anthropic Opus API directly"""
-    import anthropic
+    import openai
 
     print(f"\n  🔄 翻译: {slug}")
 
@@ -117,29 +117,36 @@ def translate_article(slug, zh_path):
 {zh_content}"""
 
     try:
-        # Read API key from OpenClaw auth profiles
-        api_key = os.environ.get("ANTHROPIC_API_KEY")
+        import openai
+        
+        # Use OpenRouter to call Opus (OpenClaw's Anthropic token is OAuth, not REST API)
+        api_key = os.environ.get("OPENROUTER_API_KEY")
         if not api_key:
             auth_file = os.path.expanduser("~/.openclaw/agents/main/agent/auth-profiles.json")
             if os.path.exists(auth_file):
                 with open(auth_file) as af:
                     auth = json.load(af)
-                profile = auth.get("profiles", {}).get("anthropic:manual", {})
-                api_key = profile.get("token") or profile.get("key")
+                profile = auth.get("profiles", {}).get("openrouter:default", {})
+                api_key = profile.get("key")
         
         if not api_key:
-            print("  ❌ 未找到Anthropic API key")
+            print("  ❌ 未找到OpenRouter API key")
             return None
 
-        client = anthropic.Anthropic(api_key=api_key)
-        response = client.messages.create(
-            model="claude-opus-4-6",
+        client = openai.OpenAI(
+            base_url="https://openrouter.ai/api/v1",
+            api_key=api_key
+        )
+        response = client.chat.completions.create(
+            model="anthropic/claude-opus-4-6",
             max_tokens=8000,
-            system=TRANSLATION_SYSTEM_PROMPT,
-            messages=[{"role": "user", "content": prompt}]
+            messages=[
+                {"role": "system", "content": TRANSLATION_SYSTEM_PROMPT},
+                {"role": "user", "content": prompt}
+            ]
         )
 
-        en_content = response.content[0].text
+        en_content = response.choices[0].message.content
         
         # Save English version
         en_path = os.path.join(POSTS, f"{slug}.en.md")
