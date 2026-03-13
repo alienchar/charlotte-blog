@@ -322,6 +322,46 @@ def main():
         print(f"\n⚠️ {len(missing_en)}篇文章缺少英文版: {', '.join(sorted(missing_en))}")
         print("  请运行翻译子agent生成英文版")
 
+    # Check for English posts using Chinese covers (missing _en cover)
+    en_cover_fixes = 0
+    for slug in sorted(en_posts):
+        en_path = os.path.join(POSTS, f"{slug}.en.md")
+        if not os.path.exists(en_path):
+            continue
+        en_fm, _ = parse_front_matter(en_path)
+        cover_ref = en_fm.get('cover', '')
+        
+        # Check if EN post references a CN cover (no _en suffix)
+        en_cover_file = os.path.join(IMAGES, f"cover_{slug}_en.png")
+        cn_cover_file = os.path.join(IMAGES, f"cover_{slug}.png")
+        
+        if os.path.exists(en_cover_file):
+            # EN cover exists — make sure post references it
+            expected_ref = f"/images/cover_{slug}_en.png"
+            if cover_ref != expected_ref:
+                # Update frontmatter to point to EN cover
+                with open(en_path, 'r') as f:
+                    content = f.read()
+                if cover_ref:
+                    content = content.replace(f"cover: '{cover_ref}'", f"cover: '{expected_ref}'")
+                    content = content.replace(f"images: ['{cover_ref}']", f"images: ['{expected_ref}']")
+                else:
+                    # Insert cover after date line
+                    content = content.replace("---\n\n", f"cover: '{expected_ref}'\nimages: ['{expected_ref}']\n---\n\n", 1)
+                with open(en_path, 'w') as f:
+                    f.write(content)
+                print(f"  🔗 {slug}.en.md → 已更新为英文封面引用")
+                en_cover_fixes += 1
+        elif os.path.exists(cn_cover_file):
+            # CN cover exists but no EN cover — flag it
+            en_title = en_fm.get('title', slug)
+            print(f"  ⚠️ {slug}: 英文版缺少独立封面（当前复用中文封面）")
+            print(f"     请运行: python3 /root/.openclaw/workspace/obsidian-bridge/make_cover_en.py \\")
+            print(f"       --illus {cn_cover_file} --title \"...\" --output {en_cover_file}")
+    
+    if en_cover_fixes:
+        print(f"\n📷 已修复 {en_cover_fixes} 篇英文文章的封面引用")
+
     if new_count == 0:
         print("✅ 无新文章需要同步")
         return

@@ -5,8 +5,8 @@ description: "I've been asked this question a hundred times. Today I'm settling 
 summary: "I've been asked this question a hundred times. Today I'm settling it once and for all — 5 core differences with real-world use cases."
 tags: ["OpenClaw", "ChatGPT", "AI comparison", "AI agents", "AI basics"]
 keywords: ["OpenClaw", "ChatGPT", "AI comparison", "AI agents", "AI basics"]
-cover: '/images/cover_chatgpt.png'
-images: ['/images/cover_chatgpt.png']
+cover: '/images/cover_chatgpt_en.png'
+images: ['/images/cover_chatgpt_en.png']
 readingTime: 12
 slug: 'chatgpt'
 ---
