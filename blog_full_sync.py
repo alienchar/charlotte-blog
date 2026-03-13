@@ -117,7 +117,21 @@ def translate_article(slug, zh_path):
 {zh_content}"""
 
     try:
-        client = anthropic.Anthropic()
+        # Read API key from OpenClaw auth profiles
+        api_key = os.environ.get("ANTHROPIC_API_KEY")
+        if not api_key:
+            auth_file = os.path.expanduser("~/.openclaw/agents/main/agent/auth-profiles.json")
+            if os.path.exists(auth_file):
+                with open(auth_file) as af:
+                    auth = json.load(af)
+                profile = auth.get("profiles", {}).get("anthropic:manual", {})
+                api_key = profile.get("token") or profile.get("key")
+        
+        if not api_key:
+            print("  ❌ 未找到Anthropic API key")
+            return None
+
+        client = anthropic.Anthropic(api_key=api_key)
         response = client.messages.create(
             model="claude-opus-4-6",
             max_tokens=8000,
