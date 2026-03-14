@@ -233,16 +233,21 @@ def main():
             archive_dir = os.path.join(VAULT, "archive", "images")
             search_paths = []
             if os.path.exists(archive_dir):
-                # Match by title (exact folder name = article title from source filename)
+                # Match by title (exact folder name = article title from YAML, or source filename)
                 src_title = os.path.splitext(os.path.basename(src_path))[0]
-                title_dir = os.path.join(archive_dir, src_title)
-                if os.path.exists(title_dir):
-                    search_paths.append(os.path.join(title_dir, cover))
-                # Also try all subdirectories (fallback)
+                # Try YAML title first (most accurate), then filename
+                for candidate_title in [title, src_title]:
+                    title_dir = os.path.join(archive_dir, candidate_title)
+                    if os.path.exists(title_dir):
+                        search_paths.append(os.path.join(title_dir, cover))
+                        break
+                # Fallback: search subdirectories, but ONLY if title contains the directory name
+                # (prevents matching wrong article's cover.png)
                 for d in sorted(os.listdir(archive_dir)):
-                    candidate = os.path.join(archive_dir, d, cover)
-                    if candidate not in search_paths:
-                        search_paths.append(candidate)
+                    if d in title or title in d:
+                        candidate = os.path.join(archive_dir, d, cover)
+                        if candidate not in search_paths:
+                            search_paths.append(candidate)
             # Priority 2: source directory and vault root
             search_paths.extend([
                 os.path.join(src_dir, cover),
