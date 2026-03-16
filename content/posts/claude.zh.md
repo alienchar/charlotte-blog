@@ -4,12 +4,12 @@ date: 2026-03-15
 description: '3月13号，Anthropic正式宣布：Claude Opus 4.6和Sonnet 4.6的100万token上下文窗口全面开放。不是beta，不是waitlist，不是"部分用户灰度"——是GA，所有人都能用。'
 tags: ["Claude", "AI", "长上下文", "Anthropic"]
 keywords: ["Claude", "AI", "长上下文", "Anthropic"]
-images: ['/images/cover.png']
+images: ['/images/cover_claude.png']
 readingTime: 7
 slug: 'claude'
 ---
 
-![封面](/images/cover.png)
+![封面](/images/cover_claude.png)
 
 100万token。
 
