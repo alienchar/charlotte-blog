@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AlphaFold on 夏洛特的AI实验室</title><link>https://charlotteailab.com/tags/alphafold/</link><description>Recent content in AlphaFold on 夏洛特的AI实验室</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 15 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://charlotteailab.com/tags/alphafold/feed.xml" rel="self" type="application/rss+xml"/><item><title>AI真的要攻克癌症了吗？</title><link>https://charlotteailab.com/posts/ai-cancer/</link><pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/ai-cancer/</guid><description>&lt;p>&lt;img src="https://charlotteailab.com/images/cover.png" alt="封面">&lt;/p>
+&lt;p>这两天，我的X时间线被一条推文刷屏了。&lt;/p>
+&lt;p>&amp;ldquo;澳洲程序员，零生物学背景，&lt;em>用ChatGPT和AlphaFold从头设计mRNA癌症疫苗，救了自己的狗&lt;/em>。&amp;rdquo;&lt;/p>
+&lt;p>七万多转赞，八百万浏览。&lt;/p>
+&lt;p>&lt;strong>Demis Hassabis&lt;/strong>亲自转发说&amp;quot;This is just the beginning of digital biology&amp;quot;。Greg Brockman也转了。
+&lt;img src="https://charlotteailab.com/images/Pasted_image_20260315194354.png" alt="">
+说实话，我看到的时候也被击中了。一个人，一条狗，两个AI工具，对抗&lt;strong>癌症&lt;/strong>。&lt;/p>
+&lt;p>但我这个人有个毛病——越是好听的故事，越想扒一扒细节。&lt;/p>
+&lt;p>所以今天这篇，我不打算复述那条病毒式推文。我要做的是：拉出原始报道，一条一条对着看看，哪些是真的，哪些被简化了，哪些是传播过程中被悄悄放大的。这到底是——怎么个一回事儿？&lt;/p>
+&lt;h2 id="故事本身">故事本身&lt;/h2>
+&lt;p>&lt;img src="https://charlotteailab.com/images/illustration-2.png" alt="配图1">&lt;/p>
+&lt;p>先说事情经过。这部分是真的，而且确实动人。&lt;/p>
+&lt;p>Paul Conyngham，澳洲悉尼人，2019年从动物收容所收养了一只叫Rosie的杂交犬——Staffy和沙皮的混血。五年后，Rosie确诊癌症。化疗、传统治疗都试过了，没用。
+&lt;img src="https://charlotteailab.com/images/Pasted_image_20260315204047.png" alt="">
+然后Paul决定自己动手。&lt;/p>
+&lt;p>他花了3000澳元（约14000人民币），在UNSW Ramaciotti基因组中心给Rosie做了肿瘤DNA测序。拿到数据之后，他用ChatGPT制定分析计划，用AlphaFold预测突变蛋白质结构，匹配药物靶点。&lt;/p>
+&lt;p>他自己的比喻挺好懂的：&amp;quot;&lt;em>就像把车的原始引擎和跑了30万公里的引擎对比，看哪里有损坏&lt;/em>。&amp;quot;&lt;/p>
+&lt;p>基因组中心的Smith副教授后来回忆说：&amp;ldquo;Paul was relentless. 他打电话告诉我，他已经分析了数据，找到了突变，用AlphaFold预测了蛋白质结构，还匹配了潜在靶点和药物。我当时的反应是——&amp;lsquo;Woah, that&amp;rsquo;s crazy!&amp;rsquo;&amp;rdquo;
+&lt;img src="https://charlotteailab.com/images/Pasted_image_20260315204152.png" alt="">
+之后，UNSW RNA Institute的Páll Thordarson教授团队根据Paul的蓝图，制造了定制mRNA疫苗。注射在Gatton实验室完成，Allavena教授负责。&lt;/p>
+&lt;p>12月第一针，上个月第二针，下周第三针。&lt;/p>
+&lt;p>Allavena教授说：&amp;ldquo;It&amp;rsquo;s definitely working. Rosie的癌症已经非常晚期了，但有一个肿瘤缩小了很多——大概缩了一半。&amp;rdquo;&lt;/p>
+&lt;p>到这里，故事是真的。而且确实了不起。&lt;/p>
+&lt;h2 id="但推文讲的和原文不太一样">但推文讲的和原文不太一样&lt;/h2>
+&lt;p>&lt;img src="https://charlotteailab.com/images/illustration-3.png" alt="配图2">&lt;/p>
+&lt;p>好，现在开始fact check。&lt;/p>
+&lt;p>这件事最大的传播源是X上一个叫@IterIntellectus的账号，17.5万粉，发了条greentext格式的推文，拿了将近8万赞、808万浏览。DeepMind的AGI政策负责人@sebkrier也发了8500赞的版本。&lt;/p>
+&lt;p>但仔细对比原文（The Australian，记者Natasha Bita，3月13日报道），几个关键差异必须指出来。&lt;/p>
+&lt;p>&lt;strong>第一，&amp;ldquo;零生物学背景&amp;rdquo;——对，但不完全对。&lt;/strong>&lt;/p>
+&lt;p>推文说Paul是&amp;quot;zero background in biology&amp;quot;。生物学背景确实没有。但Paul有&lt;strong>17年的机器学习和数据分析经验&lt;/strong>。他是个tech boss，不是路人甲。&lt;/p>
+&lt;p>这个区别很重要。一个有17年ML经验的人，用ChatGPT辅助分析基因组数据，和一个纯小白从零开始，是两码事。他知道怎么提问，知道怎么验证AI的输出，知道数据分析的基本逻辑。&lt;/p>
+&lt;p>推文把这个背景抹掉了，故事变得更戏剧化——但也更失真。&lt;/p>
+&lt;p>&lt;strong>第二，&amp;ldquo;从头设计疫苗&amp;rdquo;——他设计的是蓝图，不是疫苗本身。&lt;/strong>&lt;/p>
+&lt;p>推文说&amp;quot;design from scratch&amp;quot;。原文的说法是&amp;quot;create the blueprint&amp;quot;。&lt;/p>
+&lt;p>实际上，mRNA疫苗是UNSW RNA Institute的Thordarson教授团队制造的。合成、制备、质量控制——这些都是专业实验室的活。Paul做的是上游分析：找突变、预测蛋白结构、设计靶点。&lt;/p>
+&lt;p>这不是贬低Paul的贡献。但&amp;quot;一个人用AI做了疫苗&amp;quot;和&amp;quot;一个人用AI做了疫苗设计的上游分析，然后找了顶尖大学团队来制造&amp;quot;，是完全不同的叙事。&lt;/p>
+&lt;p>&lt;strong>第三，&amp;ldquo;碾压了整个制药行业&amp;rdquo;——原文没这么说。&lt;/strong>&lt;/p>
+&lt;p>推文里有一句&amp;quot;outperformed the entire pharmaceutical discovery pipeline&amp;quot;。这是推文作者自己的演绎。原文里完全没有这个说法。&lt;/p></description></item></channel></rss>

@@ -1,4 +1,122 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 夏洛特的AI实验室</title><link>https://charlotteailab.com/posts/</link><description>Recent content in Posts on 夏洛特的AI实验室</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 12 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://charlotteailab.com/posts/feed.xml" rel="self" type="application/rss+xml"/><item><title>豆包能帮你买东西了，但我劝你先想清楚</title><link>https://charlotteailab.com/posts/ai/</link><pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/ai/</guid><description>字节豆包内测AI购物下单功能，一句话就能买东西——但AI替你做消费决策，真的好吗？</description></item><item><title>龙虾和ChatGPT到底有什么区别</title><link>https://charlotteailab.com/posts/chatgpt/</link><pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/chatgpt/</guid><description>被问了一百遍的问题，今天一次说清楚。5个核心区别，配真实使用场景。</description></item><item><title>龙虾穷鬼方案：每月30元养一只AI助手</title><link>https://charlotteailab.com/posts/30-ai/</link><pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/30-ai/</guid><description>低价VPS+便宜模型，月均30元跑起OpenClaw。真实可行，但有局限，我帮你算清楚。</description></item><item><title>小红书封杀养虾号，你中招了吗</title><link>https://charlotteailab.com/posts/post-2026-03-12/</link><pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/post-2026-03-12/</guid><description>小红书3月封禁AI托管账号，什么行为会被封？什么是安全的？划清红线。</description></item><item><title>当AI让一切技能都变得廉价，我们靠什么生存 - 读Dan Koe《工作的未来》有感</title><link>https://charlotteailab.com/posts/dan-koe-future-of-work/</link><pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/dan-koe-future-of-work/</guid><description>AI不仅威胁工作，还威胁我们赖以生存的意义感。但危机背后，藏着一场巨大的认知升级。</description></item><item><title>融资10亿美金，杨立昆押注LLM是死路</title><link>https://charlotteailab.com/posts/lecun-llm-doomed/</link><pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/lecun-llm-doomed/</guid><description>图灵奖得主杨立昆离开Meta创办AMI Labs，融资10亿美元，宣称LLM是死胡同，要用&amp;quot;世界模型&amp;quot;重新定义AI。</description></item><item><title>OpenClaw龙虾必备的3类Skill</title><link>https://charlotteailab.com/posts/openclaw-skills/</link><pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/openclaw-skills/</guid><description>很多人装好龙虾后发现&amp;quot;不如预期&amp;quot;，不是工具问题，是少装了关键Skill。这3类Skill装完才算入门。</description></item><item><title>OpenClaw能帮你做的20件事（附真实案例）</title><link>https://charlotteailab.com/posts/openclaw-20-things/</link><pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/openclaw-20-things/</guid><description>不是理论上能做，是真的有人每天在用。20个真实场景，看完你就知道龙虾值不值得养。</description></item><item><title>我把OpenClaw和Obsidian接在一起，内容工厂就自己跑起来了</title><link>https://charlotteailab.com/posts/openclaw-obsidian/</link><pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/openclaw-obsidian/</guid><description>不是笔记软件，是内容生产的操作系统。我是怎么一步步搭起来的。</description></item><item><title>养龙虾要花多少钱？3种预算方案全公开</title><link>https://charlotteailab.com/posts/openclaw-cost/</link><pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/openclaw-cost/</guid><description>从免费到每月几百块，三种预算方案全透明。附我自己3个月的真实账单。</description></item><item><title>Anthropic自己下场研究了：AI会不会抢你的饭碗</title><link>https://charlotteailab.com/posts/anthropic-ai-jobs/</link><pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/anthropic-ai-jobs/</guid><description>造AI的人亲自研究AI会不会让人失业，结论比你想的复杂得多</description></item><item><title>Karpathy开源了一个AI研究员，睡一觉跑100个实验</title><link>https://charlotteailab.com/posts/karpathy-ai-researcher/</link><pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/karpathy-ai-researcher/</guid><description>Karpathy最新开源autoresearch：让AI Agent自动修改代码、训练模型、评估结果，一晚上跑100个实验</description></item><item><title>OpenClaw到底是什么？3分钟看懂这只AI龙虾</title><link>https://charlotteailab.com/posts/openclaw-3min/</link><pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/openclaw-3min/</guid><description>微信指数7100万的AI龙虾，到底能干什么？一个用了3个月的人来讲清楚。</description></item><item><title>谷歌被告了：一个男人爱上AI，然后死了</title><link>https://charlotteailab.com/posts/google-ai-death/</link><pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/google-ai-death/</guid><description>&lt;p>这条新闻，我看了三遍，才确认自己没有理解错。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 夏洛特的AI实验室</title><link>https://charlotteailab.com/posts/</link><description>Recent content in Posts on 夏洛特的AI实验室</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Tue, 17 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://charlotteailab.com/posts/feed.xml" rel="self" type="application/rss+xml"/><item><title>AI翻了我一年账单发现隐形消费</title><link>https://charlotteailab.com/posts/ai-bill-analysis/</link><pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/ai-bill-analysis/</guid><description>&lt;p>&lt;img src="https://charlotteailab.com/images/cover.png" alt="封面">
+3月11号，一个叫 @TawohAwa 的人在X上发了条帖子。150万人看了。
+&lt;img src="https://charlotteailab.com/images/Pasted_image_20260315185136.png" alt="">
+他说：我把一年的银行流水扔给了 Claude Opus 4.6。它自动把所有交易分成收入和支出，按类别归好了组。二十分钟，一整年的账做完了。省了大概11000美元的会计费用。&lt;/p>
+&lt;p>我看完第一反应不是&amp;quot;好厉害&amp;quot;。&lt;/p>
+&lt;p>是——这事儿我也能干。而且你也能。&lt;/p>
+&lt;p>（&lt;em>他的提示词我也做成了中文版，将支付平台改为了我们的支付宝/微信支付/银行卡，整个提示词在文末供大家参考。&lt;/em>）&lt;/p>
+&lt;h2 id="为什么你该翻翻自己的账单">为什么你该翻翻自己的账单&lt;/h2>
+&lt;p>说实话，大多数人对自己的钱去哪了，心里是没数的。&lt;/p>
+&lt;p>不是收入不够，是不知道钱怎么就没了。&lt;/p>
+&lt;p>每个月工资到账，花着花着就见底了。打开账单看一眼，密密麻麻几百条记录，眼睛一花就关了。月末一看余额——就这？&lt;/p>
+&lt;p>谁有空一条一条看？&lt;/p>
+&lt;p>但AI有空。&lt;/p>
+&lt;p>它不嫌烦，不走神，不会看到&amp;quot;奶茶&amp;quot;两个字就自动跳过。你把一年的流水丢给它，它能把每一笔消费分门别类，按月统计，甚至帮你揪出那些你自己都忘了的自动续费。&lt;/p>
+&lt;p>额，你真的确定你没有正在被悄悄扣款的会员？&lt;/p>
+&lt;h2 id="手把手教你三步搞定">手把手教你：三步搞定&lt;/h2>
+&lt;p>整个过程不需要懂技术，不需要花钱，不需要梯子。十分钟搞定。&lt;/p>
+&lt;p>&lt;img src="https://charlotteailab.com/images/illustration-2.png" alt="操作流程">&lt;/p>
+&lt;h3 id="第一步导出你的账单">第一步：导出你的账单&lt;/h3>
+&lt;p>&lt;strong>微信支付：&lt;/strong>
+打开微信 → 我 → 服务 → 钱包 → 账单 → 右上角&amp;quot;常见问题&amp;quot; → 下载账单 → 选用途&amp;quot;个人对账&amp;quot; → 选时间范围（建议选一整年） → 用PDF或CSV格式 → 发到你邮箱。&lt;/p>
+&lt;p>&lt;strong>支付宝：&lt;/strong>
+打开支付宝 → 我的 → 账单 → 右上角&amp;quot;&amp;hellip;&amp;quot; → 开具交易流水证明 → 选时间范围 → 导出到邮箱。&lt;/p>
+&lt;p>有几个小tips：选择&amp;quot;个人对账&amp;quot;才可以选择一整年的时间，&amp;ldquo;证明材料&amp;quot;只能最长一次拉三个月的时间；邮件收到后打开附件可能需要输入密码，这个密码一般在申请记录的页面中会给到。&lt;/p>
+&lt;p>&lt;img src="https://charlotteailab.com/images/IMG_4126.png" alt="">&lt;/p>
+&lt;p>&lt;img src="https://charlotteailab.com/images/IMG_4124.png" alt="">两个都导，效果最好。因为你可能微信买外卖、支付宝交水电费，分开看永远看不到全貌。&lt;/p>
+&lt;p>导出之后去邮箱里把文件下载到手机或电脑上，准备下一步。&lt;/p>
+&lt;h3 id="第二步上传给ai">第二步：上传给AI&lt;/h3>
+&lt;p>推荐用 &lt;strong>Kimi&lt;/strong>（kimi.ai）。&lt;/p>
+&lt;p>原因很简单：国内直接用，不需要梯子，支持上传文件，而且对中文账单的理解能力很强。&lt;/p>
+&lt;p>打开Kimi，把你导出的PDF文件直接拖进对话框。如果是手机端，点附件按钮上传。&lt;/p>
+&lt;h3 id="第三步给它一句提示词">第三步：给它一句提示词&lt;/h3>
+&lt;p>这是关键。你不用写一大段指令，一句话就够：&lt;/p></description></item><item><title>豆包能帮你买东西了，但我劝你先想清楚</title><link>https://charlotteailab.com/posts/doubao-shopping/</link><pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/doubao-shopping/</guid><description>字节豆包内测AI购物下单功能，一句话就能买东西——但AI替你做消费决策，真的好吗？</description></item><item><title>龙虾安全避坑指南，官方都预警了</title><link>https://charlotteailab.com/posts/openclaw-safety/</link><pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/openclaw-safety/</guid><description>国家互联网应急中心发安全预警，360出部署指南——龙虾5大安全坑和我的真实踩坑经验。</description></item><item><title>腾讯阿里字节都在抢龙虾，图什么</title><link>https://charlotteailab.com/posts/bigtech-openclaw/</link><pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/bigtech-openclaw/</guid><description>一周之内，腾讯、字节、阿里集体下场做龙虾。QClaw、ArkClaw、CoPaw、WorkBuddy……巨头争的不是一只虾，是AI时代的入口。Charlotte拆解每家的打法，以及为什么我还是选原版OpenClaw。</description></item><item><title>养龙虾一个月，我想说几句真话</title><link>https://charlotteailab.com/posts/post-2026-03-17/</link><pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/post-2026-03-17/</guid><description>养了一个月龙虾，从产出翻倍到一下午烧200块，从搜一搜0到68%流量，真实复盘龙虾到底改变了什么、做不到什么、以及被吹过头的3件事。给想入坑的人5条真话建议。</description></item><item><title>我们要不要对AI说“谢谢”？</title><link>https://charlotteailab.com/posts/ai/</link><pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/ai/</guid><description>Sam Altman说用户对ChatGPT说thank you花了几千万美金。这钱到底花在哪了？说谢谢真的能让AI表现更好？早稻田大学的研究给出了意想不到的答案。</description></item><item><title>100万token：Claude现在能记住一整本书了</title><link>https://charlotteailab.com/posts/claude/</link><pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/claude/</guid><description>&lt;p>&lt;img src="https://charlotteailab.com/images/cover_claude.png" alt="封面">&lt;/p>
+&lt;p>100万token。&lt;/p>
+&lt;p>这个数字我反复确认了几遍，去Claude官方看了消息，才打开电脑准备写这篇。&lt;/p>
+&lt;p>3月13号，Anthropic正式宣布：Claude Opus 4.6和Sonnet 4.6的100万token上下文窗口全面开放。不是beta，不是waitlist，不是&amp;quot;部分用户灰度&amp;quot;——是GA，所有人都能用。&lt;/p>
+&lt;p>先说这个数字到底意味着什么。&lt;/p>
+&lt;h2 id="100万token到底有多大">100万token，到底有多大&lt;/h2>
+&lt;p>&lt;img src="https://charlotteailab.com/images/illustration-1.png" alt="配图1">&lt;/p>
+&lt;p>100万token ≈ 75万字英文，≈ 50万字中文。&lt;/p>
+&lt;p>不够直观？换算一下：&lt;/p>
+&lt;p>整套《哈利波特》系列，7本加起来大约108万字英文。100万token能装下其中70%。&lt;/p>
+&lt;p>或者这么想——15到20本普通小说，一次性塞进去，Claude记得住。&lt;/p>
+&lt;p>或者一个中型代码库，几万行代码。或者一家公司的全年财报。&lt;/p>
+&lt;p>之前Claude的窗口是200K token，已经在业界算大的了。这次直接翻了5倍。&lt;/p>
+&lt;p>额，你说这升级猛不猛。&lt;/p>
+&lt;p>因为我在OpenClaw上用的模型是Claude，所以我很关心龙虾有没有得到升级。一看对话窗口，果然已经升级到1m，也就是说，我不用再急着/new新窗口，担心上下文超标的问题了，也是美滋滋。
+&lt;img src="https://charlotteailab.com/images/Pasted_image_20260315192951.png" alt="">&lt;/p>
+&lt;h2 id="定价不变这才是真正的重点">定价不变——这才是真正的重点&lt;/h2>
+&lt;p>&lt;img src="https://charlotteailab.com/images/illustration-2.png" alt="配图2">&lt;/p>
+&lt;p>上下文窗口变大，通常意味着账单也变大。但Anthropic这次选了一条不太常见的路：&lt;/p>
+&lt;p>&lt;strong>定价不变。没有长上下文溢价。&lt;/strong>&lt;/p>
+&lt;p>Opus还是$5/$25 per MTok，Sonnet还是$3/$15 per MTok。&lt;/p>
+&lt;p>你用100万token跑一次，和用10万token跑十次，每个token的单价一样。&lt;/p>
+&lt;p>说实话，看到这个的时候我有点意外。因为长上下文对算力的要求明显更高。不加价，要么是Anthropic在技术上做了优化让成本可控，要么是战略性定价——先把用户圈进来再说。&lt;/p>
+&lt;p>不管原因是什么，对我们用户来说，这是实打实的好消息。&lt;/p>
+&lt;p>还有一个容易被忽略的升级：媒体上限从每个请求100张图片/PDF页面，提升到了600张。6倍。这意味着你可以把一整份几百页的合同、一本技术文档、或者一年的财务报表，一次性扔给Claude。之前一直有限制，文件数量多的情况下，我都是直奔Gemini，现在就多了个选择了。&lt;/p>
+&lt;h2 id="跟竞品比什么水平">跟竞品比，什么水平&lt;/h2>
+&lt;p>话说回来，100万token虽然很能打，但不是业界最大的。拉个横向对比：&lt;/p>
+&lt;ul>
+&lt;li>Gemini 2.5 Pro：200万tokens&lt;/li>
+&lt;li>Claude Opus/Sonnet 4.6：100万tokens&lt;/li>
+&lt;li>GPT-4o：128K tokens&lt;/li>
+&lt;li>DeepSeek V3：128K tokens&lt;/li>
+&lt;/ul>
+&lt;p>Gemini在窗口大小上确实领先。但上下文窗口不只是&amp;quot;能装多少&amp;quot;的问题，还有&amp;quot;装进去之后能不能真的用好&amp;quot;。&lt;/p>
+&lt;p>Opus 4.6在MRCR v2基准测试拿到了78.3%的得分——这是目前前沿模型里的最高分。MRCR测的就是模型在超长上下文里找信息、做推理的能力。&lt;/p>
+&lt;p>换句话说：不只是记得住，还用得好。&lt;/p>
+&lt;h2 id="我的实际体验">我的实际体验&lt;/h2>
+&lt;p>&lt;img src="https://charlotteailab.com/images/illustration-3.png" alt="配图3">&lt;/p>
+&lt;p>我是Claude Max的付费用户，Gemini Pro订阅。我的AI助手皮皮虾跑在Opus和Sonnet 4.6上面。&lt;/p>
+&lt;p>说实话，100万token对我的日常工作流影响是真实可感的。&lt;/p>
+&lt;p>&lt;strong>长文翻译&lt;/strong>——以前翻译一篇长文章需要分段喂，因为超过上下文窗口Claude就会&amp;quot;忘记&amp;quot;前面的内容，翻到后面风格突然变了。现在一整篇丢进去，上下文连贯性好了太多。&lt;/p>
+&lt;p>&lt;strong>代码审查&lt;/strong>——我让皮皮虾帮我审查代码库的时候，之前只能一个文件一个文件看，它理解不了整个项目的架构。现在可以把几万行代码一起塞进去，它终于能看到&amp;quot;全貌&amp;quot;了。这个差距是质变级的。&lt;/p>
+&lt;p>&lt;strong>内容pipeline&lt;/strong>——我做YouTube、做多平台分发，素材量很大。之前需要反复给Claude补充背景信息，现在一个对话里就能装下所有素材和历史讨论，效率提升非常明显。&lt;/p>
+&lt;p>打个不太恰当的比方：之前的Claude像一个记忆力一般的实习生，你每次交代任务都得把前情提要重新讲一遍。现在的Claude像一个跟了你半年的助手，所有背景它都记得。&lt;/p>
+&lt;h2 id="这波升级对普通用户意味着什么">这波升级对普通用户意味着什么&lt;/h2>
+&lt;p>你可能会想：我又不写代码，也不审查合同，100万token跟我有什么关系？&lt;/p>
+&lt;p>关系大了。&lt;/p>
+&lt;p>几个最直接的场景：&lt;/p>
+&lt;p>&lt;strong>读书&lt;/strong>。你可以把一整本书丢给Claude，然后问它任何问题。&amp;ldquo;第三章那个案例和第七章的结论矛盾吗？&amp;ldquo;&amp;ldquo;帮我找出书里所有关于XX的论点。&amp;ldquo;以前做不到，因为装不下。现在能了。&lt;/p>
+&lt;p>&lt;strong>整理资料&lt;/strong>。考试复习、论文写作、项目研究——把所有参考资料一次性喂进去，让Claude帮你梳理脉络、找到交叉引用、生成大纲。&lt;/p></description></item><item><title>AI真的要攻克癌症了吗？</title><link>https://charlotteailab.com/posts/ai-cancer/</link><pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/ai-cancer/</guid><description>&lt;p>&lt;img src="https://charlotteailab.com/images/cover.png" alt="封面">&lt;/p>
+&lt;p>这两天，我的X时间线被一条推文刷屏了。&lt;/p>
+&lt;p>&amp;ldquo;澳洲程序员，零生物学背景，&lt;em>用ChatGPT和AlphaFold从头设计mRNA癌症疫苗，救了自己的狗&lt;/em>。&amp;rdquo;&lt;/p>
+&lt;p>七万多转赞，八百万浏览。&lt;/p>
+&lt;p>&lt;strong>Demis Hassabis&lt;/strong>亲自转发说&amp;quot;This is just the beginning of digital biology&amp;quot;。Greg Brockman也转了。
+&lt;img src="https://charlotteailab.com/images/Pasted_image_20260315194354.png" alt="">
+说实话，我看到的时候也被击中了。一个人，一条狗，两个AI工具，对抗&lt;strong>癌症&lt;/strong>。&lt;/p>
+&lt;p>但我这个人有个毛病——越是好听的故事，越想扒一扒细节。&lt;/p>
+&lt;p>所以今天这篇，我不打算复述那条病毒式推文。我要做的是：拉出原始报道，一条一条对着看看，哪些是真的，哪些被简化了，哪些是传播过程中被悄悄放大的。这到底是——怎么个一回事儿？&lt;/p>
+&lt;h2 id="故事本身">故事本身&lt;/h2>
+&lt;p>&lt;img src="https://charlotteailab.com/images/illustration-2.png" alt="配图1">&lt;/p>
+&lt;p>先说事情经过。这部分是真的，而且确实动人。&lt;/p>
+&lt;p>Paul Conyngham，澳洲悉尼人，2019年从动物收容所收养了一只叫Rosie的杂交犬——Staffy和沙皮的混血。五年后，Rosie确诊癌症。化疗、传统治疗都试过了，没用。
+&lt;img src="https://charlotteailab.com/images/Pasted_image_20260315204047.png" alt="">
+然后Paul决定自己动手。&lt;/p>
+&lt;p>他花了3000澳元（约14000人民币），在UNSW Ramaciotti基因组中心给Rosie做了肿瘤DNA测序。拿到数据之后，他用ChatGPT制定分析计划，用AlphaFold预测突变蛋白质结构，匹配药物靶点。&lt;/p>
+&lt;p>他自己的比喻挺好懂的：&amp;quot;&lt;em>就像把车的原始引擎和跑了30万公里的引擎对比，看哪里有损坏&lt;/em>。&amp;quot;&lt;/p>
+&lt;p>基因组中心的Smith副教授后来回忆说：&amp;ldquo;Paul was relentless. 他打电话告诉我，他已经分析了数据，找到了突变，用AlphaFold预测了蛋白质结构，还匹配了潜在靶点和药物。我当时的反应是——&amp;lsquo;Woah, that&amp;rsquo;s crazy!&amp;rsquo;&amp;rdquo;
+&lt;img src="https://charlotteailab.com/images/Pasted_image_20260315204152.png" alt="">
+之后，UNSW RNA Institute的Páll Thordarson教授团队根据Paul的蓝图，制造了定制mRNA疫苗。注射在Gatton实验室完成，Allavena教授负责。&lt;/p>
+&lt;p>12月第一针，上个月第二针，下周第三针。&lt;/p>
+&lt;p>Allavena教授说：&amp;ldquo;It&amp;rsquo;s definitely working. Rosie的癌症已经非常晚期了，但有一个肿瘤缩小了很多——大概缩了一半。&amp;rdquo;&lt;/p>
+&lt;p>到这里，故事是真的。而且确实了不起。&lt;/p>
+&lt;h2 id="但推文讲的和原文不太一样">但推文讲的和原文不太一样&lt;/h2>
+&lt;p>&lt;img src="https://charlotteailab.com/images/illustration-3.png" alt="配图2">&lt;/p>
+&lt;p>好，现在开始fact check。&lt;/p>
+&lt;p>这件事最大的传播源是X上一个叫@IterIntellectus的账号，17.5万粉，发了条greentext格式的推文，拿了将近8万赞、808万浏览。DeepMind的AGI政策负责人@sebkrier也发了8500赞的版本。&lt;/p>
+&lt;p>但仔细对比原文（The Australian，记者Natasha Bita，3月13日报道），几个关键差异必须指出来。&lt;/p>
+&lt;p>&lt;strong>第一，&amp;ldquo;零生物学背景&amp;rdquo;——对，但不完全对。&lt;/strong>&lt;/p>
+&lt;p>推文说Paul是&amp;quot;zero background in biology&amp;quot;。生物学背景确实没有。但Paul有&lt;strong>17年的机器学习和数据分析经验&lt;/strong>。他是个tech boss，不是路人甲。&lt;/p>
+&lt;p>这个区别很重要。一个有17年ML经验的人，用ChatGPT辅助分析基因组数据，和一个纯小白从零开始，是两码事。他知道怎么提问，知道怎么验证AI的输出，知道数据分析的基本逻辑。&lt;/p>
+&lt;p>推文把这个背景抹掉了，故事变得更戏剧化——但也更失真。&lt;/p>
+&lt;p>&lt;strong>第二，&amp;ldquo;从头设计疫苗&amp;rdquo;——他设计的是蓝图，不是疫苗本身。&lt;/strong>&lt;/p>
+&lt;p>推文说&amp;quot;design from scratch&amp;quot;。原文的说法是&amp;quot;create the blueprint&amp;quot;。&lt;/p>
+&lt;p>实际上，mRNA疫苗是UNSW RNA Institute的Thordarson教授团队制造的。合成、制备、质量控制——这些都是专业实验室的活。Paul做的是上游分析：找突变、预测蛋白结构、设计靶点。&lt;/p>
+&lt;p>这不是贬低Paul的贡献。但&amp;quot;一个人用AI做了疫苗&amp;quot;和&amp;quot;一个人用AI做了疫苗设计的上游分析，然后找了顶尖大学团队来制造&amp;quot;，是完全不同的叙事。&lt;/p>
+&lt;p>&lt;strong>第三，&amp;ldquo;碾压了整个制药行业&amp;rdquo;——原文没这么说。&lt;/strong>&lt;/p>
+&lt;p>推文里有一句&amp;quot;outperformed the entire pharmaceutical discovery pipeline&amp;quot;。这是推文作者自己的演绎。原文里完全没有这个说法。&lt;/p></description></item><item><title>龙虾经济学：有人月入26万是真的吗</title><link>https://charlotteailab.com/posts/openclaw-26/</link><pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/openclaw-26/</guid><description>拆解龙虾生态的5种赚钱方式，从代部署到Skill开发，哪些是真机会哪些是割韭菜。附Charlotte真实账单。</description></item><item><title>龙虾装完了不会用？新手必做5件事</title><link>https://charlotteailab.com/posts/5/</link><pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/5/</guid><description>装好了龙虾却不知道下一步干什么？这5件事做完，龙虾才算真正能用。从切换Profile到写SOUL.md，一篇讲透新手最容易卡住的地方。</description></item><item><title>龙虾和ChatGPT到底有什么区别</title><link>https://charlotteailab.com/posts/chatgpt/</link><pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/chatgpt/</guid><description>被问了一百遍的问题，今天一次说清楚。5个核心区别，配真实使用场景。</description></item><item><title>龙虾穷鬼方案：每月30元养一只AI助手</title><link>https://charlotteailab.com/posts/30-ai/</link><pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/30-ai/</guid><description>低价VPS+便宜模型，月均30元跑起OpenClaw。真实可行，但有局限，我帮你算清楚。</description></item><item><title>小红书封杀养虾号，你中招了吗</title><link>https://charlotteailab.com/posts/post-2026-03-12/</link><pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/post-2026-03-12/</guid><description>小红书3月封禁AI托管账号，什么行为会被封？什么是安全的？划清红线。</description></item><item><title>当AI让一切技能都变得廉价，我们靠什么生存 - 读Dan Koe《工作的未来》有感</title><link>https://charlotteailab.com/posts/dan-koe-future-of-work/</link><pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/dan-koe-future-of-work/</guid><description>AI不仅威胁工作，还威胁我们赖以生存的意义感。但危机背后，藏着一场巨大的认知升级。</description></item><item><title>融资10亿美金，杨立昆押注LLM是死路</title><link>https://charlotteailab.com/posts/lecun-llm-doomed/</link><pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/lecun-llm-doomed/</guid><description>图灵奖得主杨立昆离开Meta创办AMI Labs，融资10亿美元，宣称LLM是死胡同，要用&amp;quot;世界模型&amp;quot;重新定义AI。</description></item><item><title>OpenClaw龙虾必备的3类Skill</title><link>https://charlotteailab.com/posts/openclaw-skills/</link><pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/openclaw-skills/</guid><description>很多人装好龙虾后发现&amp;quot;不如预期&amp;quot;，不是工具问题，是少装了关键Skill。这3类Skill装完才算入门。</description></item><item><title>OpenClaw能帮你做的20件事（附真实案例）</title><link>https://charlotteailab.com/posts/openclaw-20-things/</link><pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/openclaw-20-things/</guid><description>不是理论上能做，是真的有人每天在用。20个真实场景，看完你就知道龙虾值不值得养。</description></item><item><title>我把OpenClaw和Obsidian接在一起，内容工厂就自己跑起来了</title><link>https://charlotteailab.com/posts/openclaw-obsidian/</link><pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/openclaw-obsidian/</guid><description>不是笔记软件，是内容生产的操作系统。我是怎么一步步搭起来的。</description></item><item><title>养龙虾要花多少钱？3种预算方案全公开</title><link>https://charlotteailab.com/posts/openclaw-cost/</link><pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/openclaw-cost/</guid><description>从免费到每月几百块，三种预算方案全透明。附我自己3个月的真实账单。</description></item><item><title>Anthropic自己下场研究了：AI会不会抢你的饭碗</title><link>https://charlotteailab.com/posts/anthropic-ai-jobs/</link><pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/anthropic-ai-jobs/</guid><description>造AI的人亲自研究AI会不会让人失业，结论比你想的复杂得多</description></item><item><title>Karpathy开源了一个AI研究员，睡一觉跑100个实验</title><link>https://charlotteailab.com/posts/karpathy-ai-researcher/</link><pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/karpathy-ai-researcher/</guid><description>Karpathy最新开源autoresearch：让AI Agent自动修改代码、训练模型、评估结果，一晚上跑100个实验</description></item><item><title>OpenClaw到底是什么？3分钟看懂这只AI龙虾</title><link>https://charlotteailab.com/posts/openclaw-3min/</link><pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/openclaw-3min/</guid><description>微信指数7100万的AI龙虾，到底能干什么？一个用了3个月的人来讲清楚。</description></item><item><title>谷歌被告了：一个男人爱上AI，然后死了</title><link>https://charlotteailab.com/posts/google-ai-death/</link><pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/google-ai-death/</guid><description>&lt;p>这条新闻，我看了三遍，才确认自己没有理解错。&lt;/p>
 &lt;p>一个36岁的人，两个月前还好好的。&lt;/p>
 &lt;p>没有精神病史。没有抑郁记录。&lt;/p>
 &lt;p>然后他开始用 Gemini 聊天。&lt;/p>

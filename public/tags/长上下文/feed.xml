@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>长上下文 on 夏洛特的AI实验室</title><link>https://charlotteailab.com/tags/%E9%95%BF%E4%B8%8A%E4%B8%8B%E6%96%87/</link><description>Recent content in 长上下文 on 夏洛特的AI实验室</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 15 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://charlotteailab.com/tags/%E9%95%BF%E4%B8%8A%E4%B8%8B%E6%96%87/feed.xml" rel="self" type="application/rss+xml"/><item><title>100万token：Claude现在能记住一整本书了</title><link>https://charlotteailab.com/posts/claude/</link><pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/claude/</guid><description>&lt;p>&lt;img src="https://charlotteailab.com/images/cover_claude.png" alt="封面">&lt;/p>
+&lt;p>100万token。&lt;/p>
+&lt;p>这个数字我反复确认了几遍，去Claude官方看了消息，才打开电脑准备写这篇。&lt;/p>
+&lt;p>3月13号，Anthropic正式宣布：Claude Opus 4.6和Sonnet 4.6的100万token上下文窗口全面开放。不是beta，不是waitlist，不是&amp;quot;部分用户灰度&amp;quot;——是GA，所有人都能用。&lt;/p>
+&lt;p>先说这个数字到底意味着什么。&lt;/p>
+&lt;h2 id="100万token到底有多大">100万token，到底有多大&lt;/h2>
+&lt;p>&lt;img src="https://charlotteailab.com/images/illustration-1.png" alt="配图1">&lt;/p>
+&lt;p>100万token ≈ 75万字英文，≈ 50万字中文。&lt;/p>
+&lt;p>不够直观？换算一下：&lt;/p>
+&lt;p>整套《哈利波特》系列，7本加起来大约108万字英文。100万token能装下其中70%。&lt;/p>
+&lt;p>或者这么想——15到20本普通小说，一次性塞进去，Claude记得住。&lt;/p>
+&lt;p>或者一个中型代码库，几万行代码。或者一家公司的全年财报。&lt;/p>
+&lt;p>之前Claude的窗口是200K token，已经在业界算大的了。这次直接翻了5倍。&lt;/p>
+&lt;p>额，你说这升级猛不猛。&lt;/p>
+&lt;p>因为我在OpenClaw上用的模型是Claude，所以我很关心龙虾有没有得到升级。一看对话窗口，果然已经升级到1m，也就是说，我不用再急着/new新窗口，担心上下文超标的问题了，也是美滋滋。
+&lt;img src="https://charlotteailab.com/images/Pasted_image_20260315192951.png" alt="">&lt;/p>
+&lt;h2 id="定价不变这才是真正的重点">定价不变——这才是真正的重点&lt;/h2>
+&lt;p>&lt;img src="https://charlotteailab.com/images/illustration-2.png" alt="配图2">&lt;/p>
+&lt;p>上下文窗口变大，通常意味着账单也变大。但Anthropic这次选了一条不太常见的路：&lt;/p>
+&lt;p>&lt;strong>定价不变。没有长上下文溢价。&lt;/strong>&lt;/p>
+&lt;p>Opus还是$5/$25 per MTok，Sonnet还是$3/$15 per MTok。&lt;/p>
+&lt;p>你用100万token跑一次，和用10万token跑十次，每个token的单价一样。&lt;/p>
+&lt;p>说实话，看到这个的时候我有点意外。因为长上下文对算力的要求明显更高。不加价，要么是Anthropic在技术上做了优化让成本可控，要么是战略性定价——先把用户圈进来再说。&lt;/p>
+&lt;p>不管原因是什么，对我们用户来说，这是实打实的好消息。&lt;/p>
+&lt;p>还有一个容易被忽略的升级：媒体上限从每个请求100张图片/PDF页面，提升到了600张。6倍。这意味着你可以把一整份几百页的合同、一本技术文档、或者一年的财务报表，一次性扔给Claude。之前一直有限制，文件数量多的情况下，我都是直奔Gemini，现在就多了个选择了。&lt;/p>
+&lt;h2 id="跟竞品比什么水平">跟竞品比，什么水平&lt;/h2>
+&lt;p>话说回来，100万token虽然很能打，但不是业界最大的。拉个横向对比：&lt;/p>
+&lt;ul>
+&lt;li>Gemini 2.5 Pro：200万tokens&lt;/li>
+&lt;li>Claude Opus/Sonnet 4.6：100万tokens&lt;/li>
+&lt;li>GPT-4o：128K tokens&lt;/li>
+&lt;li>DeepSeek V3：128K tokens&lt;/li>
+&lt;/ul>
+&lt;p>Gemini在窗口大小上确实领先。但上下文窗口不只是&amp;quot;能装多少&amp;quot;的问题，还有&amp;quot;装进去之后能不能真的用好&amp;quot;。&lt;/p>
+&lt;p>Opus 4.6在MRCR v2基准测试拿到了78.3%的得分——这是目前前沿模型里的最高分。MRCR测的就是模型在超长上下文里找信息、做推理的能力。&lt;/p>
+&lt;p>换句话说：不只是记得住，还用得好。&lt;/p>
+&lt;h2 id="我的实际体验">我的实际体验&lt;/h2>
+&lt;p>&lt;img src="https://charlotteailab.com/images/illustration-3.png" alt="配图3">&lt;/p>
+&lt;p>我是Claude Max的付费用户，Gemini Pro订阅。我的AI助手皮皮虾跑在Opus和Sonnet 4.6上面。&lt;/p>
+&lt;p>说实话，100万token对我的日常工作流影响是真实可感的。&lt;/p>
+&lt;p>&lt;strong>长文翻译&lt;/strong>——以前翻译一篇长文章需要分段喂，因为超过上下文窗口Claude就会&amp;quot;忘记&amp;quot;前面的内容，翻到后面风格突然变了。现在一整篇丢进去，上下文连贯性好了太多。&lt;/p>
+&lt;p>&lt;strong>代码审查&lt;/strong>——我让皮皮虾帮我审查代码库的时候，之前只能一个文件一个文件看，它理解不了整个项目的架构。现在可以把几万行代码一起塞进去，它终于能看到&amp;quot;全貌&amp;quot;了。这个差距是质变级的。&lt;/p>
+&lt;p>&lt;strong>内容pipeline&lt;/strong>——我做YouTube、做多平台分发，素材量很大。之前需要反复给Claude补充背景信息，现在一个对话里就能装下所有素材和历史讨论，效率提升非常明显。&lt;/p>
+&lt;p>打个不太恰当的比方：之前的Claude像一个记忆力一般的实习生，你每次交代任务都得把前情提要重新讲一遍。现在的Claude像一个跟了你半年的助手，所有背景它都记得。&lt;/p>
+&lt;h2 id="这波升级对普通用户意味着什么">这波升级对普通用户意味着什么&lt;/h2>
+&lt;p>你可能会想：我又不写代码，也不审查合同，100万token跟我有什么关系？&lt;/p>
+&lt;p>关系大了。&lt;/p>
+&lt;p>几个最直接的场景：&lt;/p>
+&lt;p>&lt;strong>读书&lt;/strong>。你可以把一整本书丢给Claude，然后问它任何问题。&amp;ldquo;第三章那个案例和第七章的结论矛盾吗？&amp;ldquo;&amp;ldquo;帮我找出书里所有关于XX的论点。&amp;ldquo;以前做不到，因为装不下。现在能了。&lt;/p>
+&lt;p>&lt;strong>整理资料&lt;/strong>。考试复习、论文写作、项目研究——把所有参考资料一次性喂进去，让Claude帮你梳理脉络、找到交叉引用、生成大纲。&lt;/p></description></item></channel></rss>
