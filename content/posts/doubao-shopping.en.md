@@ -5,8 +5,8 @@ description: "ByteDance's Doubao app is testing AI-powered one-sentence shopping
 summary: "ByteDance's Doubao app is testing AI-powered one-sentence shopping. The technology is impressive — but when an algorithm controls your spending, are you really the one shopping?"
 tags: ["Doubao", "AI Shopping", "ByteDance", "Qianwen", "AI Commerce"]
 keywords: ["Doubao", "AI Shopping", "ByteDance", "Qianwen", "AI Commerce"]
-cover: "/images/cover_doubao-shopping.png"
-images: ["/images/cover_doubao-shopping.png"]
+cover: '/images/cover_doubao-shopping_en.png'
+images: ['/images/cover_doubao-shopping_en.png']
 readingTime: 9
 slug: "doubao-shopping"
 ---

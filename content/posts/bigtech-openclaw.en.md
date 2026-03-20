@@ -5,8 +5,8 @@ description: "In one week, China's three tech giants all released their own Open
 summary: "In one week, China's three tech giants all released their own OpenClaw-style AI agents. QClaw, ArkClaw, CoPaw, WorkBuddy — they're not competing over a chatbot. They're fighting for the AI gateway. Charlotte breaks down each company's play, and why she still uses the original OpenClaw."
 tags: ["OpenClaw", "AI Agent", "Tencent", "ByteDance", "Alibaba", "AI gateway"]
 keywords: ["OpenClaw", "AI Agent", "Tencent", "ByteDance", "Alibaba", "AI gateway"]
-cover: "/images/cover_bigtech-openclaw.png"
-images: ["/images/cover_bigtech-openclaw.png"]
+cover: '/images/cover_bigtech-openclaw_en.png'
+images: ['/images/cover_bigtech-openclaw_en.png']
 readingTime: 14
 slug: "bigtech-openclaw"
 ---

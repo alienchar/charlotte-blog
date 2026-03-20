@@ -5,8 +5,8 @@ description: "China's national cybersecurity agency issued an official security 
 summary: "China's national cybersecurity agency issued an official security warning about OpenClaw. 360 published a deployment guide. Here are the 5 real security traps — and the mistakes I made myself."
 tags: ["OpenClaw", "AI Safety", "Security Guide", "ClawJacked"]
 keywords: ["OpenClaw", "AI Safety", "Security Guide", "ClawJacked", "OpenClaw"]
-cover: "/images/cover_openclaw-safety.png"
-images: ["/images/cover_openclaw-safety.png"]
+cover: '/images/cover_openclaw-safety_en.png'
+images: ['/images/cover_openclaw-safety_en.png']
 readingTime: 13
 slug: "openclaw-safety"
 ---
