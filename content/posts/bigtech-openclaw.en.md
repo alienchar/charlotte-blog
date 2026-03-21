@@ -1,4 +1,5 @@
 ---
+
 title: "Tencent, ByteDance, and Alibaba All Launched AI Agents in the Same Week. Here's Why."
 date: 2026-03-17
 description: "In one week, China's three tech giants all released their own OpenClaw-style AI agents. QClaw, ArkClaw, CoPaw, WorkBuddy — they're not competing over a chatbot. They're fighting for the AI gateway. Charlotte breaks down each company's play, and why she still uses the original OpenClaw."
@@ -9,11 +10,7 @@ cover: '/images/cover_bigtech-openclaw_en.png'
 images: ['/images/cover_bigtech-openclaw_en.png']
 readingTime: 14
 slug: "bigtech-openclaw"
----
-
-![Cover](/images/cover.png)
-
-At the start of March, OpenClaw was still a niche toy for the tech crowd.
+---At the start of March, OpenClaw was still a niche toy for the tech crowd.
 
 One week later, *Tencent, ByteDance, and Alibaba had all entered the space.*
 

@@ -1,4 +1,5 @@
 ---
+
 title: 'When AI Makes Every Skill Cheap, What Do We Have Left?'
 date: '2026-03-06'
 summary: 'Reflections on Dan Koe''s ''The Future of Work'' — redefining personal value in the age of AI'

@@ -1,4 +1,5 @@
 ---
+
 title: "75% of Resumes Get Trashed by AI Before Any Human Sees Them"
 date: 2026-03-18
 description: "75% of resumes get rejected by AI before any human HR ever sees them. You sent out 100 applications with zero callbacks? Nobody actually read your resume. Here's how ATS screening works, why the AI-vs-AI resume arms race is absurd, and what you can actually do about it."
@@ -9,11 +10,7 @@ cover: "/images/cover_ai-resume-screening_en.png"
 images: ["/images/cover_ai-resume-screening_en.png"]
 readingTime: 9
 slug: "ai-resume-screening"
----
-
-![cover](/images/cover.png)
-
-You've sent out 100 resumes. Not a single callback.
+---You've sent out 100 resumes. Not a single callback.
 
 It's not that you're not good enough. It's that no *human* has actually looked at your resume.
 

@@ -1,4 +1,5 @@
 ---
+
 title: "One Man, One Dog, Two AI Tools: The Cancer Story That Broke the Internet"
 date: 2026-03-15
 description: "A viral tweet claimed an Australian programmer with zero biology background used ChatGPT and AlphaFold to design an mRNA cancer vaccine and save his dog. I fact-checked every claim."
@@ -7,11 +8,7 @@ keywords: ["AI", "mRNA", "AlphaFold", "ChatGPT", "fact-check"]
 images: ["/images/cover.png"]
 readingTime: 7
 slug: "ai-cancer"
----
-
-![Cover](/images/cover.png)
-
-My X timeline got flooded these past couple of days with a single tweet.
+---My X timeline got flooded these past couple of days with a single tweet.
 
 "Australian programmer, zero biology background, *used ChatGPT and AlphaFold to design an mRNA cancer vaccine from scratch and saved his dog*."
 

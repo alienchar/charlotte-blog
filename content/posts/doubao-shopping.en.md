@@ -1,4 +1,5 @@
 ---
+
 title: "Doubao Can Now Buy Things for You. Here's Why You Should Pause Before Using It."
 date: 2026-03-17
 description: "ByteDance's Doubao app is testing AI-powered one-sentence shopping. The technology is impressive — but when an algorithm controls your spending, are you really the one shopping?"

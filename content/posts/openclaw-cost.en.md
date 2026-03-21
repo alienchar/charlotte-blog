@@ -1,4 +1,5 @@
 ---
+
 title: 'How Much Does It Cost to Raise a Lobster? 3 Budget Plans Revealed'
 date: '2026-03-08'
 summary: 'From free to a few hundred bucks a month — three transparent budget tiers. Plus my actual 3-month bill.'

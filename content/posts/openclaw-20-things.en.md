@@ -1,4 +1,5 @@
 ---
+
 title: '20 Things OpenClaw Can Do for You (With Real Examples)'
 date: '2026-03-08'
 summary: 'Not theoretical. Not hypothetical. 20 real-world use cases that people actually run every day. Read this and decide if the lobster is worth raising.'

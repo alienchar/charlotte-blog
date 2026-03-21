@@ -1,4 +1,5 @@
 ---
+
 title: "OpenClaw Security: 5 Traps the Government Actually Warned About"
 date: 2026-03-17
 description: "China's national cybersecurity agency issued an official security warning about OpenClaw. 360 published a deployment guide. Here are the 5 real security traps — and the mistakes I made myself."

@@ -1,4 +1,5 @@
 ---
+
 title: "Doubao Can Now Shop for You — But Should You Let It?"
 date: 2026-03-12
 description: "ByteDance Doubao is beta-testing AI-powered shopping where you can buy things with a single sentence. But is letting AI make your spending decisions really a good idea?"

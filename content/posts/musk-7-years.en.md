@@ -1,4 +1,5 @@
 ---
+
 title: 'Musk: The Next 7 Years Will Be Wilder Than You Think'
 date: '2026-03-05'
 summary: 'He''s not worried about AI destroying humanity. He''s worried about how chaotic the next 3 to 7 years of transition will be.'

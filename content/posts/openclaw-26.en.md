@@ -1,4 +1,5 @@
 ---
+
 title: "Lobster Economics: Is Anyone Really Making ¥260K a Month?"
 date: 2026-03-14
 description: "Breaking down the 5 real ways people are making money in the OpenClaw ecosystem — from deployment services to Skill development. Which ones are legit opportunities and which are scams? Plus Charlotte's actual monthly bill."
@@ -9,11 +10,7 @@ cover: '/images/cover_openclaw-26_en.png'
 images: ['/images/cover_openclaw-26_en.png']
 readingTime: 11
 slug: 'openclaw-26'
----
-
-![cover](/images/cover.png)
-
-"¥260,000 in a few days."
+---"¥260,000 in a few days."
 
 That's a direct quote from a 36Kr report. Someone made that much in revenue — just by installing OpenClaw for other people.
 

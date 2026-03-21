@@ -1,4 +1,5 @@
 ---
+
 title: "I Let AI Audit My Entire Year of Finances. Here's What It Found."
 date: 2026-03-17
 description: "One person dumped a year of bank statements into Claude Opus 4.6 and saved $11,000 in accounting fees in 20 minutes. Here's exactly how to do it yourself — including a full prompt template."
@@ -7,11 +8,7 @@ keywords: ["AI"]
 images: ["/images/cover.png"]
 readingTime: 8
 slug: "ai-bill-analysis"
----
-
-![Cover](/images/cover.png)
-
-On March 11th, someone named @TawohAwa posted on X. 1.5 million people saw it.
+---On March 11th, someone named @TawohAwa posted on X. 1.5 million people saw it.
 
 ![](/images/Pasted_image_20260315185136.png)
 

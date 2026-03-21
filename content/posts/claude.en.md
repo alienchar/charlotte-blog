@@ -1,4 +1,5 @@
 ---
+
 title: "1 Million Tokens: Claude Can Now Remember an Entire Book"
 date: 2026-03-15
 description: "On March 13, Anthropic officially announced: the 1 million token context window for Claude Opus 4.6 and Sonnet 4.6 is now generally available. Not beta, not a waitlist, not a partial rollout — GA, for everyone."
@@ -7,11 +8,7 @@ keywords: ["Claude", "AI", "Long Context", "Anthropic"]
 images: ['/images/cover_claude_en.png']
 readingTime: 7
 slug: 'claude'
----
-
-![Cover](/images/cover_claude_en.png)
-
-One million tokens.
+---One million tokens.
 
 I checked this number several times, went to Claude's official announcement to verify, and only then opened my laptop to write this.
 

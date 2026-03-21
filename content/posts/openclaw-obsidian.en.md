@@ -1,4 +1,5 @@
 ---
+
 title: 'I Connected OpenClaw to Obsidian, and My Content Factory Started Running Itself'
 date: '2026-03-08'
 summary: 'It''s not a note-taking app — it''s the operating system for content production. Here''s how I built it, step by step.'

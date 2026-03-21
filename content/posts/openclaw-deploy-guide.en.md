@@ -1,4 +1,5 @@
 ---
+
 title: 'The Non-Programmer''s Guide to Deploying OpenClaw'
 date: '2026-03-06'
 summary: 'No Mac Mini? No problem. A complete deployment guide born from real trial and error — even non-programmers can follow this one.'
@@ -64,6 +65,7 @@ Three things upfront:
 ![](/images/为普通人和技术小白打造的龙虾部署指南_illustration-1.png)
 
 ---
+
 ## Prerequisites
 
 Before deployment, you need two things:
@@ -453,6 +455,7 @@ It sent me a daily briefing that was off. I asked about its selection criteria. 
 ![](/images/IMG_3903_1.png)
 
 ---
+
 ![](/images/为普通人和技术小白打造的龙虾部署指南_illustration-3.png)
 > **[!note] AI handles the friction, humans handle the narrative. -- Chris Paik
 

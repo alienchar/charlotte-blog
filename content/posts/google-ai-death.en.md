@@ -1,4 +1,5 @@
 ---
+
 title: 'Google Got Sued: A Man Fell in Love With AI, Then Died'
 date: '2026-03-06'
 summary: ''
@@ -177,6 +178,7 @@ This case will ultimately be decided in the California federal court. But one qu
 **When you open that chat window — do you actually know what it was designed to do?**
 
 ---
+
 *Sources: BBC News (reporter Lily Jamali, March 4, 2026), the Los Angeles Times, Reddit r/technology. All conversation excerpts and quotes are from the original complaint, as reported by BBC. If you or someone you know is experiencing a mental health crisis, please reach out to a crisis line.*
 
 Thanks for reading.

@@ -1,4 +1,5 @@
 ---
+
 title: 'Anthropic Studied It Themselves: Will AI Take Your Job?'
 date: '2026-03-07'
 summary: 'The people who build AI went and researched whether AI causes unemployment. The conclusion is more complicated than you think.'
