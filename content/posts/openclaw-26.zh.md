@@ -9,12 +9,7 @@ cover: '/images/cover_openclaw-26.png'
 images: ['/images/cover_openclaw-26.png']
 readingTime: 11
 slug: 'openclaw-26'
----
-
-![cover](/images/cover.png)
-
-
-"几天赚26万"。
+---"几天赚26万"。
 
 这是36kr报道里的原话。说的是有人靠给别人装龙虾，短短几天流水做到了26万。
 

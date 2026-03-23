@@ -9,10 +9,7 @@ cover: "/images/cover_ai-resume-screening.png"
 images: ["/images/cover_ai-resume-screening.png"]
 readingTime: 9
 slug: "ai-resume-screening"
----
-
-![封面](/images/cover.png)
-<!-- 封面文字：75%的简历 / AI直接扔了 -->
+---<!-- 封面文字：75%的简历 / AI直接扔了 -->
 
 投了100份简历，一个回响都没有。
 

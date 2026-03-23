@@ -8,6 +8,8 @@ keywords: ["AI"]
 images: ["/images/cover.png"]
 readingTime: 8
 slug: "ai-bill-analysis"
+cover: '/images/Pasted_image_20260315185136.png'
+images: ['/images/Pasted_image_20260315185136.png']
 ---On March 11th, someone named @TawohAwa posted on X. 1.5 million people saw it.
 
 ![](/images/Pasted_image_20260315185136.png)

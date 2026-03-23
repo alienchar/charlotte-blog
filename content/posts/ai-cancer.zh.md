@@ -7,11 +7,9 @@ keywords: ["AI", "mRNA", "AlphaFold", "ChatGPT", "fact-check"]
 images: ["/images/cover.png"]
 readingTime: 7
 slug: "ai-cancer"
----
-
-![封面](/images/cover.png)
-
-这两天，我的X时间线被一条推文刷屏了。
+cover: '/images/Pasted_image_20260315194354.png'
+images: ['/images/Pasted_image_20260315194354.png']
+---这两天，我的X时间线被一条推文刷屏了。
 
 "澳洲程序员，零生物学背景，*用ChatGPT和AlphaFold从头设计mRNA癌症疫苗，救了自己的狗*。"
 

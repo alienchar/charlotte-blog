@@ -7,12 +7,9 @@ keywords: ["AI"]
 images: ["/images/cover.png"]
 readingTime: 8
 slug: "ai-bill-analysis"
----
-
-
-
-![封面](/images/cover.png)
-3月11号，一个叫 @TawohAwa 的人在X上发了条帖子。150万人看了。
+cover: '/images/Pasted_image_20260315185136.png'
+images: ['/images/Pasted_image_20260315185136.png']
+---3月11号，一个叫 @TawohAwa 的人在X上发了条帖子。150万人看了。
 ![](/images/Pasted_image_20260315185136.png)
 他说：我把一年的银行流水扔给了 Claude Opus 4.6。它自动把所有交易分成收入和支出，按类别归好了组。二十分钟，一整年的账做完了。省了大概11000美元的会计费用。
 

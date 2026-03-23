@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>长上下文 on 夏洛特的AI实验室</title><link>https://charlotteailab.com/tags/%E9%95%BF%E4%B8%8A%E4%B8%8B%E6%96%87/</link><description>Recent content in 长上下文 on 夏洛特的AI实验室</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 15 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://charlotteailab.com/tags/%E9%95%BF%E4%B8%8A%E4%B8%8B%E6%96%87/feed.xml" rel="self" type="application/rss+xml"/><item><title>100万token：Claude现在能记住一整本书了</title><link>https://charlotteailab.com/posts/claude/</link><pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/claude/</guid><description>&lt;p>&lt;img src="https://charlotteailab.com/images/cover_claude.png" alt="封面">&lt;/p>
-&lt;p>100万token。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>长上下文 on 夏洛特的AI实验室</title><link>https://charlotteailab.com/tags/%E9%95%BF%E4%B8%8A%E4%B8%8B%E6%96%87/</link><description>Recent content in 长上下文 on 夏洛特的AI实验室</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 15 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://charlotteailab.com/tags/%E9%95%BF%E4%B8%8A%E4%B8%8B%E6%96%87/feed.xml" rel="self" type="application/rss+xml"/><item><title>100万token：Claude现在能记住一整本书了</title><link>https://charlotteailab.com/posts/claude/</link><pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/claude/</guid><description>&lt;p>100万token。&lt;/p>
 &lt;p>这个数字我反复确认了几遍，去Claude官方看了消息，才打开电脑准备写这篇。&lt;/p>
 &lt;p>3月13号，Anthropic正式宣布：Claude Opus 4.6和Sonnet 4.6的100万token上下文窗口全面开放。不是beta，不是waitlist，不是&amp;quot;部分用户灰度&amp;quot;——是GA，所有人都能用。&lt;/p>
 &lt;p>先说这个数字到底意味着什么。&lt;/p>
@@ -47,4 +46,5 @@
 &lt;p>关系大了。&lt;/p>
 &lt;p>几个最直接的场景：&lt;/p>
 &lt;p>&lt;strong>读书&lt;/strong>。你可以把一整本书丢给Claude，然后问它任何问题。&amp;ldquo;第三章那个案例和第七章的结论矛盾吗？&amp;ldquo;&amp;ldquo;帮我找出书里所有关于XX的论点。&amp;ldquo;以前做不到，因为装不下。现在能了。&lt;/p>
-&lt;p>&lt;strong>整理资料&lt;/strong>。考试复习、论文写作、项目研究——把所有参考资料一次性喂进去，让Claude帮你梳理脉络、找到交叉引用、生成大纲。&lt;/p></description></item></channel></rss>
+&lt;p>&lt;strong>整理资料&lt;/strong>。考试复习、论文写作、项目研究——把所有参考资料一次性喂进去，让Claude帮你梳理脉络、找到交叉引用、生成大纲。&lt;/p>
+&lt;p>&lt;strong>工作对话&lt;/strong>。把过去几个月的会议纪要、邮件、文档全扔进去，问Claude&amp;quot;我们Q1的核心决策有哪些变化&amp;rdquo;。它能给你一个连贯的答案，而不是只看最后几条消息。&lt;/p></description></item></channel></rss>

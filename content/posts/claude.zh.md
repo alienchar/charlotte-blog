@@ -7,11 +7,9 @@ keywords: ["Claude", "AI", "长上下文", "Anthropic"]
 images: ['/images/cover_claude.png']
 readingTime: 7
 slug: 'claude'
----
-
-![封面](/images/cover_claude.png)
-
-100万token。
+cover: '/images/illustration-1.png'
+images: ['/images/illustration-1.png']
+---100万token。
 
 这个数字我反复确认了几遍，去Claude官方看了消息，才打开电脑准备写这篇。
 

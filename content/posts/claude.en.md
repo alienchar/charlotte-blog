@@ -8,6 +8,8 @@ keywords: ["Claude", "AI", "Long Context", "Anthropic"]
 images: ['/images/cover_claude_en.png']
 readingTime: 7
 slug: 'claude'
+cover: '/images/illustration-1.png'
+images: ['/images/illustration-1.png']
 ---One million tokens.
 
 I checked this number several times, went to Claude's official announcement to verify, and only then opened my laptop to write this.

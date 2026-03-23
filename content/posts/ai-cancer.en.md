@@ -8,6 +8,8 @@ keywords: ["AI", "mRNA", "AlphaFold", "ChatGPT", "fact-check"]
 images: ["/images/cover.png"]
 readingTime: 7
 slug: "ai-cancer"
+cover: '/images/Pasted_image_20260315194354.png'
+images: ['/images/Pasted_image_20260315194354.png']
 ---My X timeline got flooded these past couple of days with a single tweet.
 
 "Australian programmer, zero biology background, *used ChatGPT and AlphaFold to design an mRNA cancer vaccine from scratch and saved his dog*."

@@ -9,11 +9,7 @@ cover: "/images/cover_bigtech-openclaw.png"
 images: ["/images/cover_bigtech-openclaw.png"]
 readingTime: 14
 slug: "bigtech-openclaw"
----
-
-![cover](/images/cover.png)
-
-3月初的时候，龙虾还是技术圈的小众玩具。
+---3月初的时候，龙虾还是技术圈的小众玩具。
 
 一周之后，*腾讯、字节、阿里全部下场了*。
 

@@ -8,6 +8,8 @@ keywords: ["AI", "ChatGPT", "prompt技巧", "LLM"]
 images: ['/images/Pasted_image_20260316103501.png']
 readingTime: 7
 slug: 'ai'
+cover: '/images/Pasted_image_20260316103501.png'
+images: ['/images/Pasted_image_20260316103501.png']
 ---
 
 # 一句谢谢，花了几千万美金
