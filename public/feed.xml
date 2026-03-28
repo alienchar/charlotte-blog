@@ -1,4 +1,52 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>夏洛特的AI实验室</title><link>https://charlotteailab.com/</link><description>Recent content on 夏洛特的AI实验室</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 27 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://charlotteailab.com/feed.xml" rel="self" type="application/rss+xml"/><item><title>《福布斯》发了一份「AI铁饭碗」榜单，第一名年薪140万</title><link>https://charlotteailab.com/posts/post-2026-03-27/</link><pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/post-2026-03-27/</guid><description>Forbes发布2026 AI抗性职业指数，分析800+职业，护士麻醉师以93.3%的AI抗性指数排名第一——但真正的安全感不在职业，在能力。</description></item><item><title>苹果创始人说「我不是AI的粉丝」，他到底在失望什么？</title><link>https://charlotteailab.com/posts/post-2026-03-26/</link><pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/post-2026-03-26/</guid><description>苹果联合创始人沃兹尼亚克在苹果50周年之际接受采访，直言对AI&amp;rsquo;失望很多&amp;rsquo;——他的批评，比你想的深得多。</description></item><item><title>字节开源了一个「超级智能体」，GitHub一夜3.5万星</title><link>https://charlotteailab.com/posts/deerflow/</link><pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/deerflow/</guid><description>字节跳动开源DeerFlow 2.0，一个让多个AI像团队一样协作的框架——GitHub一夜35000星，它到底牛在哪？普通人能用吗？</description></item><item><title>乔布斯离去后最大的讽刺：苹果要靠谷歌</title><link>https://charlotteailab.com/posts/post-2026-03-23/</link><pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/post-2026-03-23/</guid><description>苹果每年掏10亿美元买谷歌Gemini来驱动Siri——那个曾经嘲笑谷歌Assistant的Siri</description></item><item><title>梅姨落网背后，AI如何帮找回被拐儿童</title><link>https://charlotteailab.com/posts/post-2026-03-22/</link><pubDate>Sun, 22 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/post-2026-03-22/</guid><description>梅姨落网背后，是DNA数据库、AI人脸识别、大数据追踪三项技术的联合破局。92%的人相信科技是反拐终极武器——这次我来用普通人能听懂的话，解释这些技术到底做了什么。</description></item><item><title>每天用AI，你的大脑正在悄悄萎缩</title><link>https://charlotteailab.com/posts/post-2026-03-21/</link><pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/post-2026-03-21/</guid><description>哈佛商业评论联合BCG发布研究：14%的AI用户正在经历&amp;rsquo;大脑烧毁&amp;rsquo;。重大错误增加39%，决策疲劳高出33%。你每天用AI，大脑可能正在被悄悄掏空。</description></item><item><title>简历被AI拒了？求职规则变了</title><link>https://charlotteailab.com/posts/ai-resume-screening/</link><pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/ai-resume-screening/</guid><description>75%的简历在HR看到之前就被AI扔掉了。你投了100份简历没回音？可能根本没有人类看过。科普ATS筛选原理，拆解AI简历军备竞赛的荒诞循环，给出实用优化建议。</description></item><item><title>AI翻了我一年账单发现隐形消费</title><link>https://charlotteailab.com/posts/ai-bill-analysis/</link><pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/ai-bill-analysis/</guid><description>&lt;p>3月11号，一个叫 @TawohAwa 的人在X上发了条帖子。150万人看了。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>夏洛特的AI实验室</title><link>https://charlotteailab.com/</link><description>Recent content on 夏洛特的AI实验室</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sat, 28 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://charlotteailab.com/feed.xml" rel="self" type="application/rss+xml"/><item><title>普通人AI编程指南</title><link>https://charlotteailab.com/posts/post-2026-03-28/</link><pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/post-2026-03-28/</guid><description>&lt;p>&lt;img src="https://charlotteailab.com/images/cover.png" alt="cover">&lt;/p>
+&lt;h2 id="先讲一个让我沉默了很久的事">先讲一个让我沉默了很久的事&lt;/h2>
+&lt;p>前段时间，一个叫Stavros的希腊程序员写了篇文章，标题是《How I write software with LLMs》。
+&lt;img src="https://charlotteailab.com/images/Pasted_image_20260325093220.png" alt="">
+文章里有句话，我反复读了三遍：&lt;/p>
+&lt;p>&lt;strong>&amp;ldquo;我以为我喜欢编程。后来发现，我喜欢的是做东西。编程只是手段。&amp;rdquo;&lt;/strong>&lt;/p>
+&lt;p>这句话击中了我。&lt;/p>
+&lt;p>因为我自己就是那种&amp;quot;不会写代码，但特别想做东西&amp;quot;的人。过去一年，我用AI搭了整个视频工厂的自动化流程——从选题到视频生成再到发布，中间涉及的脚本、API调用、数据处理，全是AI帮我写的。&lt;/p>
+&lt;p>一行代码我都没手打过。但每一个模块的逻辑，我比谁都清楚。&lt;/p>
+&lt;p>今天这篇文章，我想把我踩过的坑、学到的方法，加上两位顶级开发者（一位是Google Chrome工程师Addy Osmani，一位就是上面提到的Stavros）的实战经验，拆解成一套&lt;strong>普通人也能用的AI编程方法论&lt;/strong>。&lt;/p>
+&lt;p>不贩卖焦虑，不吹神话。只讲：什么能做，什么不能做，怎么做成功率最高。&lt;/p>
+&lt;hr>
+&lt;h2 id="ai写代码到底靠不靠谱">AI写代码到底靠不靠谱？&lt;/h2>
+&lt;p>先说数据吧。&lt;/p>
+&lt;p>GitHub的统计显示，用Copilot的开发者任务完成速度&lt;strong>提升了55%&lt;/strong>。84%的开发者已经在用或计划用AI编程工具。日常使用AI的开发者，代码合并请求（Pull Request）的数量比轻度用户&lt;strong>多60%&lt;/strong>。&lt;/p>
+&lt;p>听起来很美对吧？别急。&lt;/p>
+&lt;p>同一份数据还显示：&lt;strong>45%的开发者反映，调试AI生成的代码，有时比自己从头写还慢。&lt;/strong>&lt;/p>
+&lt;p>这就是AI编程的真实状态——它不是万能的，但对会用的人来说，确实是质变。&lt;/p>
+&lt;p>关键词还是&amp;quot;会用&amp;quot;。&lt;/p>
+&lt;p>Stavros在他的文章里说了一句特别到位的话：&lt;/p>
+&lt;blockquote>
+&lt;p>&amp;ldquo;不同的人用LLM得到的结果，差异大得惊人。&amp;rdquo;&lt;/p>&lt;/blockquote>
+&lt;p>为什么有人用AI效率翻倍，有人觉得是垃圾？不是工具的问题，是&lt;strong>方法&lt;/strong>的问题。&lt;/p>
+&lt;hr>
+&lt;h2 id="大佬们怎么用ai写代码">大佬们怎么用AI写代码？&lt;/h2>
+&lt;h3 id="第一条军规先写需求文档再动手">第一条军规：先写需求文档，再动手&lt;/h3>
+&lt;p>Google Chrome工程师Addy Osmani说得很直白了：&lt;/p>
+&lt;p>&lt;strong>不要上来就跟AI说：&amp;ldquo;帮我写个xxx&amp;rdquo;。&lt;/strong>&lt;/p>
+&lt;p>（哈哈咱们刚开始作为新手可不就是这样嘛……）&lt;/p>
+&lt;p>他的第一步永远是：&lt;em>跟AI一起写一份详细的需求文档（他叫spec.md），包括要做什么、数据结构长什么样、边界情况有哪些、测试策略是什么&lt;/em>。&lt;/p>
+&lt;p>这一步很多人跳过了。你以为在省时间，其实是在给自己挖坑。&lt;/p>
+&lt;p>你跟AI说&amp;quot;帮我做一个记账App&amp;quot;，AI确实能给你一坨代码。但这坨代码大概率是：功能零散、逻辑混乱、改一个地方崩三个地方。&lt;/p>
+&lt;p>正确的做法是——&lt;/p>
+&lt;p>先花15分钟，用自然语言把你想要的东西写清楚。越具体越好：&lt;/p>
+&lt;ul>
+&lt;li>这个App给谁用？&lt;/li>
+&lt;li>核心功能是什么？（记录收支 → 按类别统计 → 月度报表）&lt;/li>
+&lt;li>数据存在哪？（本地？云端？）&lt;/li>
+&lt;li>需要登录吗？&lt;/li>
+&lt;li>最小可用版本长什么样？&lt;/li>
+&lt;/ul>
+&lt;p>Addy Osmani说这就像&amp;quot;15分钟做一次瀑布开发&amp;quot;——快速但完整的规划，换来后面几小时的顺畅执行。&lt;/p>
+&lt;p>&lt;strong>普通人翻译版&lt;/strong>：你去餐厅不会只说&amp;quot;给我来点吃的&amp;quot;。你会说&amp;quot;一碗兰州拉面，细面，辣，加个蛋&amp;quot;。跟AI编程也是一样的道理。&lt;/p>
+&lt;p>&lt;img src="https://charlotteailab.com/images/illustration-1.png" alt="人与AI协作编程">&lt;/p>
+&lt;h3 id="第二条军规一次只做一件事">第二条军规：一次只做一件事&lt;/h3>
+&lt;p>这是Addy Osmani反复强调的：&lt;/p>
+&lt;blockquote>
+&lt;p>&amp;ldquo;LLMs do best when given focused prompts: implement one function, fix one bug, add one feature at a time.&amp;rdquo;
+（AI在聚焦的指令下效果最好：一次实现一个函数，修一个bug，加一个功能。）&lt;/p></description></item><item><title>苹果创始人说「我不是AI的粉丝」，他到底在失望什么？</title><link>https://charlotteailab.com/posts/post-2026-03-26/</link><pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/post-2026-03-26/</guid><description>苹果联合创始人沃兹尼亚克在苹果50周年之际接受采访，直言对AI&amp;rsquo;失望很多&amp;rsquo;——他的批评，比你想的深得多。</description></item><item><title>字节开源了一个「超级智能体」，GitHub一夜3.5万星</title><link>https://charlotteailab.com/posts/deerflow/</link><pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/deerflow/</guid><description>字节跳动开源DeerFlow 2.0，一个让多个AI像团队一样协作的框架——GitHub一夜35000星，它到底牛在哪？普通人能用吗？</description></item><item><title>《福布斯》发了一份「AI铁饭碗」榜单，第一名年薪140万</title><link>https://charlotteailab.com/posts/ai-proof-careers/</link><pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/ai-proof-careers/</guid><description>Forbes发布2026 AI抗性职业指数，分析800+职业，护士麻醉师以93.3%的AI抗性指数排名第一——但真正的安全感不在职业，在能力。</description></item><item><title>奥斯卡导演说AI经济是「庞氏骗局」，他疯了吗？</title><link>https://charlotteailab.com/posts/ai-ponzi-scheme/</link><pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/ai-ponzi-scheme/</guid><description>拍过《纳瓦尔尼》的奥斯卡导演，这次把镜头对准了硅谷——纪录片《The AI Doc》直指AI投资热潮本质是庞氏骗局。</description></item><item><title>普通人AI编程指南：不会写代码，照样做出产品</title><link>https://charlotteailab.com/posts/ai-coding-guide/</link><pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/ai-coding-guide/</guid><description>一个不会写代码的内容创作者，如何用AI搭建整套视频生产自动化流程？从Google工程师和独立开发者的实战经验，提炼出普通人立刻能用的五步法。</description></item><item><title>乔布斯离去后最大的讽刺：苹果要靠谷歌</title><link>https://charlotteailab.com/posts/post-2026-03-23/</link><pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/post-2026-03-23/</guid><description>苹果每年掏10亿美元买谷歌Gemini来驱动Siri——那个曾经嘲笑谷歌Assistant的Siri</description></item><item><title>梅姨落网背后，AI如何帮找回被拐儿童</title><link>https://charlotteailab.com/posts/post-2026-03-22/</link><pubDate>Sun, 22 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/post-2026-03-22/</guid><description>梅姨落网背后，是DNA数据库、AI人脸识别、大数据追踪三项技术的联合破局。92%的人相信科技是反拐终极武器——这次我来用普通人能听懂的话，解释这些技术到底做了什么。</description></item><item><title>每天用AI，你的大脑正在悄悄萎缩</title><link>https://charlotteailab.com/posts/post-2026-03-21/</link><pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/post-2026-03-21/</guid><description>哈佛商业评论联合BCG发布研究：14%的AI用户正在经历&amp;rsquo;大脑烧毁&amp;rsquo;。重大错误增加39%，决策疲劳高出33%。你每天用AI，大脑可能正在被悄悄掏空。</description></item><item><title>简历被AI拒了？求职规则变了</title><link>https://charlotteailab.com/posts/ai-resume-screening/</link><pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/ai-resume-screening/</guid><description>75%的简历在HR看到之前就被AI扔掉了。你投了100份简历没回音？可能根本没有人类看过。科普ATS筛选原理，拆解AI简历军备竞赛的荒诞循环，给出实用优化建议。</description></item><item><title>AI翻了我一年账单发现隐形消费</title><link>https://charlotteailab.com/posts/ai-bill-analysis/</link><pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate><guid>https://charlotteailab.com/posts/ai-bill-analysis/</guid><description>&lt;p>3月11号，一个叫 @TawohAwa 的人在X上发了条帖子。150万人看了。
 &lt;img src="https://charlotteailab.com/images/Pasted_image_20260315185136.png" alt="">
 他说：我把一年的银行流水扔给了 Claude Opus 4.6。它自动把所有交易分成收入和支出，按类别归好了组。二十分钟，一整年的账做完了。省了大概11000美元的会计费用。&lt;/p>
 &lt;p>我看完第一反应不是&amp;quot;好厉害&amp;quot;。&lt;/p>
