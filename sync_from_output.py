@@ -299,14 +299,38 @@ def write_zh_post(slug, title, article_date, description, summary, tags,
 def translate_to_english(zh_title, zh_body, tags):
     """
     调用 Gemini Pro API 翻译中文文章为英文
-    返回 (en_title, en_body, en_description)
+    返回 (en_title, en_body, en_description, cover_title)
     """
     import urllib.request
     import urllib.error
 
     api_key = os.environ.get("GEMINI_API_KEY", "")
     if not api_key:
-        return None, None, None
+        for env_path in [
+            "/root/.hermes/.env",
+            "/root/.hermes/profiles/main/.env",
+            "/root/.openclaw/.env",
+        ]:
+            if not os.path.exists(env_path):
+                continue
+            try:
+                with open(env_path, 'r', encoding='utf-8') as f:
+                    for line in f:
+                        line = line.strip()
+                        if not line or line.startswith('#') or '=' not in line:
+                            continue
+                        key, value = line.split('=', 1)
+                        key = key.strip()
+                        value = value.strip().strip('"').strip("'")
+                        if key and key not in os.environ:
+                            os.environ[key] = value
+            except Exception:
+                continue
+            api_key = os.environ.get("GEMINI_API_KEY", "")
+            if api_key:
+                break
+    if not api_key:
+        return None, None, None, None
 
     # 截断正文以节省 token（最多 8000 字）
     body_to_translate = zh_body[:8000]
